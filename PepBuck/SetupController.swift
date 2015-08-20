@@ -37,6 +37,7 @@ class SetupController: UIViewController {
         whatIsLabel.animateTo()
         whatIsHourLabel.hidden = false
         whatIsHourLabel.animation = "slideLeft"
+        whatIsHourLabel.duration = 1.75
         whatIsHourLabel.animate()
         entryField.text = ""
         calcIcon.hidden = false
