@@ -48,6 +48,8 @@
 		8876EB431B8535AA00384F47 /* GreenEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8876EB411B8535AA00384F47 /* GreenEmpty.png */; };
 		8876EB441B8535AA00384F47 /* GreenFullB.png in Resources */ = {isa = PBXBuildFile; fileRef = 8876EB421B8535AA00384F47 /* GreenFullB.png */; };
 		8891103F1B85736A008E9F05 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8891103E1B85736A008E9F05 /* playButton.png */; };
+		88BD82EF1B88F4530050CB73 /* EarningsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD82EE1B88F4530050CB73 /* EarningsController.swift */; };
+		88D7581B1B8681FD0077F698 /* ReturnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7581A1B8681FD0077F698 /* ReturnController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,8 @@
 		8876EB411B8535AA00384F47 /* GreenEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenEmpty.png; sourceTree = "<group>"; };
 		8876EB421B8535AA00384F47 /* GreenFullB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenFullB.png; sourceTree = "<group>"; };
 		8891103E1B85736A008E9F05 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playButton.png; path = ../../playButton.png; sourceTree = "<group>"; };
+		88BD82EE1B88F4530050CB73 /* EarningsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarningsController.swift; sourceTree = "<group>"; };
+		88D7581A1B8681FD0077F698 /* ReturnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,8 @@
 				887423821B8569D400CA7889 /* CircularProgressView.swift */,
 				8876EB211B8534EC00384F47 /* AppDelegate.swift */,
 				8876EB231B8534EC00384F47 /* SetupController.swift */,
+				88D7581A1B8681FD0077F698 /* ReturnController.swift */,
+				88BD82EE1B88F4530050CB73 /* EarningsController.swift */,
 				8874237E1B8565CD00CA7889 /* MainController.swift */,
 				8876EB251B8534EC00384F47 /* Main.storyboard */,
 				8876EB281B8534ED00384F47 /* Images.xcassets */,
@@ -334,6 +340,7 @@
 				887423761B85445D00CA7889 /* SpringLabel.swift in Sources */,
 				887423691B85445D00CA7889 /* DesignableLabel.swift in Sources */,
 				887423701B85445D00CA7889 /* Misc.swift in Sources */,
+				88BD82EF1B88F4530050CB73 /* EarningsController.swift in Sources */,
 				8876EB241B8534EC00384F47 /* SetupController.swift in Sources */,
 				887423751B85445D00CA7889 /* SpringImageView.swift in Sources */,
 				8874236E1B85445D00CA7889 /* ImageLoader.swift in Sources */,
@@ -352,6 +359,7 @@
 				887423671B85445D00CA7889 /* DesignableButton.swift in Sources */,
 				887423611B85445D00CA7889 /* AsyncButton.swift in Sources */,
 				887423741B85445D00CA7889 /* SpringButton.swift in Sources */,
+				88D7581B1B8681FD0077F698 /* ReturnController.swift in Sources */,
 				887423621B85445D00CA7889 /* AsyncImageView.swift in Sources */,
 				887423631B85445D00CA7889 /* AutoTextView.swift in Sources */,
 				8874236B1B85445D00CA7889 /* DesignableTextView.swift in Sources */,

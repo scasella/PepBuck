@@ -25,7 +25,10 @@ class SetupController: UIViewController {
     
     @IBAction func submitTap(sender: AnyObject) {
         if payToggle == false {
-        let name = entryField.text
+        if entryField.text != "" {
+        
+        var name = entryField.text
+        name.replaceRange(name.startIndex...name.startIndex, with: String(name[name.startIndex]).capitalizedString)
         welcomeLabel.hidden = true
         pepBuckLabel.hidden = true
         nameLabel.text = "Hi, \(name)"
@@ -45,10 +48,13 @@ class SetupController: UIViewController {
         entryField.resignFirstResponder()
         entryField.becomeFirstResponder()
         payToggle = true
+         }
         } else {
+            if entryField.text != "" {
             payRate = (entryField.text as NSString).doubleValue
+            NSUserDefaults.standardUserDefaults().setObject(payRate, forKey: "payRate")
             performSegueWithIdentifier("toMain", sender: self)
-        }
+            } }
         
     }
     
