@@ -9,12 +9,15 @@
 import UIKit
 
 var startNowToggle = false
+var toggleSaveTime = true
+var seconds = 0
+var savedTime = NSDate()
 
 var date = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .ShortStyle)
 
 class MainController: UIViewController {
     
-    var seconds = 0
+    var coinLabelPay = 0.00
     var timer = NSTimer()
     var pauseToggle = false
     var newSession = true
@@ -25,6 +28,10 @@ class MainController: UIViewController {
         case toResume
     }
 
+    @IBOutlet var invisiblePlay: SpringButton!
+    @IBOutlet var coinLabel: SpringLabel!
+    @IBOutlet var endShiftButton: UIButton!
+    @IBOutlet var coinImage: SpringImageView!
     @IBOutlet var timerLabel: UILabel!
     @IBOutlet var playButton: SpringButton!
     @IBOutlet var timerCircle: CircularProgressView!
@@ -34,6 +41,7 @@ class MainController: UIViewController {
     @IBAction func playPressed(sender: SpringButton) {
         if pauseToggle == false {
         
+        endShiftButton.hidden = true
         timerLabel.hidden = false
         playButton.hidden = true
         setupGame()
@@ -46,9 +54,38 @@ class MainController: UIViewController {
         timer.invalidate()
         timerLabel.hidden = true
         playButton.hidden = false
+        endShiftButton.hidden = false
         pauseToggle = false
         
         }
+    }
+    
+    
+    
+    @IBAction func endShiftPressed(sender: AnyObject) {
+        invisiblePlay.hidden = true
+        timerLabel.hidden = true
+        playButton.hidden = true
+        coinLabel.hidden = false
+        coinImage.hidden = false
+        endShiftButton.hidden = true
+        timerCircle.value = CGFloat(0.0)
+        coinLabel.text = "+ $\(coinLabelPay)"
+        coinImage.duration = 4.0
+        coinLabel.duration = 4.0
+        
+        coinLabel.animate()
+        coinImage.animateNext {
+            self.coinLabel.hidden = true
+            self.coinImage.hidden = true
+            seconds = 0
+            self.timerLabel.hidden = true
+            self.playButton.hidden = false
+            self.invisiblePlay.hidden = false
+            self.performSegueWithIdentifier("refreshView", sender: self)
+            
+        }
+        
     }
     
     
@@ -63,6 +100,8 @@ class MainController: UIViewController {
         
         }
         
+        
+        
         timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
         
     }
@@ -72,18 +111,19 @@ class MainController: UIViewController {
     func subtractTime() {
        
         let oldSecs = Double(seconds)
-        let oldPay = round(payRate * Double(seconds / 10 ) / 60 / 60 * 100)/100
+        let oldPay = round(payRate * Double(seconds / 10) / 60 / 60 * 100) / 100
         
         seconds++
         
         let newSecs = Double(seconds)
-        let newPay = round(payRate * Double(seconds / 10 ) / 60 / 60 * 100)/100
+        let newPay = round(payRate * Double(seconds / 10) / 60 / 60 * 100) / 100
+        coinLabelPay = newPay
 
         totalHours = (totalHours - oldSecs + newSecs) / 60 / 60
         totalPay = totalPay - oldPay + newPay
         
         timerLabel.text = "$\(newPay)"
-        timerCircle.value = CGFloat(payRate * Double(seconds / 10 ) / 60 / 60 / 10 % 1)
+        timerCircle.value = CGFloat(payRate * Double(seconds / 10 ) / 60 / 60 % 1)
         }
     
     
