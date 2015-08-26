@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -96,7 +95,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEd-Ao-2Sa">
                                 <rect key="frame" x="318" y="368" width="46" height="30"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -275,7 +274,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p55-BG-YIB">
                                 <rect key="frame" x="313" y="629" width="46" height="30"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -308,7 +307,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="I5w-XD-ya3" kind="presentation" identifier="toMain" modalTransitionStyle="crossDissolve" animates="NO" id="rS4-wk-GLg"/>
-                        <segue destination="evr-at-wYR" kind="presentation" identifier="toEarnings" id="QmN-g7-B35"/>
+                        <segue destination="evr-at-wYR" kind="presentation" identifier="toEarnings" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" animates="NO" id="QmN-g7-B35"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15H-bI-Np7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -327,91 +326,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3V-ZU-FZe">
-                                <rect key="frame" x="193" y="558" width="166" height="55"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Earnings" backgroundImage="GreenEmpty.png">
-                                    <color key="titleColor" red="0.0" green="0.73725490199999999" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" backgroundImage="GreenFullB.png"/>
-                                <state key="highlighted" backgroundImage="GreenFullB.png"/>
-                                <connections>
-                                    <segue destination="evr-at-wYR" kind="presentation" modalTransitionStyle="crossDissolve" animates="NO" id="Z5X-yu-uSp"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PepBuck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7w3-Wl-gF0">
-                                <rect key="frame" x="74" y="12" width="227" height="87"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="Ugf-V7-9tf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
-                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ye9-IF-UGI">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ye9-IF-UGI">
                                 <rect key="frame" x="319" y="629" width="46" height="30"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="I5w-XD-ya3" kind="presentation" identifier="refreshView" modalTransitionStyle="crossDissolve" animates="NO" id="FuE-yQ-kVk"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-e4-GGo" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="85" width="375" height="443"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-e4-GGo" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="97" width="375" height="570"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOv-bX-lYQ" customClass="CircularProgressView" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="44" y="4" width="287" height="436"/>
+                                    <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Wf-aO-Txd">
+                                        <rect key="frame" x="27" y="520" width="320" height="50"/>
+                                    </adBannerView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOv-bX-lYQ" customClass="CircularProgressView" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="44" y="11" width="287" height="436"/>
                                         <subviews>
-                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoinImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-bG-ahC" customClass="SpringImageView" customModule="PepBuck" customModuleProvider="target">
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CoinImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-bG-ahC" customClass="SpringImageView" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="49" y="124" width="189" height="187"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="187" id="CQh-Rz-Yjg"/>
-                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomOut"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoF-SW-V7v">
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoF-SW-V7v">
                                                 <rect key="frame" x="46" y="166" width="195" height="101"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="101" id="Zxc-QO-Eu4"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="46"/>
-                                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="46"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-LN-dcs">
-                                                <rect key="frame" x="80" y="356" width="127" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="32" id="Xis-8Y-rSm"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <state key="normal" title="end shift">
-                                                    <color key="titleColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="endShiftPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="ebw-7O-eIg"/>
-                                                </connections>
-                                            </button>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-Sl-GOG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-Sl-GOG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="83" y="203" width="120" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="32" id="b90-GB-aQH"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="35"/>
-                                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomOut"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vo2-Hk-0yZ" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vo2-Hk-0yZ" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="69" y="166" width="172" height="108"/>
                                                 <state key="normal">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -420,32 +377,25 @@
                                                     <action selector="playPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="LJu-Ab-lgG"/>
                                                 </connections>
                                             </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-LN-dcs">
+                                                <rect key="frame" x="80" y="383" width="127" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                                <state key="normal" title="end shift">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="endShiftPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="ebw-7O-eIg"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="vo2-Hk-0yZ" firstAttribute="leading" secondItem="mOv-bX-lYQ" secondAttribute="leading" constant="69" id="Atj-Z5-EIz"/>
-                                            <constraint firstItem="cRd-bG-ahC" firstAttribute="leading" secondItem="mOv-bX-lYQ" secondAttribute="leading" constant="49" id="Lzr-mX-rsc"/>
-                                            <constraint firstItem="LAu-LN-dcs" firstAttribute="centerX" secondItem="DgU-Sl-GOG" secondAttribute="centerX" id="PSb-wg-tkK"/>
-                                            <constraint firstItem="xoF-SW-V7v" firstAttribute="centerX" secondItem="DgU-Sl-GOG" secondAttribute="centerX" id="T92-XL-yMV"/>
-                                            <constraint firstItem="xoF-SW-V7v" firstAttribute="top" secondItem="vo2-Hk-0yZ" secondAttribute="top" id="Tfl-mS-C9R"/>
-                                            <constraint firstItem="DgU-Sl-GOG" firstAttribute="centerX" secondItem="cRd-bG-ahC" secondAttribute="centerX" id="Uyo-fB-f8z"/>
-                                            <constraint firstItem="LAu-LN-dcs" firstAttribute="leading" secondItem="mOv-bX-lYQ" secondAttribute="leading" constant="80" id="WmX-eB-TDI"/>
-                                            <constraint firstItem="DgU-Sl-GOG" firstAttribute="centerX" secondItem="mOv-bX-lYQ" secondAttribute="centerX" id="Wyc-Q0-nkH"/>
-                                            <constraint firstItem="DgU-Sl-GOG" firstAttribute="leading" secondItem="mOv-bX-lYQ" secondAttribute="leading" constant="83" id="etH-YS-ZRY"/>
-                                            <constraint firstItem="LAu-LN-dcs" firstAttribute="top" secondItem="vo2-Hk-0yZ" secondAttribute="bottom" constant="82" id="jWI-3B-Wq9"/>
-                                            <constraint firstItem="LAu-LN-dcs" firstAttribute="top" secondItem="cRd-bG-ahC" secondAttribute="bottom" constant="45" id="k2S-U2-kbf"/>
-                                            <constraint firstAttribute="bottom" secondItem="LAu-LN-dcs" secondAttribute="bottom" constant="48" id="lfP-yo-sEh"/>
-                                            <constraint firstItem="xoF-SW-V7v" firstAttribute="leading" secondItem="mOv-bX-lYQ" secondAttribute="leading" constant="46" id="noI-Ha-EFW"/>
-                                            <constraint firstItem="DgU-Sl-GOG" firstAttribute="top" secondItem="mOv-bX-lYQ" secondAttribute="top" constant="203" id="vPL-ZB-fYz"/>
-                                            <constraint firstItem="xoF-SW-V7v" firstAttribute="trailing" secondItem="vo2-Hk-0yZ" secondAttribute="trailing" id="yND-M1-rXy"/>
-                                            <constraint firstItem="LAu-LN-dcs" firstAttribute="top" secondItem="xoF-SW-V7v" secondAttribute="bottom" constant="89" id="yZA-H9-EFZ"/>
-                                        </constraints>
+                                        <color key="backgroundColor" red="0.14117647058823529" green="0.56862745098039214" blue="0.44705882352941179" alpha="1" colorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="progressTint">
-                                                <color key="value" red="0.0" green="0.73725490196078436" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="trackTint">
-                                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <color key="value" red="0.10443183057077671" green="0.42168931966726075" blue="0.33039419687381805" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="progressThickness">
                                                 <real key="value" value="32"/>
@@ -457,13 +407,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="mOv-bX-lYQ" firstAttribute="centerX" secondItem="xfc-e4-GGo" secondAttribute="centerX" id="BQp-ZL-Vos"/>
-                                    <constraint firstItem="mOv-bX-lYQ" firstAttribute="top" secondItem="xfc-e4-GGo" secondAttribute="top" constant="4" id="FHD-zj-UeE"/>
-                                    <constraint firstAttribute="bottom" secondItem="mOv-bX-lYQ" secondAttribute="bottom" constant="3" id="IQA-aR-WuJ"/>
-                                    <constraint firstItem="mOv-bX-lYQ" firstAttribute="leading" secondItem="xfc-e4-GGo" secondAttribute="leading" constant="44" id="JmB-n1-35Q"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.14117647058823529" green="0.56862745098039214" blue="0.44705882352941179" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="duration">
@@ -472,27 +416,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snl-wv-DPy">
-                                <rect key="frame" x="16" y="558" width="166" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="166" id="1DF-g3-l2H"/>
-                                    <constraint firstAttribute="height" constant="55" id="OcW-N2-3H0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Settings" backgroundImage="GreenEmpty.png">
-                                    <color key="titleColor" red="0.0" green="0.73725490199999999" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" backgroundImage="GreenFullB.png"/>
-                                <state key="highlighted" backgroundImage="GreenFullB.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kra-nl-VK4" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="144" y="257" width="106" height="108"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="106" id="BJI-sy-j1L"/>
-                                    <constraint firstAttribute="height" constant="108" id="Bvs-ii-mxE"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="playButton.png">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kra-nl-VK4" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="146" y="275" width="106" height="108"/>
+                                <state key="normal" title="Button" image="PlayButtonWhite.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -512,28 +438,39 @@
                                     <action selector="playPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="f9Z-w5-Hqk"/>
                                 </connections>
                             </button>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snl-wv-DPy">
+                                <rect key="frame" x="16" y="551" width="166" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Settings" backgroundImage="whiteBorderButton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="whiteFullButton.png"/>
+                                <state key="highlighted" image="whiteFullButton.png"/>
+                            </button>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3V-ZU-FZe">
+                                <rect key="frame" x="193" y="551" width="166" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Earnings" backgroundImage="whiteBorderButton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="whiteFullButton.png"/>
+                                <state key="highlighted" image="whiteFullButton.png"/>
+                                <connections>
+                                    <segue destination="evr-at-wYR" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" animates="NO" id="Z5X-yu-uSp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PepBuck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7w3-Wl-gF0">
+                                <rect key="frame" x="74" y="10" width="227" height="87"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="53"/>
+                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="T3V-ZU-FZe" firstAttribute="trailing" secondItem="WBA-zS-z0b" secondAttribute="trailingMargin" id="3L0-cr-HLl"/>
-                            <constraint firstItem="xfc-e4-GGo" firstAttribute="top" secondItem="f09-7M-Zsk" secondAttribute="bottom" constant="65" id="6tp-7y-5si"/>
-                            <constraint firstItem="ye9-IF-UGI" firstAttribute="top" secondItem="T3V-ZU-FZe" secondAttribute="bottom" constant="16" id="CQS-iA-0HK"/>
-                            <constraint firstItem="7w3-Wl-gF0" firstAttribute="centerX" secondItem="xfc-e4-GGo" secondAttribute="centerX" id="DHy-ih-xE7"/>
-                            <constraint firstItem="T3V-ZU-FZe" firstAttribute="leading" secondItem="snl-wv-DPy" secondAttribute="trailing" constant="11" id="K4X-Lh-HQa"/>
-                            <constraint firstItem="7w3-Wl-gF0" firstAttribute="leading" secondItem="WBA-zS-z0b" secondAttribute="leadingMargin" constant="58" id="LvA-sM-dGo"/>
-                            <constraint firstItem="snl-wv-DPy" firstAttribute="leading" secondItem="WBA-zS-z0b" secondAttribute="leadingMargin" id="NAs-jf-HNb"/>
-                            <constraint firstAttribute="trailing" secondItem="xfc-e4-GGo" secondAttribute="trailing" id="Pua-xF-VTZ"/>
-                            <constraint firstItem="MKd-yo-E4S" firstAttribute="top" secondItem="ye9-IF-UGI" secondAttribute="bottom" constant="8" symbolic="YES" id="Qi7-Jh-4VD"/>
-                            <constraint firstItem="T3V-ZU-FZe" firstAttribute="top" secondItem="snl-wv-DPy" secondAttribute="top" id="Rkj-K9-yPE"/>
-                            <constraint firstItem="snl-wv-DPy" firstAttribute="baseline" secondItem="T3V-ZU-FZe" secondAttribute="firstBaseline" id="S8f-9a-IXC"/>
-                            <constraint firstItem="xfc-e4-GGo" firstAttribute="leading" secondItem="WBA-zS-z0b" secondAttribute="leading" id="UJf-ND-v7S"/>
-                            <constraint firstItem="snl-wv-DPy" firstAttribute="top" secondItem="xfc-e4-GGo" secondAttribute="bottom" constant="30" id="VDP-TF-fYX"/>
-                            <constraint firstItem="T3V-ZU-FZe" firstAttribute="baseline" secondItem="snl-wv-DPy" secondAttribute="firstBaseline" id="YXq-WK-A5g"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ye9-IF-UGI" secondAttribute="trailing" constant="-6" id="bi3-UE-Byd"/>
-                            <constraint firstItem="Kra-nl-VK4" firstAttribute="top" secondItem="WBA-zS-z0b" secondAttribute="top" constant="257" id="hAO-3s-mFq"/>
-                            <constraint firstItem="7w3-Wl-gF0" firstAttribute="top" secondItem="WBA-zS-z0b" secondAttribute="topMargin" constant="12" id="ipt-MC-2KE"/>
-                            <constraint firstItem="Kra-nl-VK4" firstAttribute="leading" secondItem="WBA-zS-z0b" secondAttribute="leading" constant="144" id="nux-fU-9yg"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -563,10 +500,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earnings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFy-dD-J23" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="39" y="28" width="296" height="87"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="57"/>
-                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <visualEffectView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EDV-oE-iT3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7fm-Ll-Yx0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 203.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVw-CO-aZh">
+                                <rect key="frame" x="17" y="185" width="341" height="298"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Period start date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56S-sC-Q0e">
+                                <rect key="frame" x="39" y="357" width="296" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Earnings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFy-dD-J23" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="39" y="197" width="296" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="39"/>
+                                <color key="textColor" red="0.0" green="0.58431372549019611" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeDown"/>
@@ -576,111 +531,51 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgj-Hb-UhX" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="49" y="137" width="276" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgj-Hb-UhX" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="49" y="259" width="276" height="48"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="41"/>
                                 <color key="textColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVv-Vy-rWG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="49" y="179" width="276" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="m1A-ph-lJF"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVv-Vy-rWG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="49" y="298" width="276" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" red="0.51372549019607838" green="0.58039215686274515" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period start date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56S-sC-Q0e" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="39" y="414" width="296" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="Abh-Nt-Iqv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="0.51600237608071386" green="0.57889021229024984" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gax-Yw-EI9" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="133" y="271" width="109" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="109" id="mqd-Ty-pWG"/>
-                                    <constraint firstAttribute="height" constant="51" id="pKA-Ai-IUL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Reset" backgroundImage="GreenEmpty.png">
-                                    <color key="titleColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-D4-g74">
+                                <rect key="frame" x="49" y="403" width="109" height="51"/>
+                                <state key="normal" title="Back" backgroundImage="Rectangle 206.png">
+                                    <color key="titleColor" red="0.0" green="0.58431372550000005" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="GreenFullB.png" backgroundImage="GreenFullB.png"/>
-                                <state key="highlighted" image="GreenFullB.png" backgroundImage="GreenFullB.png"/>
+                                <state key="selected" image="Rectangle 206 Copy 2.png" backgroundImage="Rectangle 206 Copy 2.png"/>
+                                <state key="highlighted" image="Rectangle 206 Copy 2.png" backgroundImage="Rectangle 206 Copy 2.png"/>
+                                <connections>
+                                    <segue destination="I5w-XD-ya3" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" animates="NO" id="n9l-2y-wV1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gax-Yw-EI9">
+                                <rect key="frame" x="216" y="403" width="109" height="51"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Reset" backgroundImage="Rectangle 206.png">
+                                    <color key="titleColor" red="0.0" green="0.58431372549019611" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="Rectangle 206 Copy 2.png" backgroundImage="Rectangle 206 Copy 2.png"/>
+                                <state key="highlighted" image="Rectangle 206 Copy 2.png" backgroundImage="Rectangle 206 Copy 2.png"/>
                                 <connections>
                                     <action selector="resetPressed:" destination="evr-at-wYR" eventType="touchUpInside" id="lFL-kE-pt9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o82-3o-ydh" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="39" y="373" width="296" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="8mn-jG-9Ts"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="0.51600237608071386" green="0.57889021229024984" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latest date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o82-3o-ydh">
+                                <rect key="frame" x="39" y="332" width="296" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZD-Gh-uWQ">
-                                <rect key="frame" x="16" y="539" width="166" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="166" id="4HF-L6-JOX"/>
-                                    <constraint firstAttribute="height" constant="55" id="wxV-l7-h3W"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Settings" backgroundImage="GreenEmpty.png">
-                                    <color key="titleColor" red="0.0" green="0.73725490199999999" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-D4-g74">
-                                <rect key="frame" x="193" y="539" width="166" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="166" id="Ttk-JK-ZOW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Main" backgroundImage="GreenEmpty.png">
-                                    <color key="titleColor" red="0.0" green="0.73725490199999999" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="I5w-XD-ya3" kind="presentation" modalTransitionStyle="crossDissolve" animates="NO" id="n9l-2y-wV1"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="nFy-dD-J23" firstAttribute="top" secondItem="L17-Xj-sfq" secondAttribute="bottom" constant="8" symbolic="YES" id="6fQ-F4-PPc"/>
-                            <constraint firstItem="nFy-dD-J23" firstAttribute="trailing" secondItem="o82-3o-ydh" secondAttribute="trailing" id="7ZU-vX-1cF"/>
-                            <constraint firstItem="o82-3o-ydh" firstAttribute="leading" secondItem="nFy-dD-J23" secondAttribute="leading" id="7jp-o8-y08"/>
-                            <constraint firstItem="o82-3o-ydh" firstAttribute="top" secondItem="Gax-Yw-EI9" secondAttribute="bottom" constant="51" id="LM9-lM-XRk"/>
-                            <constraint firstItem="SVv-Vy-rWG" firstAttribute="centerX" secondItem="Gax-Yw-EI9" secondAttribute="centerX" id="N2l-WS-nMc"/>
-                            <constraint firstItem="56S-sC-Q0e" firstAttribute="centerX" secondItem="fXL-Vk-BbA" secondAttribute="centerX" id="PDo-lq-zX7"/>
-                            <constraint firstItem="Sa5-zm-lf2" firstAttribute="top" secondItem="7ZD-Gh-uWQ" secondAttribute="bottom" constant="73" id="SK3-tA-FyB"/>
-                            <constraint firstItem="qgj-Hb-UhX" firstAttribute="trailing" secondItem="SVv-Vy-rWG" secondAttribute="trailing" id="Sdo-jb-fQ4"/>
-                            <constraint firstItem="Gax-Yw-EI9" firstAttribute="top" secondItem="qgj-Hb-UhX" secondAttribute="bottom" constant="86" id="TBu-XK-Ib8"/>
-                            <constraint firstItem="7ZD-Gh-uWQ" firstAttribute="baseline" secondItem="yNI-D4-g74" secondAttribute="firstBaseline" id="TSV-9M-deN"/>
-                            <constraint firstAttribute="trailing" secondItem="yNI-D4-g74" secondAttribute="trailing" constant="16" id="UUJ-Dy-fTK"/>
-                            <constraint firstItem="Gax-Yw-EI9" firstAttribute="top" secondItem="SVv-Vy-rWG" secondAttribute="bottom" constant="59" id="XBo-8J-SgD"/>
-                            <constraint firstItem="qgj-Hb-UhX" firstAttribute="leading" secondItem="SVv-Vy-rWG" secondAttribute="leading" id="Z18-Ba-Zra"/>
-                            <constraint firstItem="yNI-D4-g74" firstAttribute="top" secondItem="7ZD-Gh-uWQ" secondAttribute="top" id="b3a-jV-EvD"/>
-                            <constraint firstItem="7ZD-Gh-uWQ" firstAttribute="top" secondItem="56S-sC-Q0e" secondAttribute="bottom" constant="92" id="cb9-WA-pho"/>
-                            <constraint firstItem="7ZD-Gh-uWQ" firstAttribute="leading" secondItem="fXL-Vk-BbA" secondAttribute="leading" constant="16" id="eTi-T6-N87"/>
-                            <constraint firstItem="SVv-Vy-rWG" firstAttribute="top" secondItem="nFy-dD-J23" secondAttribute="bottom" constant="64" id="nOI-r6-ZZp"/>
-                            <constraint firstItem="56S-sC-Q0e" firstAttribute="leading" secondItem="o82-3o-ydh" secondAttribute="leading" id="nmq-iP-Nmi"/>
-                            <constraint firstItem="nFy-dD-J23" firstAttribute="leading" secondItem="fXL-Vk-BbA" secondAttribute="leadingMargin" constant="23" id="oXJ-8a-0Dq"/>
-                            <constraint firstItem="56S-sC-Q0e" firstAttribute="trailing" secondItem="o82-3o-ydh" secondAttribute="trailing" id="pP5-BN-YF3"/>
-                            <constraint firstItem="qgj-Hb-UhX" firstAttribute="top" secondItem="nFy-dD-J23" secondAttribute="bottom" constant="22" id="pYQ-zt-GU6"/>
-                            <constraint firstItem="yNI-D4-g74" firstAttribute="baseline" secondItem="7ZD-Gh-uWQ" secondAttribute="firstBaseline" id="uCZ-3b-9dV"/>
-                            <constraint firstItem="56S-sC-Q0e" firstAttribute="top" secondItem="o82-3o-ydh" secondAttribute="bottom" constant="8" symbolic="YES" id="uYl-Jl-lw3"/>
-                            <constraint firstItem="qgj-Hb-UhX" firstAttribute="leading" secondItem="fXL-Vk-BbA" secondAttribute="leadingMargin" constant="33" id="ufE-pN-kDF"/>
-                            <constraint firstItem="Gax-Yw-EI9" firstAttribute="centerX" secondItem="o82-3o-ydh" secondAttribute="centerX" id="vg3-he-25j"/>
-                        </constraints>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -692,18 +587,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jaa-tj-ovH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="792.5" y="1235.5"/>
+            <point key="canvasLocation" x="812.5" y="1342.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="CoinImage.png" width="573" height="573"/>
         <image name="GreenEmpty.png" width="435" height="156"/>
         <image name="GreenFullB.png" width="435" height="156"/>
+        <image name="PlayButtonWhite.png" width="162" height="201"/>
+        <image name="Rectangle 203.png" width="1008" height="933"/>
+        <image name="Rectangle 206 Copy 2.png" width="348" height="156"/>
+        <image name="Rectangle 206.png" width="348" height="153"/>
         <image name="calcIcon.png" width="87" height="114"/>
-        <image name="playButton.png" width="162" height="201"/>
+        <image name="whiteBorderButton.png" width="495" height="159"/>
+        <image name="whiteFullButton.png" width="561" height="156"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="scH-uY-rzm"/>
         <segue reference="Z5X-yu-uSp"/>
+        <segue reference="n9l-2y-wV1"/>
     </inferredMetricsTieBreakers>
 </document>

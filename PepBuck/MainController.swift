@@ -9,7 +9,7 @@
 import UIKit
 
 var startNowToggle = false
-var toggleSaveTime = true
+var toggleSaveTime = false
 var seconds = 0
 var savedTime = NSDate()
 
@@ -46,12 +46,14 @@ class MainController: UIViewController {
         playButton.hidden = true
         setupGame()
         subtractTime()
+        toggleSaveTime = true
         newSession = false
         pauseToggle = true
             
         } else {
             
         timer.invalidate()
+        toggleSaveTime = false
         timerLabel.hidden = true
         playButton.hidden = false
         endShiftButton.hidden = false
@@ -69,6 +71,7 @@ class MainController: UIViewController {
         coinLabel.hidden = false
         coinImage.hidden = false
         endShiftButton.hidden = true
+ 
         timerCircle.value = CGFloat(0.0)
         coinLabel.text = "+ $\(coinLabelPay)"
         coinImage.duration = 4.0
@@ -139,6 +142,8 @@ class MainController: UIViewController {
         }
                
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
