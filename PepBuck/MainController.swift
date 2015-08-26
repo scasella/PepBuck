@@ -73,7 +73,7 @@ class MainController: UIViewController {
         endShiftButton.hidden = true
  
         timerCircle.value = CGFloat(0.0)
-        coinLabel.text = "+ $\(coinLabelPay)"
+        coinLabel.text = "+$\(coinLabelPay)"
         coinImage.duration = 4.0
         coinLabel.duration = 4.0
         
