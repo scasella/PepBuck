@@ -11,7 +11,7 @@ import UIKit
 class ReturnController: UIViewController {
     
     @IBAction func buttonPressed(sender: SpringButton) {
-        sender.setBackgroundImage(UIImage(named: "GreenFullB.png"), forState: UIControlState.Normal)
+    
         sender.animation = "zoomOut"
         sender.duration =  1.0
         sender.animateNext {

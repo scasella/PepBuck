@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,8 +21,8 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEw-f5-1gH" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="41" y="20" width="227" height="87"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
-                                <color key="textColor" red="0.0" green="0.72549019607843135" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="41"/>
+                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
@@ -30,8 +31,8 @@
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Steve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2S-R9-EY3" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="16" y="63" width="343" height="87"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
-                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="45"/>
+                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
@@ -43,34 +44,17 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" id="OAv-ha-mHL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
-                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="41"/>
+                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13H-Tp-xI6" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="133" y="347" width="109" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="Xsm-wp-Ldu"/>
-                                    <constraint firstAttribute="width" constant="109" id="gPW-CI-7h0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Submit" backgroundImage="GreenEmpty.png">
-                                    <color key="titleColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="GreenFullB.png" backgroundImage="GreenFullB.png"/>
-                                <state key="highlighted" image="GreenFullB.png" backgroundImage="GreenFullB.png"/>
-                                <connections>
-                                    <action selector="submitTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CcB-Mr-CvK"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cfy-ej-zLt">
                                 <rect key="frame" x="16" y="213" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="TY1-KN-fOp"/>
                                 </constraints>
-                                <color key="textColor" red="0.4823529411764706" green="0.53333333333333333" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.97254901959999995" green="0.19215686269999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your first name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-wP-VCt" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
@@ -78,8 +62,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="wcA-cc-4Aa"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
-                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7Q-gp-jOn">
@@ -88,7 +72,7 @@
                                     <constraint firstAttribute="width" constant="26" id="uNB-8g-dJN"/>
                                     <constraint firstAttribute="height" constant="37" id="vjI-oO-zfR"/>
                                 </constraints>
-                                <state key="normal" image="calcIcon.png">
+                                <state key="normal" image="WelcomeCalc.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -104,10 +88,27 @@
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your hourly pay?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-9t-n2l" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="49" y="180" width="276" height="32"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
-                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" red="0.11372549019607843" green="0.12549019607843137" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13H-Tp-xI6" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="131" y="346" width="113" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Xsm-wp-Ldu"/>
+                                    <constraint firstAttribute="width" constant="113" id="gPW-CI-7h0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Submit" backgroundImage="WelcomeButtonEmpty.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="WelcomeButtonFull.png"/>
+                                <state key="highlighted" image="WelcomeButtonFull.png"/>
+                                <connections>
+                                    <action selector="submitTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CcB-Mr-CvK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -126,7 +127,7 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="13H-Tp-xI6" secondAttribute="bottom" constant="269" id="TSY-kr-O10"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QAn-9t-n2l" secondAttribute="trailing" constant="34" id="Tdy-vB-Chp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CF1-Ot-hLf" secondAttribute="trailing" constant="1" id="UFh-bf-nJE"/>
-                            <constraint firstItem="13H-Tp-xI6" firstAttribute="top" secondItem="R7Q-gp-jOn" secondAttribute="bottom" constant="34" id="WGU-Ja-cbN"/>
+                            <constraint firstItem="13H-Tp-xI6" firstAttribute="top" secondItem="R7Q-gp-jOn" secondAttribute="bottom" constant="33" id="WGU-Ja-cbN"/>
                             <constraint firstItem="Cfy-ej-zLt" firstAttribute="top" secondItem="NSp-wP-VCt" secondAttribute="bottom" constant="1" id="YEf-0T-6cQ"/>
                             <constraint firstItem="13H-Tp-xI6" firstAttribute="centerX" secondItem="R7Q-gp-jOn" secondAttribute="centerX" id="an2-jq-hGY"/>
                             <constraint firstItem="R7Q-gp-jOn" firstAttribute="top" secondItem="Cfy-ej-zLt" secondAttribute="bottom" constant="33" id="fEr-uR-cAL"/>
@@ -172,16 +173,18 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="2Jv-GW-uUR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Start shift" backgroundImage="GreenEmpty.png">
-                                    <color key="titleColor" red="0.0" green="0.73725490199999999" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="Start shift" backgroundImage="WelcomeButtonEmpty.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="WelcomeButtonFull.png"/>
+                                <state key="highlighted" image="WelcomeButtonFull.png"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.75"/>
+                                        <real key="value" value="1.25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                         <real key="value" value="1.25"/>
@@ -191,24 +194,26 @@
                                     <action selector="buttonPressed:" destination="Utb-aS-VrW" eventType="touchUpInside" id="kYp-9P-96Y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="earnings" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ure-TU-kxc" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="earnings" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ure-TU-kxc" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="93" y="285" width="189" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="D7u-Pm-xLb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Earnings" backgroundImage="GreenEmpty.png">
-                                    <color key="titleColor" red="0.0" green="0.73725490199999999" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="Earnings" backgroundImage="WelcomeButtonEmpty.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="WelcomeButtonFull.png"/>
+                                <state key="highlighted" image="WelcomeButtonFull.png"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                         <real key="value" value="1.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.75"/>
+                                        <real key="value" value="1.25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -217,8 +222,8 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5A-uS-Rai" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="16" y="76" width="343" height="87"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
-                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="44"/>
+                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
@@ -231,37 +236,49 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="settings" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlh-xf-EnS" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="settings" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlh-xf-EnS" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="93" y="355" width="189" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="mYP-H5-6pK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Settings" backgroundImage="GreenEmpty.png">
-                                    <color key="titleColor" red="0.0" green="0.73725490199999999" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="Settings" backgroundImage="WelcomeButtonEmpty.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="WelcomeButtonFull.png"/>
+                                <state key="highlighted" image="WelcomeButtonFull.png"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                         <real key="value" value="1.75"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.75"/>
+                                        <real key="value" value="1.25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" destination="Utb-aS-VrW" eventType="touchUpInside" id="87m-fl-HOL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p55-BG-YIB">
+                                <rect key="frame" x="643" y="629" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" modalTransitionStyle="crossDissolve" animates="NO" id="R1k-bd-Shb"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBZ-Rp-teI" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="39" y="28" width="296" height="87"/>
+                                <rect key="frame" x="22" y="28" width="331" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="Be6-VJ-bFT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="45"/>
-                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="44"/>
+                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
@@ -271,21 +288,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p55-BG-YIB">
-                                <rect key="frame" x="313" y="629" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="presentation" modalTransitionStyle="crossDissolve" animates="NO" id="R1k-bd-Shb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="v5A-uS-Rai" firstAttribute="trailing" secondItem="v3b-zf-4Se" secondAttribute="trailingMargin" id="02r-P8-3kr"/>
-                            <constraint firstItem="XBZ-Rp-teI" firstAttribute="leading" secondItem="v3b-zf-4Se" secondAttribute="leadingMargin" constant="23" id="0WO-3H-e8S"/>
+                            <constraint firstItem="XBZ-Rp-teI" firstAttribute="leading" secondItem="v3b-zf-4Se" secondAttribute="leadingMargin" constant="6" id="0WO-3H-e8S"/>
                             <constraint firstItem="v5A-uS-Rai" firstAttribute="top" secondItem="wG8-vi-RLL" secondAttribute="bottom" constant="56" id="5ik-BI-bUX"/>
                             <constraint firstItem="ure-TU-kxc" firstAttribute="leading" secondItem="6W7-0j-vxg" secondAttribute="leading" id="AxU-G8-fck"/>
                             <constraint firstItem="jlh-xf-EnS" firstAttribute="top" secondItem="ure-TU-kxc" secondAttribute="bottom" constant="8" symbolic="YES" id="Bai-5g-DbM"/>
@@ -326,7 +333,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ye9-IF-UGI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-Bz-cG8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ye9-IF-UGI">
                                 <rect key="frame" x="319" y="629" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
@@ -336,52 +346,43 @@
                                     <segue destination="I5w-XD-ya3" kind="presentation" identifier="refreshView" modalTransitionStyle="crossDissolve" animates="NO" id="FuE-yQ-kVk"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-e4-GGo" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="97" width="375" height="570"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-e4-GGo" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="192" width="375" height="343"/>
                                 <subviews>
-                                    <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Wf-aO-Txd">
-                                        <rect key="frame" x="27" y="520" width="320" height="50"/>
-                                    </adBannerView>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOv-bX-lYQ" customClass="CircularProgressView" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="44" y="11" width="287" height="436"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOv-bX-lYQ" customClass="CircularProgressView" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="44" y="-56" width="287" height="436"/>
                                         <subviews>
-                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CoinImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-bG-ahC" customClass="SpringImageView" customModule="PepBuck" customModuleProvider="target">
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="CoinImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-bG-ahC" customClass="SpringImageView" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="49" y="124" width="189" height="187"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="187" id="eKS-nH-iqS"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomOut"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoF-SW-V7v">
-                                                <rect key="frame" x="46" y="166" width="195" height="101"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="46"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-Sl-GOG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-Sl-GOG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="83" y="203" width="120" height="32"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="35"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="e3J-t8-GUW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
+                                                <color key="textColor" red="0.97254901960784312" green="0.19215686274509802" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomOut"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vo2-Hk-0yZ" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                                <rect key="frame" x="69" y="166" width="172" height="108"/>
-                                                <state key="normal">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="playPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="LJu-Ab-lgG"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-LN-dcs">
-                                                <rect key="frame" x="80" y="383" width="127" height="32"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-LN-dcs">
+                                                <rect key="frame" x="76" y="360" width="127" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="3hP-EK-bhX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
                                                 <state key="normal" title="end shift">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleColor" red="0.97254901959999995" green="0.19215686269999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -389,50 +390,45 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.14117647058823529" green="0.56862745098039214" blue="0.44705882352941179" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="LAu-LN-dcs" firstAttribute="top" secondItem="cRd-bG-ahC" secondAttribute="bottom" constant="49" id="5Yv-jo-oJ2"/>
+                                            <constraint firstItem="cRd-bG-ahC" firstAttribute="leading" secondItem="mOv-bX-lYQ" secondAttribute="leading" constant="49" id="EbU-NY-0Y2"/>
+                                            <constraint firstItem="DgU-Sl-GOG" firstAttribute="top" secondItem="mOv-bX-lYQ" secondAttribute="top" constant="203" id="UtW-xl-pRb"/>
+                                            <constraint firstItem="LAu-LN-dcs" firstAttribute="leading" secondItem="mOv-bX-lYQ" secondAttribute="leading" constant="76" id="cXU-Lo-jhg"/>
+                                            <constraint firstItem="cRd-bG-ahC" firstAttribute="centerX" secondItem="DgU-Sl-GOG" secondAttribute="centerX" id="egj-Jt-hDg"/>
+                                            <constraint firstItem="DgU-Sl-GOG" firstAttribute="leading" secondItem="mOv-bX-lYQ" secondAttribute="leading" constant="83" id="hbU-kf-dRv"/>
+                                            <constraint firstItem="DgU-Sl-GOG" firstAttribute="trailing" secondItem="LAu-LN-dcs" secondAttribute="trailing" id="mhc-dr-hj6"/>
+                                            <constraint firstAttribute="bottom" secondItem="LAu-LN-dcs" secondAttribute="bottom" constant="44" id="qSU-XT-OHc"/>
+                                            <constraint firstItem="DgU-Sl-GOG" firstAttribute="centerX" secondItem="mOv-bX-lYQ" secondAttribute="centerX" id="uGQ-hi-PGu"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="progressTint">
-                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="value" red="0.97254901960784312" green="0.19215686274509802" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="trackTint">
-                                                <color key="value" red="0.10443183057077671" green="0.42168931966726075" blue="0.33039419687381805" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="progressThickness">
-                                                <real key="value" value="32"/>
+                                                <real key="value" value="67"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="showPercent" value="NO"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="value">
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="trackThickness">
+                                                <real key="value" value="52"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snl-wv-DPy">
-                                        <rect key="frame" x="27" y="455" width="155" height="55"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Settings" backgroundImage="whiteBorderButton.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="whiteFullButton.png"/>
-                                        <state key="highlighted" image="whiteFullButton.png"/>
-                                    </button>
-                                    <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3V-ZU-FZe">
-                                        <rect key="frame" x="192" y="455" width="155" height="55"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Earnings" backgroundImage="whiteBorderButton.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="whiteFullButton.png"/>
-                                        <state key="highlighted" image="whiteFullButton.png"/>
-                                        <connections>
-                                            <segue destination="evr-at-wYR" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" animates="NO" id="Z5X-yu-uSp"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.14117647058823529" green="0.56862745098039214" blue="0.44705882352941179" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mOv-bX-lYQ" firstAttribute="top" secondItem="xfc-e4-GGo" secondAttribute="top" constant="-56" id="4VP-2q-zmU"/>
+                                    <constraint firstItem="mOv-bX-lYQ" firstAttribute="centerX" secondItem="xfc-e4-GGo" secondAttribute="centerX" id="Q9S-Ia-b87"/>
+                                    <constraint firstItem="mOv-bX-lYQ" firstAttribute="leading" secondItem="xfc-e4-GGo" secondAttribute="leading" constant="44" id="f93-c9-Gbn"/>
+                                    <constraint firstAttribute="bottom" secondItem="mOv-bX-lYQ" secondAttribute="bottom" constant="-37" id="tBd-zu-sZg"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="duration">
@@ -441,8 +437,41 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kra-nl-VK4" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="146" y="275" width="106" height="108"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PepBuck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7w3-Wl-gF0">
+                                <rect key="frame" x="74" y="5" width="227" height="87"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="54"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoF-SW-V7v">
+                                <rect key="frame" x="90" y="76" width="195" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Jdp-rY-Zb3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vo2-Hk-0yZ" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="278" y="140" width="81" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="MSE-Qa-wZF"/>
+                                    <constraint firstAttribute="width" constant="81" id="N34-MR-ebb"/>
+                                </constraints>
+                                <state key="normal" image="Oval 65.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="LJu-Ab-lgG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kra-nl-VK4" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="305" y="158" width="33" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="3cl-zl-UT7"/>
+                                    <constraint firstAttribute="height" constant="34" id="PfZ-2L-7wZ"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="PlayButtonWhite.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -463,14 +492,60 @@
                                     <action selector="playPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="f9Z-w5-Hqk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PepBuck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7w3-Wl-gF0">
-                                <rect key="frame" x="74" y="10" width="227" height="87"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="53"/>
-                                <color key="textColor" red="0.0" green="0.72549019609999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Wf-aO-Txd">
+                                <rect key="frame" x="27" y="619" width="320" height="50"/>
+                            </adBannerView>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snl-wv-DPy">
+                                <rect key="frame" x="27" y="550" width="155" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="Settings" backgroundImage="PinkButtonEmpty.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="PinkButtonFull.png"/>
+                                <state key="highlighted" image="PinkButtonFull.png"/>
+                            </button>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3V-ZU-FZe">
+                                <rect key="frame" x="192" y="550" width="155" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
+                                <state key="normal" title="Earnings" backgroundImage="PinkButtonEmpty.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="PinkButtonFull.png"/>
+                                <state key="highlighted" image="PinkButtonFull.png"/>
+                                <connections>
+                                    <segue destination="evr-at-wYR" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" animates="NO" id="Z5X-yu-uSp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x1u-Bz-cG8" firstAttribute="leading" secondItem="xfc-e4-GGo" secondAttribute="leading" id="1wZ-0O-ao2"/>
+                            <constraint firstItem="7w3-Wl-gF0" firstAttribute="leading" secondItem="WBA-zS-z0b" secondAttribute="leadingMargin" constant="58" id="4Gw-EO-mab"/>
+                            <constraint firstItem="vo2-Hk-0yZ" firstAttribute="top" secondItem="7w3-Wl-gF0" secondAttribute="bottom" constant="48" id="4uQ-hv-NHq"/>
+                            <constraint firstItem="MKd-yo-E4S" firstAttribute="top" secondItem="ye9-IF-UGI" secondAttribute="bottom" constant="8" symbolic="YES" id="7J4-rl-d1C"/>
+                            <constraint firstItem="6Wf-aO-Txd" firstAttribute="centerY" secondItem="ye9-IF-UGI" secondAttribute="centerY" id="ANR-oe-gTc"/>
+                            <constraint firstItem="7w3-Wl-gF0" firstAttribute="top" secondItem="WBA-zS-z0b" secondAttribute="topMargin" constant="5" id="EMJ-hk-qWe"/>
+                            <constraint firstItem="xfc-e4-GGo" firstAttribute="leading" secondItem="WBA-zS-z0b" secondAttribute="leading" id="ISr-bB-JHh"/>
+                            <constraint firstItem="vo2-Hk-0yZ" firstAttribute="top" secondItem="xoF-SW-V7v" secondAttribute="bottom" constant="2" id="Iar-5d-hl0"/>
+                            <constraint firstItem="Kra-nl-VK4" firstAttribute="top" secondItem="f09-7M-Zsk" secondAttribute="bottom" constant="138" id="Jyc-cC-Sw6"/>
+                            <constraint firstItem="xoF-SW-V7v" firstAttribute="top" secondItem="f09-7M-Zsk" secondAttribute="bottom" constant="56" id="K21-va-LaF"/>
+                            <constraint firstItem="7w3-Wl-gF0" firstAttribute="centerX" secondItem="xoF-SW-V7v" secondAttribute="centerX" id="PRY-eI-jI3"/>
+                            <constraint firstItem="6Wf-aO-Txd" firstAttribute="centerX" secondItem="xfc-e4-GGo" secondAttribute="centerX" id="ScO-46-Lbj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kra-nl-VK4" secondAttribute="trailing" constant="21" id="TBV-7y-CsK"/>
+                            <constraint firstItem="xfc-e4-GGo" firstAttribute="trailing" secondItem="x1u-Bz-cG8" secondAttribute="trailing" id="U4d-02-LSS"/>
+                            <constraint firstItem="x1u-Bz-cG8" firstAttribute="bottom" secondItem="MKd-yo-E4S" secondAttribute="top" id="a6b-Jn-STj"/>
+                            <constraint firstItem="xfc-e4-GGo" firstAttribute="centerX" secondItem="xoF-SW-V7v" secondAttribute="centerX" id="iSk-iO-G12"/>
+                            <constraint firstItem="vo2-Hk-0yZ" firstAttribute="trailing" secondItem="WBA-zS-z0b" secondAttribute="trailingMargin" id="iUU-Tg-hl1"/>
+                            <constraint firstItem="xoF-SW-V7v" firstAttribute="leading" secondItem="WBA-zS-z0b" secondAttribute="leadingMargin" constant="74" id="pN9-i1-9Hk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ye9-IF-UGI" secondAttribute="trailing" constant="-6" id="rCg-dA-mzl"/>
+                            <constraint firstAttribute="trailing" secondItem="xfc-e4-GGo" secondAttribute="trailing" id="vjh-U7-qUa"/>
+                            <constraint firstItem="x1u-Bz-cG8" firstAttribute="top" secondItem="WBA-zS-z0b" secondAttribute="top" id="xpt-yn-Trs"/>
+                            <constraint firstItem="xfc-e4-GGo" firstAttribute="top" secondItem="Kra-nl-VK4" secondAttribute="bottom" id="ykj-95-QNK"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -500,7 +575,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EDV-oE-iT3">
+                            <visualEffectView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDV-oE-iT3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7fm-Ll-Yx0">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -509,73 +584,135 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 203.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVw-CO-aZh">
-                                <rect key="frame" x="17" y="185" width="341" height="298"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Period start date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56S-sC-Q0e">
-                                <rect key="frame" x="39" y="357" width="296" height="33"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Earnings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFy-dD-J23" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="39" y="197" width="296" height="59"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="39"/>
-                                <color key="textColor" red="0.0" green="0.58431372549019611" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7q-ME-3Bk" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="16" y="167" width="343" height="334"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EarningsBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVw-CO-aZh">
+                                        <rect key="frame" x="1" y="26" width="341" height="283"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period start date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56S-sC-Q0e">
+                                        <rect key="frame" x="23" y="159" width="296" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="Ung-hr-lqS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgj-Hb-UhX" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="87" width="276" height="48"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVv-Vy-rWG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="124" width="276" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="Lzz-v1-1rp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-D4-g74">
+                                        <rect key="frame" x="44" y="222" width="109" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="S1w-NS-iue"/>
+                                            <constraint firstAttribute="width" constant="109" id="TDc-cD-kp5"/>
+                                            <constraint firstAttribute="width" secondItem="yNI-D4-g74" secondAttribute="height" multiplier="109:51" id="r5e-fT-Cr4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Back" backgroundImage="EarningsPinkEmpty.png">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.19215686269999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="EarningsPinkFull.png"/>
+                                        <state key="highlighted" image="EarningsPinkFull.png"/>
+                                        <connections>
+                                            <segue destination="I5w-XD-ya3" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" animates="NO" id="n9l-2y-wV1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gax-Yw-EI9">
+                                        <rect key="frame" x="200" y="222" width="109" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="osP-Ob-U3u"/>
+                                            <constraint firstAttribute="width" secondItem="Gax-Yw-EI9" secondAttribute="height" multiplier="109:51" id="qkw-w7-Bi2"/>
+                                            <constraint firstAttribute="width" constant="109" id="vYR-h0-6GB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Reset" backgroundImage="EarningsPinkEmpty.png">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.19215686269999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="EarningsPinkFull.png"/>
+                                        <state key="highlighted" image="EarningsPinkFull.png"/>
+                                        <connections>
+                                            <action selector="resetPressed:" destination="evr-at-wYR" eventType="touchUpInside" id="lFL-kE-pt9"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EarningsTitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="Plz-5U-nKj" customClass="SpringImageView" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="94" y="45" width="155" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="xGI-8G-CDo"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Latest date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o82-3o-ydh">
+                                        <rect key="frame" x="23" y="180" width="296" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="uVw-CO-aZh" firstAttribute="centerY" secondItem="Y7q-ME-3Bk" secondAttribute="centerY" id="3Ee-bC-aoK"/>
+                                    <constraint firstItem="Gax-Yw-EI9" firstAttribute="top" secondItem="uVw-CO-aZh" secondAttribute="bottom" constant="-87" id="66Q-qa-4F8"/>
+                                    <constraint firstItem="o82-3o-ydh" firstAttribute="top" secondItem="56S-sC-Q0e" secondAttribute="bottom" constant="-12" id="6Vl-dN-ock"/>
+                                    <constraint firstItem="56S-sC-Q0e" firstAttribute="leading" secondItem="Y7q-ME-3Bk" secondAttribute="leading" constant="23" id="6yX-Zj-ocG"/>
+                                    <constraint firstItem="uVw-CO-aZh" firstAttribute="leading" secondItem="yNI-D4-g74" secondAttribute="trailing" constant="-152" id="7G7-hI-CP0"/>
+                                    <constraint firstItem="o82-3o-ydh" firstAttribute="leading" secondItem="56S-sC-Q0e" secondAttribute="leading" id="8qh-Az-ecJ"/>
+                                    <constraint firstItem="Plz-5U-nKj" firstAttribute="leading" secondItem="Y7q-ME-3Bk" secondAttribute="leading" constant="94" id="8yQ-fL-YXa"/>
+                                    <constraint firstItem="56S-sC-Q0e" firstAttribute="top" secondItem="qgj-Hb-UhX" secondAttribute="bottom" constant="24" id="Ac7-6e-hlv"/>
+                                    <constraint firstItem="uVw-CO-aZh" firstAttribute="top" secondItem="Y7q-ME-3Bk" secondAttribute="top" constant="26" id="GLL-LC-crS"/>
+                                    <constraint firstItem="SVv-Vy-rWG" firstAttribute="top" secondItem="Plz-5U-nKj" secondAttribute="bottom" constant="37" id="J03-zC-gXQ"/>
+                                    <constraint firstItem="56S-sC-Q0e" firstAttribute="centerX" secondItem="SVv-Vy-rWG" secondAttribute="centerX" id="JyE-tB-U4t"/>
+                                    <constraint firstItem="Gax-Yw-EI9" firstAttribute="leading" secondItem="uVw-CO-aZh" secondAttribute="trailing" constant="-142" id="Orp-mp-cmB"/>
+                                    <constraint firstItem="SVv-Vy-rWG" firstAttribute="leading" secondItem="qgj-Hb-UhX" secondAttribute="leading" id="QBK-Cf-NHc"/>
+                                    <constraint firstItem="56S-sC-Q0e" firstAttribute="top" secondItem="SVv-Vy-rWG" secondAttribute="bottom" constant="2" id="R1m-6a-oDn"/>
+                                    <constraint firstItem="qgj-Hb-UhX" firstAttribute="top" secondItem="Plz-5U-nKj" secondAttribute="bottom" id="U85-Ua-yWm"/>
+                                    <constraint firstItem="56S-sC-Q0e" firstAttribute="trailing" secondItem="o82-3o-ydh" secondAttribute="trailing" id="hKs-C6-6Jn"/>
+                                    <constraint firstItem="o82-3o-ydh" firstAttribute="centerX" secondItem="Y7q-ME-3Bk" secondAttribute="centerX" id="lRK-9N-hIS"/>
+                                    <constraint firstItem="SVv-Vy-rWG" firstAttribute="trailing" secondItem="qgj-Hb-UhX" secondAttribute="trailing" id="q9Y-mi-H7Y"/>
+                                    <constraint firstItem="uVw-CO-aZh" firstAttribute="leading" secondItem="Y7q-ME-3Bk" secondAttribute="leading" constant="1" id="r6T-A0-8qf"/>
+                                    <constraint firstItem="Plz-5U-nKj" firstAttribute="top" secondItem="Y7q-ME-3Bk" secondAttribute="top" constant="45" id="rih-8P-vaa"/>
+                                    <constraint firstItem="o82-3o-ydh" firstAttribute="centerX" secondItem="uVw-CO-aZh" secondAttribute="centerX" id="sbg-lY-0ki"/>
+                                    <constraint firstItem="qgj-Hb-UhX" firstAttribute="leading" secondItem="Y7q-ME-3Bk" secondAttribute="leading" constant="33" id="svM-MU-bM9"/>
+                                    <constraint firstItem="qgj-Hb-UhX" firstAttribute="centerX" secondItem="Plz-5U-nKj" secondAttribute="centerX" id="vu3-2E-tEh"/>
+                                    <constraint firstItem="o82-3o-ydh" firstAttribute="top" secondItem="SVv-Vy-rWG" secondAttribute="bottom" constant="23" id="xLe-wv-Fj2"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeDown"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.25"/>
+                                        <real key="value" value="1.75"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgj-Hb-UhX" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="49" y="259" width="276" height="48"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="41"/>
-                                <color key="textColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVv-Vy-rWG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="49" y="298" width="276" height="33"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" red="0.51372549019607838" green="0.58039215686274515" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-D4-g74">
-                                <rect key="frame" x="49" y="403" width="109" height="51"/>
-                                <state key="normal" title="Back" backgroundImage="Rectangle 206.png">
-                                    <color key="titleColor" red="0.0" green="0.58431372550000005" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="Rectangle 206 Copy 2.png" backgroundImage="Rectangle 206 Copy 2.png"/>
-                                <state key="highlighted" image="Rectangle 206 Copy 2.png" backgroundImage="Rectangle 206 Copy 2.png"/>
-                                <connections>
-                                    <segue destination="I5w-XD-ya3" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" animates="NO" id="n9l-2y-wV1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gax-Yw-EI9">
-                                <rect key="frame" x="216" y="403" width="109" height="51"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Reset" backgroundImage="Rectangle 206.png">
-                                    <color key="titleColor" red="0.0" green="0.58431372549019611" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="Rectangle 206 Copy 2.png" backgroundImage="Rectangle 206 Copy 2.png"/>
-                                <state key="highlighted" image="Rectangle 206 Copy 2.png" backgroundImage="Rectangle 206 Copy 2.png"/>
-                                <connections>
-                                    <action selector="resetPressed:" destination="evr-at-wYR" eventType="touchUpInside" id="lFL-kE-pt9"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latest date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o82-3o-ydh">
-                                <rect key="frame" x="39" y="332" width="296" height="33"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y7q-ME-3Bk" firstAttribute="top" secondItem="L17-Xj-sfq" secondAttribute="bottom" constant="147" id="2QC-j0-2ti"/>
+                            <constraint firstItem="EDV-oE-iT3" firstAttribute="bottom" secondItem="Sa5-zm-lf2" secondAttribute="top" id="aJI-sV-bLG"/>
+                            <constraint firstItem="EDV-oE-iT3" firstAttribute="top" secondItem="fXL-Vk-BbA" secondAttribute="top" id="aRU-Eg-cV5"/>
+                            <constraint firstItem="EDV-oE-iT3" firstAttribute="leading" secondItem="fXL-Vk-BbA" secondAttribute="leading" id="kHp-16-g9H"/>
+                            <constraint firstItem="Y7q-ME-3Bk" firstAttribute="leading" secondItem="fXL-Vk-BbA" secondAttribute="leadingMargin" id="oyk-4Y-Pyq"/>
+                            <constraint firstItem="Sa5-zm-lf2" firstAttribute="top" secondItem="Y7q-ME-3Bk" secondAttribute="bottom" constant="166" id="yfQ-Ag-RoH"/>
+                            <constraint firstItem="Y7q-ME-3Bk" firstAttribute="centerX" secondItem="EDV-oE-iT3" secondAttribute="centerX" id="zSd-vU-MlD"/>
+                            <constraint firstAttribute="trailing" secondItem="EDV-oE-iT3" secondAttribute="trailing" id="zq1-RJ-B48"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -589,21 +726,168 @@
             </objects>
             <point key="canvasLocation" x="812.5" y="1342.5"/>
         </scene>
+        <!--Earnings Controller-->
+        <scene sceneID="MBo-Wz-9fu">
+            <objects>
+                <viewController id="EmH-Fx-4hA" customClass="EarningsController" customModule="PepBuck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5S6-K2-wWZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="EaI-nX-UFE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OKG-jb-SWE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2h3-Sc-CpQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dge-l8-tnj">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xaV-nU-MSr" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="16" y="167" width="343" height="363"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="EarningsBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="YYG-17-Li2">
+                                        <rect key="frame" x="1" y="26" width="341" height="322"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih6-cf-uFS">
+                                        <rect key="frame" x="44" y="199" width="109" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="109" id="3Bp-l9-xj7"/>
+                                            <constraint firstAttribute="width" secondItem="Ih6-cf-uFS" secondAttribute="height" multiplier="109:51" id="BWF-hP-UqB"/>
+                                            <constraint firstAttribute="height" constant="51" id="iBH-Gd-PZc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Back" backgroundImage="EarningsPinkEmpty.png">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.19215686269999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="EarningsPinkFull.png"/>
+                                        <state key="highlighted" image="EarningsPinkFull.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfN-0T-W9W">
+                                        <rect key="frame" x="200" y="199" width="109" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xfN-0T-W9W" secondAttribute="height" multiplier="109:51" id="Pej-9g-Kcu"/>
+                                            <constraint firstAttribute="width" constant="109" id="kzF-Oo-ebg"/>
+                                            <constraint firstAttribute="height" constant="51" id="lT4-1Y-nga"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Save" backgroundImage="EarningsPinkEmpty.png">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.19215686269999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="EarningsPinkFull.png"/>
+                                        <state key="highlighted" image="EarningsPinkFull.png"/>
+                                        <connections>
+                                            <action selector="resetPressed:" destination="EmH-Fx-4hA" eventType="touchUpInside" id="qNN-n9-e6b"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SettingsLabel.png" translatesAutoresizingMaskIntoConstraints="NO" id="MJy-0I-EJl" customClass="SpringImageView" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="94" y="45" width="155" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="Ead-ij-gfH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZV-nl-YSg">
+                                        <rect key="frame" x="123" y="142" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hourly Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8U-8T-RE3" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="90" width="276" height="48"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05l-QV-Lmv">
+                                        <rect key="frame" x="68" y="269" width="37" height="48"/>
+                                        <state key="normal" backgroundImage="SettingsPayEmpty.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeB-J6-HWo">
+                                        <rect key="frame" x="230" y="268" width="41" height="60"/>
+                                        <state key="normal" backgroundImage="SettingsAdjustEmpty.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oat-oi-PRE">
+                                        <rect key="frame" x="147" y="273" width="49" height="46"/>
+                                        <state key="normal" backgroundImage="SettingsCircleEmpty.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="YYG-17-Li2" firstAttribute="leading" secondItem="xaV-nU-MSr" secondAttribute="leading" constant="1" id="0uu-M2-bTD"/>
+                                    <constraint firstItem="xfN-0T-W9W" firstAttribute="top" secondItem="YYG-17-Li2" secondAttribute="bottom" constant="-87" id="1vR-17-nRg"/>
+                                    <constraint firstItem="MJy-0I-EJl" firstAttribute="leading" secondItem="xaV-nU-MSr" secondAttribute="leading" constant="94" id="Ah8-t3-gZR"/>
+                                    <constraint firstItem="YYG-17-Li2" firstAttribute="centerY" secondItem="xaV-nU-MSr" secondAttribute="centerY" id="Rao-Kg-bVw"/>
+                                    <constraint firstItem="xfN-0T-W9W" firstAttribute="leading" secondItem="YYG-17-Li2" secondAttribute="trailing" constant="-142" id="StR-fM-zMZ"/>
+                                    <constraint firstItem="YYG-17-Li2" firstAttribute="top" secondItem="xaV-nU-MSr" secondAttribute="top" constant="26" id="a5J-cA-97H"/>
+                                    <constraint firstItem="YYG-17-Li2" firstAttribute="leading" secondItem="Ih6-cf-uFS" secondAttribute="trailing" constant="-152" id="fsp-xU-7Tw"/>
+                                    <constraint firstItem="MJy-0I-EJl" firstAttribute="top" secondItem="xaV-nU-MSr" secondAttribute="top" constant="45" id="km6-4G-anF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2h3-Sc-CpQ" firstAttribute="bottom" secondItem="EaI-nX-UFE" secondAttribute="top" id="044-dP-hKB"/>
+                            <constraint firstItem="2h3-Sc-CpQ" firstAttribute="leading" secondItem="OKG-jb-SWE" secondAttribute="leading" id="0gO-PL-Uh7"/>
+                            <constraint firstAttribute="trailing" secondItem="2h3-Sc-CpQ" secondAttribute="trailing" id="70B-Am-6uo"/>
+                            <constraint firstItem="xaV-nU-MSr" firstAttribute="centerX" secondItem="2h3-Sc-CpQ" secondAttribute="centerX" id="TYF-nF-wWW"/>
+                            <constraint firstItem="EaI-nX-UFE" firstAttribute="top" secondItem="xaV-nU-MSr" secondAttribute="bottom" constant="166" id="VM0-5V-XN0"/>
+                            <constraint firstItem="xaV-nU-MSr" firstAttribute="top" secondItem="5S6-K2-wWZ" secondAttribute="bottom" constant="147" id="XCf-0L-j8j"/>
+                            <constraint firstItem="xaV-nU-MSr" firstAttribute="leading" secondItem="OKG-jb-SWE" secondAttribute="leadingMargin" id="byg-ac-lxf"/>
+                            <constraint firstItem="2h3-Sc-CpQ" firstAttribute="top" secondItem="OKG-jb-SWE" secondAttribute="top" id="tgw-dO-BCF"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="totalPayLabel" destination="e8U-8T-RE3" id="6XF-5s-zFN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yfn-UI-Jr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299.5" y="1930.5"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Background.png" width="1125" height="2001"/>
         <image name="CoinImage.png" width="573" height="573"/>
-        <image name="GreenEmpty.png" width="435" height="156"/>
-        <image name="GreenFullB.png" width="435" height="156"/>
+        <image name="EarningsBG.png" width="1008" height="882"/>
+        <image name="EarningsPinkEmpty.png" width="336" height="153"/>
+        <image name="EarningsPinkFull.png" width="336" height="153"/>
+        <image name="EarningsTitle.png" width="498" height="120"/>
+        <image name="Oval 65.png" width="219" height="216"/>
+        <image name="PinkButtonEmpty.png" width="522" height="165"/>
+        <image name="PinkButtonFull.png" width="522" height="165"/>
         <image name="PlayButtonWhite.png" width="162" height="201"/>
-        <image name="Rectangle 203.png" width="1008" height="933"/>
-        <image name="Rectangle 206 Copy 2.png" width="348" height="156"/>
-        <image name="Rectangle 206.png" width="348" height="153"/>
-        <image name="calcIcon.png" width="87" height="114"/>
-        <image name="whiteBorderButton.png" width="495" height="159"/>
-        <image name="whiteFullButton.png" width="561" height="156"/>
+        <image name="SettingsAdjustEmpty.png" width="111" height="192"/>
+        <image name="SettingsCircleEmpty.png" width="156" height="156"/>
+        <image name="SettingsLabel.png" width="471" height="120"/>
+        <image name="SettingsPayEmpty.png" width="99" height="156"/>
+        <image name="WelcomeButtonEmpty.png" width="519" height="162"/>
+        <image name="WelcomeButtonFull.png" width="519" height="162"/>
+        <image name="WelcomeCalc.png" width="87" height="114"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="scH-uY-rzm"/>
         <segue reference="Z5X-yu-uSp"/>
-        <segue reference="n9l-2y-wV1"/>
     </inferredMetricsTieBreakers>
 </document>
