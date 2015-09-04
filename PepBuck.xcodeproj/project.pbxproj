@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880C97291B991DD40057521F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C97281B991DD40057521F /* SettingsController.swift */; };
 		88491A9E1B97C2AE006A1BA4 /* SettingsPayFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 88491A9B1B97C2AE006A1BA4 /* SettingsPayFull.png */; };
 		88491A9F1B97C2AE006A1BA4 /* SettingsCircleFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 88491A9C1B97C2AE006A1BA4 /* SettingsCircleFull.png */; };
 		88491AA01B97C2AE006A1BA4 /* SettingsAdjustFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 88491A9D1B97C2AE006A1BA4 /* SettingsAdjustFull.png */; };
@@ -69,6 +70,7 @@
 		8899941D1B8A8D6100C876AA /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8899941C1B8A8D6100C876AA /* playButton.png */; };
 		8899941F1B8A976300C876AA /* CoinImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8899941E1B8A976300C876AA /* CoinImage.png */; };
 		88BD82EF1B88F4530050CB73 /* EarningsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD82EE1B88F4530050CB73 /* EarningsController.swift */; };
+		88D6943D1B990E2200473067 /* pauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D6943C1B990E2200473067 /* pauseButton.png */; };
 		88D7581B1B8681FD0077F698 /* ReturnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7581A1B8681FD0077F698 /* ReturnController.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		880C97281B991DD40057521F /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		88491A9B1B97C2AE006A1BA4 /* SettingsPayFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsPayFull.png; sourceTree = "<group>"; };
 		88491A9C1B97C2AE006A1BA4 /* SettingsCircleFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsCircleFull.png; sourceTree = "<group>"; };
 		88491A9D1B97C2AE006A1BA4 /* SettingsAdjustFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsAdjustFull.png; sourceTree = "<group>"; };
@@ -149,6 +152,7 @@
 		8899941C1B8A8D6100C876AA /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
 		8899941E1B8A976300C876AA /* CoinImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CoinImage.png; sourceTree = "<group>"; };
 		88BD82EE1B88F4530050CB73 /* EarningsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarningsController.swift; sourceTree = "<group>"; };
+		88D6943C1B990E2200473067 /* pauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseButton.png; sourceTree = "<group>"; };
 		88D7581A1B8681FD0077F698 /* ReturnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -262,6 +266,7 @@
 				88491AA31B97CFCC006A1BA4 /* WelcomeButtonEmpty.png */,
 				88491AA41B97CFCC006A1BA4 /* WelcomeButtonFull.png */,
 				8899941C1B8A8D6100C876AA /* playButton.png */,
+				88D6943C1B990E2200473067 /* pauseButton.png */,
 				8885AA411B8D276F00184164 /* PlayButtonWhite.png */,
 				88491AA71B97D50A006A1BA4 /* WelcomeCalc.png */,
 				8876EB421B8535AA00384F47 /* GreenFullB.png */,
@@ -270,6 +275,7 @@
 				8876EB231B8534EC00384F47 /* SetupController.swift */,
 				88D7581A1B8681FD0077F698 /* ReturnController.swift */,
 				88BD82EE1B88F4530050CB73 /* EarningsController.swift */,
+				880C97281B991DD40057521F /* SettingsController.swift */,
 				8874237E1B8565CD00CA7889 /* MainController.swift */,
 				8876EB251B8534EC00384F47 /* Main.storyboard */,
 				8876EB281B8534ED00384F47 /* Images.xcassets */,
@@ -404,6 +410,7 @@
 				8876EB2C1B8534ED00384F47 /* LaunchScreen.xib in Resources */,
 				8899941D1B8A8D6100C876AA /* playButton.png in Resources */,
 				88491AA01B97C2AE006A1BA4 /* SettingsAdjustFull.png in Resources */,
+				88D6943D1B990E2200473067 /* pauseButton.png in Resources */,
 				8854721E1B96842D0059938E /* EarningsBG.png in Resources */,
 				8885AA501B8D3E4B00184164 /* SettingsPayEmpty.png in Resources */,
 				887423651B85445D00CA7889 /* LoadingView.xib in Resources */,
@@ -464,6 +471,7 @@
 				8874236A1B85445D00CA7889 /* DesignableTextField.swift in Sources */,
 				8874236D1B85445D00CA7889 /* DesignableTabBarController.swift in Sources */,
 				887423671B85445D00CA7889 /* DesignableButton.swift in Sources */,
+				880C97291B991DD40057521F /* SettingsController.swift in Sources */,
 				887423611B85445D00CA7889 /* AsyncButton.swift in Sources */,
 				887423741B85445D00CA7889 /* SpringButton.swift in Sources */,
 				88D7581B1B8681FD0077F698 /* ReturnController.swift in Sources */,

@@ -9,6 +9,7 @@
 import UIKit
 
 var payRate = 0.00
+var name = ""
 
 class SetupController: UIViewController {
     
@@ -27,8 +28,9 @@ class SetupController: UIViewController {
         if payToggle == false {
         if entryField.text != "" {
         
-        var name = entryField.text
+        name = entryField.text
         name.replaceRange(name.startIndex...name.startIndex, with: String(name[name.startIndex]).capitalizedString)
+        NSUserDefaults.standardUserDefaults().setObject(name, forKey: "name")
         welcomeLabel.hidden = true
         pepBuckLabel.hidden = true
         nameLabel.text = "Hi, \(name)"

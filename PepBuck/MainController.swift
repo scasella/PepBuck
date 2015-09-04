@@ -8,6 +8,7 @@
 
 import UIKit
 
+var circleCompletion = 1.00
 var startNowToggle = false
 var toggleSaveTime = false
 var seconds = 0
@@ -37,13 +38,17 @@ class MainController: UIViewController {
     @IBOutlet var timerCircle: CircularProgressView!
     @IBOutlet var springView: SpringView!
     
+    @IBOutlet var settingsButton: UIButton!
+    @IBOutlet var earningsButton: UIButton!
     
     @IBAction func playPressed(sender: SpringButton) {
         if pauseToggle == false {
         
+        playButton.setBackgroundImage(UIImage(named: "pauseButton.png"), forState: UIControlState.Normal)
+        settingsButton.enabled = false
+        earningsButton.enabled = false
         endShiftButton.hidden = true
         timerLabel.hidden = false
-        playButton.hidden = true
         setupGame()
         subtractTime()
         toggleSaveTime = true
@@ -51,12 +56,13 @@ class MainController: UIViewController {
         pauseToggle = true
             
         } else {
-            
+        
         timer.invalidate()
         toggleSaveTime = false
-        timerLabel.hidden = true
-        playButton.hidden = false
+        playButton.setBackgroundImage(UIImage(named: "PlayButtonWhite.png"), forState: UIControlState.Normal)
         endShiftButton.hidden = false
+        settingsButton.enabled = true
+        earningsButton.enabled = true
         pauseToggle = false
         
         }
@@ -126,7 +132,7 @@ class MainController: UIViewController {
         totalPay = totalPay - oldPay + newPay
         
         timerLabel.text = "$\(newPay)"
-        timerCircle.value = CGFloat(payRate * Double(seconds / 10 ) / 60 / 60 % 1)
+        timerCircle.value = CGFloat(payRate * Double(seconds / 10 ) / 60 / 60 % circleCompletion)
         }
     
     
@@ -135,10 +141,7 @@ class MainController: UIViewController {
         super.viewDidLoad()
         
             if startNowToggle == true {
-            timerLabel.hidden = false
-            playButton.hidden = true
-            setupGame()
-            subtractTime()
+            playPressed(SpringButton())
         }
                
     }
