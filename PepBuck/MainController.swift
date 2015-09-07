@@ -29,6 +29,7 @@ class MainController: UIViewController {
         case toResume
     }
 
+    @IBOutlet var springImage: SpringImageView!
     @IBOutlet var invisiblePlay: SpringButton!
     @IBOutlet var coinLabel: SpringLabel!
     @IBOutlet var endShiftButton: UIButton!
@@ -44,7 +45,10 @@ class MainController: UIViewController {
     @IBAction func playPressed(sender: SpringButton) {
         if pauseToggle == false {
         
-        playButton.setBackgroundImage(UIImage(named: "pauseButton.png"), forState: UIControlState.Normal)
+        timerCircle.alpha = 1.0
+        playButton.setBackgroundImage(UIImage(named: ""), forState: UIControlState.Normal)
+            
+        invisiblePlay.hidden = false
         settingsButton.enabled = false
         earningsButton.enabled = false
         endShiftButton.hidden = true
@@ -58,8 +62,10 @@ class MainController: UIViewController {
         } else {
         
         timer.invalidate()
+        timerCircle.alpha = 0.0
         toggleSaveTime = false
-        playButton.setBackgroundImage(UIImage(named: "PlayButtonWhite.png"), forState: UIControlState.Normal)
+        playButton.setBackgroundImage(UIImage(named: "pinkPlayCircle.png"), forState: UIControlState.Normal)
+        invisiblePlay.hidden = true 
         endShiftButton.hidden = false
         settingsButton.enabled = true
         earningsButton.enabled = true
@@ -139,11 +145,20 @@ class MainController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timerCircle.alpha = 0.0
+        
         
             if startNowToggle == true {
             playPressed(SpringButton())
+            startNowToggle = false 
         }
                
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toSettings" {
+            previousViewIsMain = true
+        }
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

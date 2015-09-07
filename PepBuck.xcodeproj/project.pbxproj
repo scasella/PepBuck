@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		880C97291B991DD40057521F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C97281B991DD40057521F /* SettingsController.swift */; };
+		880CD29D1B9DE75900578C54 /* BG3.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD29C1B9DE75900578C54 /* BG3.png */; };
+		880CD2A01B9DE77B00578C54 /* PlayPink.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD29E1B9DE77B00578C54 /* PlayPink.png */; };
+		880CD2A11B9DE77B00578C54 /* WhiteCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD29F1B9DE77B00578C54 /* WhiteCard.png */; };
+		880CD2A31B9DF7B800578C54 /* pinkPlayCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD2A21B9DF7B800578C54 /* pinkPlayCircle.png */; };
+		880CD2A51B9DFB3900578C54 /* pauseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD2A41B9DFB3900578C54 /* pauseIcon.png */; };
 		88491A9E1B97C2AE006A1BA4 /* SettingsPayFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 88491A9B1B97C2AE006A1BA4 /* SettingsPayFull.png */; };
 		88491A9F1B97C2AE006A1BA4 /* SettingsCircleFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 88491A9C1B97C2AE006A1BA4 /* SettingsCircleFull.png */; };
 		88491AA01B97C2AE006A1BA4 /* SettingsAdjustFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 88491A9D1B97C2AE006A1BA4 /* SettingsAdjustFull.png */; };
@@ -60,7 +65,6 @@
 		8876EB291B8534ED00384F47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8876EB281B8534ED00384F47 /* Images.xcassets */; };
 		8876EB2C1B8534ED00384F47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8876EB2A1B8534ED00384F47 /* LaunchScreen.xib */; };
 		8876EB381B8534ED00384F47 /* PepBuckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876EB371B8534ED00384F47 /* PepBuckTests.swift */; };
-		8876EB431B8535AA00384F47 /* GreenEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8876EB411B8535AA00384F47 /* GreenEmpty.png */; };
 		8876EB441B8535AA00384F47 /* GreenFullB.png in Resources */ = {isa = PBXBuildFile; fileRef = 8876EB421B8535AA00384F47 /* GreenFullB.png */; };
 		8885AA421B8D276F00184164 /* PlayButtonWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 8885AA411B8D276F00184164 /* PlayButtonWhite.png */; };
 		8885AA441B8D320100184164 /* whiteBorderButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8885AA431B8D320100184164 /* whiteBorderButton.png */; };
@@ -72,6 +76,7 @@
 		88BD82EF1B88F4530050CB73 /* EarningsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD82EE1B88F4530050CB73 /* EarningsController.swift */; };
 		88D6943D1B990E2200473067 /* pauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D6943C1B990E2200473067 /* pauseButton.png */; };
 		88D7581B1B8681FD0077F698 /* ReturnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7581A1B8681FD0077F698 /* ReturnController.swift */; };
+		88FD7C811B9DD276002DF4EB /* BG2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88FD7C801B9DD276002DF4EB /* BG2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +91,11 @@
 
 /* Begin PBXFileReference section */
 		880C97281B991DD40057521F /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		880CD29C1B9DE75900578C54 /* BG3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG3.png; sourceTree = "<group>"; };
+		880CD29E1B9DE77B00578C54 /* PlayPink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayPink.png; sourceTree = "<group>"; };
+		880CD29F1B9DE77B00578C54 /* WhiteCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteCard.png; sourceTree = "<group>"; };
+		880CD2A21B9DF7B800578C54 /* pinkPlayCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkPlayCircle.png; sourceTree = "<group>"; };
+		880CD2A41B9DFB3900578C54 /* pauseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseIcon.png; sourceTree = "<group>"; };
 		88491A9B1B97C2AE006A1BA4 /* SettingsPayFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsPayFull.png; sourceTree = "<group>"; };
 		88491A9C1B97C2AE006A1BA4 /* SettingsCircleFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsCircleFull.png; sourceTree = "<group>"; };
 		88491A9D1B97C2AE006A1BA4 /* SettingsAdjustFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsAdjustFull.png; sourceTree = "<group>"; };
@@ -142,7 +152,6 @@
 		8876EB311B8534ED00384F47 /* PepBuckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PepBuckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8876EB361B8534ED00384F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8876EB371B8534ED00384F47 /* PepBuckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PepBuckTests.swift; sourceTree = "<group>"; };
-		8876EB411B8535AA00384F47 /* GreenEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenEmpty.png; sourceTree = "<group>"; };
 		8876EB421B8535AA00384F47 /* GreenFullB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenFullB.png; sourceTree = "<group>"; };
 		8885AA411B8D276F00184164 /* PlayButtonWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonWhite.png; sourceTree = "<group>"; };
 		8885AA431B8D320100184164 /* whiteBorderButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteBorderButton.png; sourceTree = "<group>"; };
@@ -154,6 +163,7 @@
 		88BD82EE1B88F4530050CB73 /* EarningsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarningsController.swift; sourceTree = "<group>"; };
 		88D6943C1B990E2200473067 /* pauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseButton.png; sourceTree = "<group>"; };
 		88D7581A1B8681FD0077F698 /* ReturnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnController.swift; sourceTree = "<group>"; };
+		88FD7C801B9DD276002DF4EB /* BG2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,14 +269,19 @@
 				885472191B96840D0059938E /* earningsAssets */,
 				885472101B960CDB0059938E /* assets2 */,
 				8874237D1B85446100CA7889 /* Spring */,
-				8876EB411B8535AA00384F47 /* GreenEmpty.png */,
 				8885AA451B8D3E4B00184164 /* settingsAssets */,
 				8899941E1B8A976300C876AA /* CoinImage.png */,
+				88FD7C801B9DD276002DF4EB /* BG2.png */,
 				8885AA431B8D320100184164 /* whiteBorderButton.png */,
 				88491AA31B97CFCC006A1BA4 /* WelcomeButtonEmpty.png */,
 				88491AA41B97CFCC006A1BA4 /* WelcomeButtonFull.png */,
 				8899941C1B8A8D6100C876AA /* playButton.png */,
+				880CD2A41B9DFB3900578C54 /* pauseIcon.png */,
+				880CD29E1B9DE77B00578C54 /* PlayPink.png */,
+				880CD29F1B9DE77B00578C54 /* WhiteCard.png */,
+				880CD2A21B9DF7B800578C54 /* pinkPlayCircle.png */,
 				88D6943C1B990E2200473067 /* pauseButton.png */,
+				880CD29C1B9DE75900578C54 /* BG3.png */,
 				8885AA411B8D276F00184164 /* PlayButtonWhite.png */,
 				88491AA71B97D50A006A1BA4 /* WelcomeCalc.png */,
 				8876EB421B8535AA00384F47 /* GreenFullB.png */,
@@ -405,13 +420,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880CD2A01B9DE77B00578C54 /* PlayPink.png in Resources */,
 				8876EB271B8534EC00384F47 /* Main.storyboard in Resources */,
-				8876EB431B8535AA00384F47 /* GreenEmpty.png in Resources */,
 				8876EB2C1B8534ED00384F47 /* LaunchScreen.xib in Resources */,
 				8899941D1B8A8D6100C876AA /* playButton.png in Resources */,
 				88491AA01B97C2AE006A1BA4 /* SettingsAdjustFull.png in Resources */,
 				88D6943D1B990E2200473067 /* pauseButton.png in Resources */,
 				8854721E1B96842D0059938E /* EarningsBG.png in Resources */,
+				880CD2A31B9DF7B800578C54 /* pinkPlayCircle.png in Resources */,
 				8885AA501B8D3E4B00184164 /* SettingsPayEmpty.png in Resources */,
 				887423651B85445D00CA7889 /* LoadingView.xib in Resources */,
 				88491A9F1B97C2AE006A1BA4 /* SettingsCircleFull.png in Resources */,
@@ -420,6 +436,7 @@
 				88491A9E1B97C2AE006A1BA4 /* SettingsPayFull.png in Resources */,
 				885472171B960CE60059938E /* PinkButtonEmpty.png in Resources */,
 				885472151B960CE60059938E /* Oval 65.png in Resources */,
+				88FD7C811B9DD276002DF4EB /* BG2.png in Resources */,
 				88491AA61B97CFCC006A1BA4 /* WelcomeButtonFull.png in Resources */,
 				8876EB291B8534ED00384F47 /* Images.xcassets in Resources */,
 				885472201B96842D0059938E /* EarningsTitle.png in Resources */,
@@ -429,9 +446,12 @@
 				88491AA21B97CB31006A1BA4 /* SettingsLabel.png in Resources */,
 				8885AA441B8D320100184164 /* whiteBorderButton.png in Resources */,
 				885472181B960CE60059938E /* PinkButtonFull.png in Resources */,
+				880CD29D1B9DE75900578C54 /* BG3.png in Resources */,
 				8885AA521B8D3E4B00184164 /* SettingsAdjustEmpty.png in Resources */,
+				880CD2A11B9DE77B00578C54 /* WhiteCard.png in Resources */,
 				885472161B960CE60059938E /* Background.png in Resources */,
 				88491AA81B97D50A006A1BA4 /* WelcomeCalc.png in Resources */,
+				880CD2A51B9DFB3900578C54 /* pauseIcon.png in Resources */,
 				8885AA571B8D3E4B00184164 /* SettingsCircleEmpty.png in Resources */,
 				8899941F1B8A976300C876AA /* CoinImage.png in Resources */,
 			);

@@ -8,6 +8,8 @@
 
 import UIKit
 
+var previousViewIsMain = false 
+
 class ReturnController: UIViewController {
     
     @IBAction func buttonPressed(sender: SpringButton) {
@@ -23,10 +25,12 @@ class ReturnController: UIViewController {
             self.performSegueWithIdentifier("toMain", sender: self)
         
             case "earnings":
+                previousViewIsMain = false
                 self.performSegueWithIdentifier("toEarnings", sender: self)
                 
             default:
-                println("settings")
+                previousViewIsMain = false
+                 self.performSegueWithIdentifier("toSettings", sender: self)
             }
         
     }}
