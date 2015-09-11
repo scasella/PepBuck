@@ -45,10 +45,8 @@ class MainController: UIViewController {
     @IBAction func playPressed(sender: SpringButton) {
         if pauseToggle == false {
         
-        timerCircle.alpha = 1.0
-        playButton.setBackgroundImage(UIImage(named: ""), forState: UIControlState.Normal)
-            
-        invisiblePlay.hidden = false
+        playButton.setTitle("Pause", forState: UIControlState.Normal)
+        //invisiblePlay.hidden = false
         settingsButton.enabled = false
         earningsButton.enabled = false
         endShiftButton.hidden = true
@@ -62,10 +60,9 @@ class MainController: UIViewController {
         } else {
         
         timer.invalidate()
-        timerCircle.alpha = 0.0
         toggleSaveTime = false
-        playButton.setBackgroundImage(UIImage(named: "pinkPlayCircle.png"), forState: UIControlState.Normal)
-        invisiblePlay.hidden = true 
+        playButton.setTitle("Start", forState: UIControlState.Normal)
+        //invisiblePlay.hidden = true
         endShiftButton.hidden = false
         settingsButton.enabled = true
         earningsButton.enabled = true
@@ -145,13 +142,15 @@ class MainController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timerCircle.alpha = 0.0
         
         
             if startNowToggle == true {
             playPressed(SpringButton())
             startNowToggle = false 
         }
+        
+        animator = UIDynamicAnimator(referenceView: view)
+
                
     }
     
@@ -161,14 +160,51 @@ class MainController: UIViewController {
         }
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    var animator : UIDynamicAnimator!
+    var attachmentBehavior : UIAttachmentBehavior!
+    var gravityBehaviour : UIGravityBehavior!
+    var snapBehavior : UISnapBehavior!
+
+    @IBOutlet var panRecognizer: UIPanGestureRecognizer!
+    @IBAction func handleGesture(sender: AnyObject) {
+        let myView = springView
+        let location = sender.locationInView(view)
+        let boxLocation = sender.locationInView(springView)
+        
+        if sender.state == UIGestureRecognizerState.Began {
+            animator.removeBehavior(snapBehavior)
+            
+            let centerOffset = UIOffsetMake(boxLocation.x - CGRectGetMidX(myView.bounds), boxLocation.y - CGRectGetMidY(myView.bounds));
+            attachmentBehavior = UIAttachmentBehavior(item: myView, offsetFromCenter: centerOffset, attachedToAnchor: location)
+            attachmentBehavior.frequency = 0
+            
+            animator.addBehavior(attachmentBehavior)
+        }
+        else if sender.state == UIGestureRecognizerState.Changed {
+            attachmentBehavior.anchorPoint = location
+        }
+        else if sender.state == UIGestureRecognizerState.Ended {
+            animator.removeBehavior(attachmentBehavior)
+            
+            snapBehavior = UISnapBehavior(item: myView, snapToPoint: view.center)
+            animator.addBehavior(snapBehavior)
+            
+            let translation = sender.translationInView(view)
+          /*  if translation.y > 100 {
+                animator.removeAllBehaviors()
+                
+                var gravity = UIGravityBehavior(items: [springView])
+                gravity.gravityDirection = CGVectorMake(0, 10)
+                animator.addBehavior(gravity)
+            } */
+        }
+    }
+
     
     
 }

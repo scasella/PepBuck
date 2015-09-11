@@ -54,10 +54,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
         }*/
+        
         NSUserDefaults.standardUserDefaults().objectForKey("circleCompletion")
         payRate = NSUserDefaults.standardUserDefaults().objectForKey("payRate") as! Double
        
-        /* if toggleSaveTime == true {
+        if toggleSaveTime == true {
             NSUserDefaults.standardUserDefaults().objectForKey("seconds")
             NSUserDefaults.standardUserDefaults().objectForKey("savedTime")
             
@@ -65,7 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             seconds = seconds + Int(round(Double(elapsedTime)))
             println(seconds)
         }
-*/
+
         
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
