@@ -28,7 +28,28 @@ class MainController: UIViewController {
         case toPause
         case toResume
     }
+    
+    enum settingEnum {
+        case None
+        case Pay
+        case Circle
+        case Adjust
+    }
+    
+    var settingsSelect = settingEnum.None
 
+    
+    
+    @IBOutlet var saveButton: UIButton!
+    @IBOutlet var backButton: UIButton!
+    @IBOutlet var settingsLabel: SpringLabel!
+    @IBOutlet var circleButton: SpringButton!
+    @IBOutlet var adjustButton: SpringButton!
+    @IBOutlet var payButton: SpringButton!
+    @IBOutlet var settingsField: UITextField!
+    @IBOutlet var settingsView: SpringView!
+    @IBOutlet var mainView: SpringView!
+    @IBOutlet var earningsView: SpringView!
     @IBOutlet var springImage: SpringImageView!
     @IBOutlet var invisiblePlay: SpringButton!
     @IBOutlet var coinLabel: SpringLabel!
@@ -139,6 +160,53 @@ class MainController: UIViewController {
         }
     
     
+    @IBAction func earningsButtonPressed(sender: AnyObject) {
+        /* springView.animation = "flipX"
+       springView.duration = 2.5
+        springView.animate() */
+        settingsButton.enabled = false
+        earningsButton.enabled = false
+        earningsView.duration = 1.5
+        mainView.duration = 1.5
+        mainView.animation = "fall"
+        mainView.force = 4.0
+        earningsView.animation = "slideUp"
+        earningsView.force = 4.0
+        mainView.animateToNext() {
+              self.mainView.y = 400
+        }
+        earningsView.animate()
+        //mainView.hidden = true
+        earningsView.hidden = false
+    }
+    
+    
+    
+    @IBAction func settingsButtonPressed(sender: AnyObject) {
+        settingsButton.enabled = false
+        earningsButton.enabled = false
+        springView.animation = "fall"
+        springView.animate()
+        settingsView.hidden = false
+        
+    }
+    
+    
+    
+    @IBAction func earningsBackPressed(sender: AnyObject) {
+        earningsView.animation = "fall"
+        earningsView.duration = 1.5
+        mainView.animation = "slideUp"
+        mainView.duration = 1.5
+        mainView.force = 4.0
+        earningsView.animate()
+        mainView.animate()
+        settingsButton.enabled = true
+        earningsButton.enabled = true
+        
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -154,11 +222,15 @@ class MainController: UIViewController {
                
     }
     
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toSettings" {
             previousViewIsMain = true
         }
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -171,6 +243,9 @@ class MainController: UIViewController {
     var snapBehavior : UISnapBehavior!
 
     @IBOutlet var panRecognizer: UIPanGestureRecognizer!
+    
+    
+    
     @IBAction func handleGesture(sender: AnyObject) {
         let myView = springView
         let location = sender.locationInView(view)
@@ -205,6 +280,82 @@ class MainController: UIViewController {
         }
     }
 
+    
+    
+    @IBAction func savePressed(sender: AnyObject) {
+        switch settingsSelect {
+            
+        case .Pay:
+            payRate = (settingsField.text as NSString).doubleValue
+            NSUserDefaults.standardUserDefaults().setObject(payRate, forKey: "payRate")
+            
+            
+        case .Circle:
+            
+            NSUserDefaults.standardUserDefaults().setObject(circleCompletion, forKey: "circleCompletion")
+            
+        case .Adjust:
+            
+            let newHours = totalHours - (settingsField.text as! NSString).doubleValue
+            totalPay = totalPay + newHours * payRate
+            
+            NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
+            NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
+            
+        default :
+            println("test")
+            
+        }
+    }
+
+    
+    
+    @IBAction func settingsPressed(sender: SpringButton) {
+        
+        if sender.restorationIdentifier == "Pay" {
+            
+            settingsLabel.text = "Hourly Pay"
+            settingsButtonsSwitch()
+            sender.setBackgroundImage(UIImage(named: "SettingsPayFull.png"), forState: UIControlState.Normal)
+            settingsSelect = .Pay
+            
+            
+        } else if sender.restorationIdentifier == "Circle" {
+            
+            settingsLabel.text = "Circle Finish"
+            settingsButtonsSwitch()
+            sender.setBackgroundImage(UIImage(named: "SettingsCircleFull.png"), forState: UIControlState.Normal)
+            settingsSelect = .Circle
+            
+        } else {
+            
+            settingsLabel.text = "Adjust Time"
+            settingsButtonsSwitch()
+            sender.setBackgroundImage(UIImage(named: "SettingsAdjustFull.png"), forState: UIControlState.Normal)
+            settingsSelect = .Adjust
+            
+        }
+        
+        settingsField.becomeFirstResponder()
+    }
+    
+    
+    
+    func settingsButtonsSwitch() {
+        payButton.setBackgroundImage(UIImage(named: "SettingsPayEmpty.png"), forState: UIControlState.Normal)
+        circleButton.setBackgroundImage(UIImage(named: "SettingsCircleEmpty.png"), forState: UIControlState.Normal)
+        adjustButton.setBackgroundImage(UIImage(named: "SettingsAdjustEmpty.png"), forState: UIControlState.Normal)
+        //tapLabel.hidden = true
+        settingsField.hidden = false
+        saveButton.alpha = 1.0
+        saveButton.enabled = true
+    }
+    
+    
+
+    @IBAction func backPressed(sender: AnyObject) {
+        performSegueWithIdentifier("refreshView", sender: self)
+    }
     
     
 }
