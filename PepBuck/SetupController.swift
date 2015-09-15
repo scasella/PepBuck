@@ -8,9 +8,6 @@
 
 import UIKit
 
-var payRate = 0.00
-var name = ""
-
 class SetupController: UIViewController {
     
     var payToggle = false
@@ -38,11 +35,12 @@ class SetupController: UIViewController {
         nameLabel.animation = "fadeIn"
         nameLabel.duration = 1.0
         nameLabel.animate()
-        whatIsLabel.x = -1000
+        whatIsLabel.x = 1000
+        whatIsLabel.duration = 1.5
         whatIsLabel.animateTo()
         whatIsHourLabel.hidden = false
-        whatIsHourLabel.animation = "slideLeft"
-        whatIsHourLabel.duration = 1.75
+        whatIsHourLabel.animation = "slideRight"
+        whatIsHourLabel.duration = 1.5
         whatIsHourLabel.animate()
         entryField.text = ""
         calcIcon.hidden = false

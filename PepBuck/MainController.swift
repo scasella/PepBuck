@@ -8,10 +8,16 @@
 
 import UIKit
 
+var payRate = 0.00
+var name = ""
 var circleCompletion = 1.00
 var startNowToggle = false
 var toggleSaveTime = false
 var seconds = 0
+var periodStart = ""
+var latestDate = ""
+var totalPay = 0.00
+var totalHours = 0.00
 var savedTime = NSDate()
 
 var date = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .ShortStyle)
@@ -59,6 +65,11 @@ class MainController: UIViewController {
     @IBOutlet var playButton: SpringButton!
     @IBOutlet var timerCircle: CircularProgressView!
     @IBOutlet var springView: SpringView!
+    @IBOutlet var totalPayLabel: UILabel!
+    @IBOutlet var totalHoursLabel: UILabel!
+    @IBOutlet var periodStartLabel: UILabel!
+    @IBOutlet var latestDateLabel: UILabel!
+
     
     @IBOutlet var settingsButton: UIButton!
     @IBOutlet var earningsButton: UIButton!
@@ -166,6 +177,10 @@ class MainController: UIViewController {
         springView.animate() */
         settingsButton.enabled = false
         earningsButton.enabled = false
+        totalPayLabel.text = "$\(round(totalPay * 100)/100)"
+        totalHoursLabel.text = "\(round(totalHours * 100)/100) hours"
+        periodStartLabel.text = "Period start date: \(periodStart)"
+        latestDateLabel.text = "Latest date: \(latestDate)"
         earningsView.duration = 1.5
         mainView.duration = 1.5
         mainView.animation = "fall"
@@ -193,24 +208,8 @@ class MainController: UIViewController {
     
     
     
-    @IBAction func earningsBackPressed(sender: AnyObject) {
-        earningsView.animation = "fall"
-        earningsView.duration = 1.5
-        mainView.animation = "slideUp"
-        mainView.duration = 1.5
-        mainView.force = 4.0
-        earningsView.animate()
-        mainView.animate()
-        settingsButton.enabled = true
-        earningsButton.enabled = true
-        
-    }
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
             if startNowToggle == true {
             playPressed(SpringButton())
@@ -219,17 +218,16 @@ class MainController: UIViewController {
         
         animator = UIDynamicAnimator(referenceView: view)
 
-               
+        
     }
     
-    
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toSettings" {
-            previousViewIsMain = true
+    override func viewDidAppear(animated: Bool) {
+        
+        if name == "" {
+            performSegueWithIdentifier("toSetup", sender: self)
         }
     }
-    
+
     
     
     override func didReceiveMemoryWarning() {
@@ -279,8 +277,66 @@ class MainController: UIViewController {
             } */
         }
     }
+    
+    
+    
+    /* Earnings View Code - Below
+    =========================
+    =========================
+    =========================
+    */
+    
+    @IBAction func earningsResetPressed(sender: AnyObject) {
+        let refreshAlert = UIAlertController(title: "Reset Earnings", message: "Are you sure?", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Yes!", style: .Default, handler: { (action: UIAlertAction!) in
+            totalHours = 0.00
+            totalPay = 0.00
+            periodStart = ""
+            latestDate = ""
+            
+            self.resetLabels()
+            
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
+            println("Handle Cancel Logic here")
+        }))
+        
+    }
+    
 
     
+    func resetLabels() {
+        totalPayLabel.text = "$0.00"
+        totalHoursLabel.text = "0.00 hours"
+        periodStartLabel.text = ""
+        latestDateLabel.text = ""
+    }
+    
+    
+    
+    @IBAction func earningsBackPressed(sender: AnyObject) {
+        earningsView.animation = "fall"
+        earningsView.duration = 1.5
+        mainView.animation = "slideUp"
+        mainView.duration = 1.5
+        mainView.force = 4.0
+        earningsView.animate()
+        mainView.animate()
+        settingsButton.enabled = true
+        earningsButton.enabled = true
+        
+    }
+    
+ //END EARNINGS VIEW
+    
+
+/* Settings View Code - Below
+    =========================
+    =========================
+    =========================
+*/
     
     @IBAction func savePressed(sender: AnyObject) {
         switch settingsSelect {
@@ -288,19 +344,23 @@ class MainController: UIViewController {
         case .Pay:
             payRate = (settingsField.text as NSString).doubleValue
             NSUserDefaults.standardUserDefaults().setObject(payRate, forKey: "payRate")
-            
+            showSettingsAlert("Hourly pay is now $\(payRate)")
             
         case .Circle:
-            
+            circleCompletion = (settingsField.text as NSString).doubleValue
             NSUserDefaults.standardUserDefaults().setObject(circleCompletion, forKey: "circleCompletion")
+             showSettingsAlert("Circle completes every $\(circleCompletion) earned")
             
         case .Adjust:
             
-            let newHours = totalHours - (settingsField.text as! NSString).doubleValue
-            totalPay = totalPay + newHours * payRate
+            let newHours = (settingsField.text as NSString).doubleValue - totalHours
+            totalHours = (settingsField.text as NSString).doubleValue
+            totalPay = newHours * payRate + totalPay
             
             NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
             NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
+            
+             showSettingsAlert("Hours worked adjusted sucessfully")
             
         default :
             println("test")
@@ -318,7 +378,7 @@ class MainController: UIViewController {
             settingsButtonsSwitch()
             sender.setBackgroundImage(UIImage(named: "SettingsPayFull.png"), forState: UIControlState.Normal)
             settingsSelect = .Pay
-            
+            settingsField.text = "\(round(payRate * 100) / 100)"
             
         } else if sender.restorationIdentifier == "Circle" {
             
@@ -326,6 +386,7 @@ class MainController: UIViewController {
             settingsButtonsSwitch()
             sender.setBackgroundImage(UIImage(named: "SettingsCircleFull.png"), forState: UIControlState.Normal)
             settingsSelect = .Circle
+            settingsField.text = "\(circleCompletion)"
             
         } else {
             
@@ -333,7 +394,8 @@ class MainController: UIViewController {
             settingsButtonsSwitch()
             sender.setBackgroundImage(UIImage(named: "SettingsAdjustFull.png"), forState: UIControlState.Normal)
             settingsSelect = .Adjust
-            
+            settingsField.text = "\(round(totalHours * 100) / 100)"
+        
         }
         
         settingsField.becomeFirstResponder()
@@ -357,5 +419,17 @@ class MainController: UIViewController {
         performSegueWithIdentifier("refreshView", sender: self)
     }
     
+    
+    
+    func showSettingsAlert(setting: String) {
+        let alertController = UIAlertController(title: "Settings Updated", message:
+            "\(setting)", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    
+    }
+    
+//END SETTINGS VIEW
     
 }

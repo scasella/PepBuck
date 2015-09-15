@@ -21,7 +21,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEw-f5-1gH" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="41" y="20" width="227" height="87"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="41"/>
-                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
@@ -31,7 +31,7 @@
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Steve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2S-R9-EY3" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="16" y="63" width="343" height="87"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="45"/>
-                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
@@ -44,7 +44,7 @@
                                     <constraint firstAttribute="width" constant="194" id="OAv-ha-mHL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="41"/>
-                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cfy-ej-zLt">
@@ -52,8 +52,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="TY1-KN-fOp"/>
                                 </constraints>
-                                <color key="textColor" red="0.97254901959999995" green="0.19215686269999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your first name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-wP-VCt" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
@@ -61,8 +61,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="wcA-cc-4Aa"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
-                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7Q-gp-jOn">
@@ -74,21 +74,14 @@
                                 <state key="normal" image="WelcomeCalc.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEd-Ao-2Sa">
-                                <rect key="frame" x="318" y="368" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
                                 <connections>
-                                    <segue destination="Utb-aS-VrW" kind="presentation" modalTransitionStyle="crossDissolve" animates="NO" id="4df-jx-X9Y"/>
+                                    <segue destination="BJE-gH-SjQ" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="rjC-nh-7tg"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your hourly pay?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-9t-n2l" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="49" y="180" width="276" height="32"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
-                                <color key="textColor" red="0.11372549019607843" green="0.12549019607843137" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13H-Tp-xI6" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
@@ -98,12 +91,14 @@
                                     <constraint firstAttribute="width" constant="113" id="gPW-CI-7h0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                <state key="normal" title="Submit" backgroundImage="WelcomeButtonEmpty.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Submit" backgroundImage="PinkEmptyButton.png">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="WelcomeButtonFull.png"/>
-                                <state key="highlighted" image="WelcomeButtonFull.png"/>
+                                <state key="selected" image="PinkFullButton.png">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="PinkFullButton.png"/>
                                 <connections>
                                     <action selector="submitTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CcB-Mr-CvK"/>
                                 </connections>
@@ -153,173 +148,132 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="176.5" y="226.5"/>
+            <point key="canvasLocation" x="125.5" y="219.5"/>
         </scene>
-        <!--Return Controller-->
-        <scene sceneID="UYN-Rp-Wnw">
+        <!--Salary Calc Controller-->
+        <scene sceneID="7Od-vE-SaC">
             <objects>
-                <viewController id="Utb-aS-VrW" customClass="ReturnController" customModule="PepBuck" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BJE-gH-SjQ" customClass="SalaryCalcController" customModule="PepBuck" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wG8-vi-RLL"/>
-                        <viewControllerLayoutGuide type="bottom" id="wh0-Nv-Ap5"/>
+                        <viewControllerLayoutGuide type="top" id="CfM-Ob-DOc"/>
+                        <viewControllerLayoutGuide type="bottom" id="tcG-v5-KiQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="v3b-zf-4Se">
+                    <view key="view" contentMode="scaleToFill" id="Fuu-lk-ojm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="start" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6W7-0j-vxg" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="93" y="215" width="189" height="62"/>
+                            <visualEffectView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLH-6b-drA">
+                                <rect key="frame" x="0.0" y="-5" width="375" height="685"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nNp-tF-npP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="685"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary to Hourly Converter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8d-wR-ILa" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                            <rect key="frame" x="30" y="65" width="315" height="92"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="92" id="9Vi-E5-yVo"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
+                                            <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="r8d-wR-ILa" firstAttribute="leading" secondItem="nNp-tF-npP" secondAttribute="leading" constant="30" id="KCS-2b-b1U"/>
+                                        <constraint firstItem="r8d-wR-ILa" firstAttribute="centerX" secondItem="nNp-tF-npP" secondAttribute="centerX" id="WHt-k7-E9N"/>
+                                        <constraint firstItem="r8d-wR-ILa" firstAttribute="top" secondItem="nNp-tF-npP" secondAttribute="top" constant="65" id="cAH-re-0jL"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifM-DB-KGx">
+                                <rect key="frame" x="16" y="213" width="343" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="2Jv-GW-uUR"/>
+                                    <constraint firstAttribute="height" constant="30" id="A2b-T0-Qmc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
-                                <state key="normal" title="Start shift" backgroundImage="WelcomeButtonEmpty.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="WelcomeButtonFull.png"/>
-                                <state key="highlighted" image="WelcomeButtonFull.png"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your salary?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="j2c-dY-oHX" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="49" y="180" width="276" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="BkY-kZ-u4n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="1.25"/>
-                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="Utb-aS-VrW" eventType="touchUpInside" id="kYp-9P-96Y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="earnings" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ure-TU-kxc" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="93" y="285" width="189" height="62"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="D7u-Pm-xLb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
-                                <state key="normal" title="Earnings" backgroundImage="WelcomeButtonEmpty.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="WelcomeButtonFull.png"/>
-                                <state key="highlighted" image="WelcomeButtonFull.png"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many hours per week?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="b8w-lI-RUc" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="49" y="180" width="276" height="32"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                         <real key="value" value="1.5"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="Utb-aS-VrW" eventType="touchUpInside" id="Fbc-eJ-q56"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5A-uS-Rai" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="16" y="76" width="343" height="87"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="44"/>
-                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="0.25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="settings" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlh-xf-EnS" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="93" y="355" width="189" height="62"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6g-3w-B00" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="131" y="346" width="113" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="mYP-H5-6pK"/>
+                                    <constraint firstAttribute="height" constant="52" id="C4N-uf-lfs"/>
+                                    <constraint firstAttribute="width" constant="113" id="it5-58-iLp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
-                                <state key="normal" title="Settings" backgroundImage="WelcomeButtonEmpty.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Submit" backgroundImage="PinkEmptyButton.png">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="WelcomeButtonFull.png"/>
-                                <state key="highlighted" image="WelcomeButtonFull.png"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="1.75"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <state key="selected" image="PinkFullButton.png"/>
+                                <state key="highlighted" image="PinkFullButton.png"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="Utb-aS-VrW" eventType="touchUpInside" id="87m-fl-HOL"/>
+                                    <action selector="submitPressed:" destination="BJE-gH-SjQ" eventType="touchUpInside" id="d7P-cC-k7J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p55-BG-YIB">
-                                <rect key="frame" x="643" y="629" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="presentation" modalTransitionStyle="crossDissolve" animates="NO" id="R1k-bd-Shb"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBZ-Rp-teI" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="22" y="28" width="331" height="87"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="Be6-VJ-bFT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="44"/>
-                                <color key="textColor" red="0.1137254902" green="0.12549019610000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="v5A-uS-Rai" firstAttribute="trailing" secondItem="v3b-zf-4Se" secondAttribute="trailingMargin" id="02r-P8-3kr"/>
-                            <constraint firstItem="XBZ-Rp-teI" firstAttribute="leading" secondItem="v3b-zf-4Se" secondAttribute="leadingMargin" constant="6" id="0WO-3H-e8S"/>
-                            <constraint firstItem="v5A-uS-Rai" firstAttribute="top" secondItem="wG8-vi-RLL" secondAttribute="bottom" constant="56" id="5ik-BI-bUX"/>
-                            <constraint firstItem="ure-TU-kxc" firstAttribute="leading" secondItem="6W7-0j-vxg" secondAttribute="leading" id="AxU-G8-fck"/>
-                            <constraint firstItem="jlh-xf-EnS" firstAttribute="top" secondItem="ure-TU-kxc" secondAttribute="bottom" constant="8" symbolic="YES" id="Bai-5g-DbM"/>
-                            <constraint firstItem="wh0-Nv-Ap5" firstAttribute="top" secondItem="jlh-xf-EnS" secondAttribute="bottom" constant="250" id="FNc-Zl-kFb"/>
-                            <constraint firstItem="ure-TU-kxc" firstAttribute="leading" secondItem="jlh-xf-EnS" secondAttribute="leading" id="KNZ-rj-FaP"/>
-                            <constraint firstItem="v5A-uS-Rai" firstAttribute="trailing" secondItem="p55-BG-YIB" secondAttribute="trailing" id="SYi-dD-PQR"/>
-                            <constraint firstItem="ure-TU-kxc" firstAttribute="trailing" secondItem="jlh-xf-EnS" secondAttribute="trailing" id="UZT-WI-kGn"/>
-                            <constraint firstItem="ure-TU-kxc" firstAttribute="trailing" secondItem="6W7-0j-vxg" secondAttribute="trailing" id="biI-l1-iRd"/>
-                            <constraint firstItem="XBZ-Rp-teI" firstAttribute="top" secondItem="wG8-vi-RLL" secondAttribute="bottom" constant="8" symbolic="YES" id="dfl-Ax-MBg"/>
-                            <constraint firstItem="v5A-uS-Rai" firstAttribute="centerX" secondItem="6W7-0j-vxg" secondAttribute="centerX" id="jdR-y6-yc7"/>
-                            <constraint firstItem="v5A-uS-Rai" firstAttribute="leading" secondItem="v3b-zf-4Se" secondAttribute="leadingMargin" id="pEV-8m-l8l"/>
-                            <constraint firstItem="XBZ-Rp-teI" firstAttribute="centerX" secondItem="v5A-uS-Rai" secondAttribute="centerX" id="tVY-zV-cjb"/>
-                            <constraint firstItem="6W7-0j-vxg" firstAttribute="leading" secondItem="v3b-zf-4Se" secondAttribute="leadingMargin" constant="77" id="toW-ZC-cGl"/>
-                            <constraint firstItem="wh0-Nv-Ap5" firstAttribute="top" secondItem="p55-BG-YIB" secondAttribute="bottom" constant="8" symbolic="YES" id="vl1-5a-jX7"/>
-                            <constraint firstItem="6W7-0j-vxg" firstAttribute="top" secondItem="v5A-uS-Rai" secondAttribute="bottom" constant="52" id="wCN-5I-dTK"/>
-                            <constraint firstItem="ure-TU-kxc" firstAttribute="top" secondItem="6W7-0j-vxg" secondAttribute="bottom" constant="8" symbolic="YES" id="z0t-Vr-hbT"/>
+                            <constraint firstAttribute="trailing" secondItem="lLH-6b-drA" secondAttribute="trailing" id="8K8-1w-Kho"/>
+                            <constraint firstItem="ifM-DB-KGx" firstAttribute="top" secondItem="b8w-lI-RUc" secondAttribute="bottom" constant="1" id="BbO-2m-voq"/>
+                            <constraint firstItem="lLH-6b-drA" firstAttribute="leading" secondItem="Fuu-lk-ojm" secondAttribute="leading" id="Gjb-Wt-1iF"/>
+                            <constraint firstItem="b8w-lI-RUc" firstAttribute="leading" secondItem="Fuu-lk-ojm" secondAttribute="leadingMargin" constant="33" id="Roq-xQ-neo"/>
+                            <constraint firstItem="ifM-DB-KGx" firstAttribute="centerX" secondItem="A6g-3w-B00" secondAttribute="centerX" id="RrJ-ZH-Y2K"/>
+                            <constraint firstItem="ifM-DB-KGx" firstAttribute="centerX" secondItem="b8w-lI-RUc" secondAttribute="centerX" id="SdH-tH-rDq"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lLH-6b-drA" secondAttribute="bottom" constant="-13" id="TS2-hg-idY"/>
+                            <constraint firstItem="b8w-lI-RUc" firstAttribute="baseline" secondItem="j2c-dY-oHX" secondAttribute="baseline" id="aS4-hu-Fzw"/>
+                            <constraint firstItem="b8w-lI-RUc" firstAttribute="leading" secondItem="j2c-dY-oHX" secondAttribute="leading" id="ac2-8k-N6K"/>
+                            <constraint firstItem="b8w-lI-RUc" firstAttribute="firstBaseline" secondItem="j2c-dY-oHX" secondAttribute="firstBaseline" id="bT3-Xk-4lR"/>
+                            <constraint firstItem="ifM-DB-KGx" firstAttribute="leading" secondItem="Fuu-lk-ojm" secondAttribute="leadingMargin" id="dda-1y-XTD"/>
+                            <constraint firstItem="lLH-6b-drA" firstAttribute="top" secondItem="Fuu-lk-ojm" secondAttribute="topMargin" constant="-5" id="jg5-HM-bhZ"/>
+                            <constraint firstItem="b8w-lI-RUc" firstAttribute="centerX" secondItem="lLH-6b-drA" secondAttribute="centerX" id="rqG-wX-17H"/>
+                            <constraint firstItem="b8w-lI-RUc" firstAttribute="top" secondItem="CfM-Ob-DOc" secondAttribute="bottom" constant="160" id="sRh-jZ-41D"/>
+                            <constraint firstItem="tcG-v5-KiQ" firstAttribute="top" secondItem="A6g-3w-B00" secondAttribute="bottom" constant="269" id="uG4-jQ-dY9"/>
+                            <constraint firstItem="j2c-dY-oHX" firstAttribute="trailing" secondItem="b8w-lI-RUc" secondAttribute="trailing" id="yAf-iC-SCr"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="I5w-XD-ya3" kind="presentation" identifier="toMain" modalTransitionStyle="crossDissolve" animates="NO" id="rS4-wk-GLg"/>
-                        <segue destination="evr-at-wYR" kind="presentation" identifier="toEarnings" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" animates="NO" id="QmN-g7-B35"/>
-                        <segue destination="EmH-Fx-4hA" kind="presentation" identifier="toSettings" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="Xdk-9O-5m7"/>
+                        <outlet property="howManyHoursLabel" destination="b8w-lI-RUc" id="E7y-dj-Pi0"/>
+                        <outlet property="textField" destination="ifM-DB-KGx" id="0EU-F9-J0k"/>
+                        <outlet property="whatIsYourSalaryLabel" destination="j2c-dY-oHX" id="g6M-KD-M7W"/>
+                        <segue destination="I5w-XD-ya3" kind="presentation" identifier="toMain" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" animates="NO" id="3ko-Tb-LqV"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="15H-bI-Np7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NCd-02-KEp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812.5" y="397.5"/>
+            <point key="canvasLocation" x="536.5" y="114.5"/>
         </scene>
         <!--Main Controller-->
         <scene sceneID="wqQ-v0-351">
@@ -374,25 +328,187 @@
                                     <action selector="earningsButtonPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="QyV-gs-bwX"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-LN-dcs">
-                                <rect key="frame" x="124" y="476" width="127" height="32"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
-                                <state key="normal" title="end shift">
-                                    <color key="titleColor" red="0.35686274509803922" green="0.64313725490196083" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="endShiftPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="ebw-7O-eIg"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PepBuckLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="VGh-bv-87N">
                                 <rect key="frame" x="78" y="32" width="218" height="63"/>
                             </imageView>
-                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-e4-GGo" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="165" width="375" height="288"/>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xaV-nU-MSr" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="16" y="90" width="343" height="363"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L95-Xf-N3k" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="14" width="276" height="50"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="36"/>
+                                        <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih6-cf-uFS">
+                                        <rect key="frame" x="56" y="251" width="109" height="51"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Back" backgroundImage="PinkEmptyButton.png">
+                                            <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="PinkFullButton.png"/>
+                                        <state key="highlighted" image="PinkFullButton.png"/>
+                                        <connections>
+                                            <action selector="backPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="H2E-c9-P0m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfN-0T-W9W">
+                                        <rect key="frame" x="177" y="251" width="109" height="51"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Save" backgroundImage="PinkEmptyButton.png">
+                                            <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="PinkFullButton.png"/>
+                                        <state key="highlighted" image="PinkFullButton.png"/>
+                                        <connections>
+                                            <action selector="savePressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="CMa-VA-3kg"/>
+                                        </connections>
+                                    </button>
+                                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="WhiteButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="FZV-nl-YSg">
+                                        <rect key="frame" x="114" y="187" width="109" height="51"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hourly Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8U-8T-RE3" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="90" width="276" height="48"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap a button below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eY-1b-a3w" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="61" width="276" height="48"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
+                                        <color key="textColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Pay" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05l-QV-Lmv" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="62" y="114" width="37" height="50"/>
+                                        <state key="normal" backgroundImage="SettingsPayEmpty.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="settingsPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="1Qu-yP-Ds1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Adjust" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeB-J6-HWo" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="224" y="111" width="41" height="62"/>
+                                        <state key="normal" backgroundImage="SettingsAdjustEmpty.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="settingsPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="8Nm-k0-dke"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Circle" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oat-oi-PRE" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="141" y="116" width="49" height="48"/>
+                                        <state key="normal" backgroundImage="SettingsCircleEmpty.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="settingsPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="F1Y-r7-tGj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1.75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-e4-GGo" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="190" width="375" height="288"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7q-ME-3Bk" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="-17" width="343" height="323"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVw-CO-aZh">
+                                                <rect key="frame" x="8" y="0.0" width="321" height="266"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Period start date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56S-sC-Q0e">
+                                                <rect key="frame" x="23" y="130" width="296" height="33"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgj-Hb-UhX" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                                <rect key="frame" x="33" y="58" width="276" height="48"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="34"/>
+                                                <color key="textColor" red="0.21568627450980393" green="0.22352941176470587" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVv-Vy-rWG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                                <rect key="frame" x="33" y="95" width="276" height="33"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                                <color key="textColor" red="0.21568627450980393" green="0.22352941176470587" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-D4-g74">
+                                                <rect key="frame" x="44" y="193" width="109" height="51"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                <state key="normal" title="Back" backgroundImage="PinkEmptyButton.png">
+                                                    <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="PinkFullButton.png"/>
+                                                <state key="highlighted" image="PinkFullButton.png"/>
+                                                <connections>
+                                                    <action selector="earningsBackPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="Ues-Ul-rf3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gax-Yw-EI9">
+                                                <rect key="frame" x="200" y="193" width="109" height="51"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                <state key="normal" title="Reset" backgroundImage="PinkEmptyButton.png">
+                                                    <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected" image="PinkFullButton.png"/>
+                                                <state key="highlighted" image="PinkFullButton.png"/>
+                                                <connections>
+                                                    <action selector="earningsResetPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="flt-1z-Sua"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latest date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o82-3o-ydh">
+                                                <rect key="frame" x="23" y="151" width="296" height="33"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Earnings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psP-y7-Tdp" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="10" width="276" height="48"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="36"/>
+                                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                                <real key="value" value="1.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="1.75"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2na-9r-B2R" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="18" y="-11" width="349" height="299"/>
+                                        <rect key="frame" x="18" y="-11" width="349" height="293"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Card.png" translatesAutoresizingMaskIntoConstraints="NO" id="YUZ-2n-iMP" customClass="SpringImageView" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="6" y="13" width="320" height="286"/>
@@ -405,9 +521,6 @@
                                                         <real key="value" value="1.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="DGR-Rn-duA" appends="YES" id="jqw-As-ZQI"/>
-                                                </connections>
                                             </imageView>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOv-bX-lYQ" customClass="CircularProgressView" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="73" y="-33" width="175" height="302"/>
@@ -511,178 +624,17 @@
                                     <outletCollection property="gestureRecognizers" destination="DGR-Rn-duA" appends="YES" id="1kE-X2-uuF"/>
                                 </connections>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7q-ME-3Bk" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="16" y="165" width="343" height="323"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVw-CO-aZh">
-                                        <rect key="frame" x="8" y="0.0" width="321" height="266"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Period start date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56S-sC-Q0e">
-                                        <rect key="frame" x="23" y="130" width="296" height="33"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgj-Hb-UhX" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="33" y="58" width="276" height="48"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="34"/>
-                                        <color key="textColor" red="0.21568627450980393" green="0.22352941176470587" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVv-Vy-rWG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="33" y="95" width="276" height="33"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
-                                        <color key="textColor" red="0.21568627450980393" green="0.22352941176470587" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-D4-g74">
-                                        <rect key="frame" x="44" y="193" width="109" height="51"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                        <state key="normal" title="Back" backgroundImage="PinkEmptyButton.png">
-                                            <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="PinkFullButton.png"/>
-                                        <state key="highlighted" image="PinkFullButton.png"/>
-                                        <connections>
-                                            <action selector="earningsBackPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="Ues-Ul-rf3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gax-Yw-EI9">
-                                        <rect key="frame" x="200" y="193" width="109" height="51"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                        <state key="normal" title="Reset" backgroundImage="PinkEmptyButton.png">
-                                            <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="PinkFullButton.png"/>
-                                        <state key="highlighted" image="PinkFullButton.png"/>
-                                        <connections>
-                                            <action selector="resetPressed:" destination="evr-at-wYR" eventType="touchUpInside" id="lFL-kE-pt9"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latest date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o82-3o-ydh">
-                                        <rect key="frame" x="23" y="151" width="296" height="33"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Earnings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psP-y7-Tdp" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="10" width="276" height="48"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="36"/>
-                                        <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <size key="shadowOffset" width="0.0" height="0.0"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="1.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.75"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xaV-nU-MSr" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="16" y="90" width="343" height="363"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L95-Xf-N3k" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="33" y="14" width="276" height="50"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="36"/>
-                                        <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <size key="shadowOffset" width="0.0" height="0.0"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih6-cf-uFS">
-                                        <rect key="frame" x="56" y="251" width="109" height="51"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                        <state key="normal" title="Back" backgroundImage="PinkEmptyButton.png">
-                                            <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="PinkFullButton.png"/>
-                                        <state key="highlighted" image="PinkFullButton.png"/>
-                                        <connections>
-                                            <action selector="backPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="H2E-c9-P0m"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfN-0T-W9W">
-                                        <rect key="frame" x="177" y="251" width="109" height="51"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                        <state key="normal" title="Save" backgroundImage="PinkEmptyButton.png">
-                                            <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="PinkFullButton.png"/>
-                                        <state key="highlighted" image="PinkFullButton.png"/>
-                                        <connections>
-                                            <action selector="savePressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="CMa-VA-3kg"/>
-                                        </connections>
-                                    </button>
-                                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="WhiteButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="FZV-nl-YSg">
-                                        <rect key="frame" x="114" y="187" width="109" height="51"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hourly Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8U-8T-RE3" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="33" y="90" width="276" height="48"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap a button below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eY-1b-a3w" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="33" y="61" width="276" height="48"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
-                                        <color key="textColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <size key="shadowOffset" width="0.0" height="0.0"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Pay" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05l-QV-Lmv" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="62" y="114" width="37" height="50"/>
-                                        <state key="normal" backgroundImage="SettingsPayEmpty.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="settingsPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="1Qu-yP-Ds1"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Adjust" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeB-J6-HWo" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="224" y="111" width="41" height="62"/>
-                                        <state key="normal" backgroundImage="SettingsAdjustEmpty.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="settingsPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="8Nm-k0-dke"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Circle" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oat-oi-PRE" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="141" y="116" width="49" height="48"/>
-                                        <state key="normal" backgroundImage="SettingsCircleEmpty.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="settingsPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="F1Y-r7-tGj"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="1.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.75"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-LN-dcs">
+                                <rect key="frame" x="124" y="488" width="127" height="32"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
+                                <state key="normal" title="end shift">
+                                    <color key="titleColor" red="0.35686274509803922" green="0.64313725490196083" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="endShiftPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="ebw-7O-eIg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019607843142" green="0.93333333333333335" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -697,9 +649,11 @@
                         <outlet property="earningsView" destination="Y7q-ME-3Bk" id="u4R-TI-kuA"/>
                         <outlet property="endShiftButton" destination="LAu-LN-dcs" id="SpZ-Jg-JDc"/>
                         <outlet property="invisiblePlay" destination="vo2-Hk-0yZ" id="j1t-O5-e0L"/>
+                        <outlet property="latestDateLabel" destination="o82-3o-ydh" id="C9R-Vq-Kbg"/>
                         <outlet property="mainView" destination="2na-9r-B2R" id="S7q-mA-29Y"/>
                         <outlet property="panRecognizer" destination="DGR-Rn-duA" id="JLJ-AU-Pta"/>
                         <outlet property="payButton" destination="05l-QV-Lmv" id="VFt-fx-Gsf"/>
+                        <outlet property="periodStartLabel" destination="56S-sC-Q0e" id="a9x-SM-Jic"/>
                         <outlet property="playButton" destination="Kra-nl-VK4" id="LVa-FE-9fw"/>
                         <outlet property="saveButton" destination="xfN-0T-W9W" id="khG-gG-oV2"/>
                         <outlet property="settingsButton" destination="snl-wv-DPy" id="jKs-xX-Eve"/>
@@ -710,6 +664,9 @@
                         <outlet property="springView" destination="xfc-e4-GGo" id="WJ7-jH-VLo"/>
                         <outlet property="timerCircle" destination="mOv-bX-lYQ" id="msj-Fr-Dod"/>
                         <outlet property="timerLabel" destination="xoF-SW-V7v" id="t6E-A5-Z4T"/>
+                        <outlet property="totalHoursLabel" destination="SVv-Vy-rWG" id="YA0-IT-2vl"/>
+                        <outlet property="totalPayLabel" destination="qgj-Hb-UhX" id="k7e-cv-q8W"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="toSetup" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" animates="NO" id="T0S-cs-OPM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JoH-fL-FT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -719,90 +676,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="44.5" y="1170.5"/>
-        </scene>
-        <!--Earnings Controller-->
-        <scene sceneID="Sqb-5V-OwS">
-            <objects>
-                <viewController id="evr-at-wYR" customClass="EarningsController" customModule="PepBuck" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L17-Xj-sfq"/>
-                        <viewControllerLayoutGuide type="bottom" id="Sa5-zm-lf2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fXL-Vk-BbA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <visualEffectView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDV-oE-iT3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7fm-Ll-Yx0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="EDV-oE-iT3" firstAttribute="bottom" secondItem="Sa5-zm-lf2" secondAttribute="top" id="aJI-sV-bLG"/>
-                            <constraint firstItem="EDV-oE-iT3" firstAttribute="top" secondItem="fXL-Vk-BbA" secondAttribute="top" id="aRU-Eg-cV5"/>
-                            <constraint firstItem="EDV-oE-iT3" firstAttribute="leading" secondItem="fXL-Vk-BbA" secondAttribute="leading" id="kHp-16-g9H"/>
-                            <constraint firstAttribute="trailing" secondItem="EDV-oE-iT3" secondAttribute="trailing" id="zq1-RJ-B48"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="latestDateLabel" destination="o82-3o-ydh" id="zhv-Fc-mDc"/>
-                        <outlet property="periodStartLabel" destination="56S-sC-Q0e" id="lC5-ON-m7F"/>
-                        <outlet property="totalHoursLabel" destination="SVv-Vy-rWG" id="zJ8-Ql-gFP"/>
-                        <outlet property="totalPayLabel" destination="qgj-Hb-UhX" id="f4r-G4-b9q"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jaa-tj-ovH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="812.5" y="1342.5"/>
-        </scene>
-        <!--Settings Controller-->
-        <scene sceneID="MBo-Wz-9fu">
-            <objects>
-                <viewController id="EmH-Fx-4hA" customClass="SettingsController" customModule="PepBuck" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5S6-K2-wWZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="EaI-nX-UFE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OKG-jb-SWE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <visualEffectView opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2h3-Sc-CpQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dge-l8-tnj">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="2h3-Sc-CpQ" firstAttribute="bottom" secondItem="EaI-nX-UFE" secondAttribute="top" id="Wse-5V-NG0"/>
-                            <constraint firstItem="2h3-Sc-CpQ" firstAttribute="leading" secondItem="OKG-jb-SWE" secondAttribute="leading" id="XwC-Bc-dYD"/>
-                            <constraint firstAttribute="trailing" secondItem="2h3-Sc-CpQ" secondAttribute="trailing" id="uDj-nK-tje"/>
-                            <constraint firstItem="2h3-Sc-CpQ" firstAttribute="top" secondItem="OKG-jb-SWE" secondAttribute="top" id="uys-bz-U4H"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="settingsLabel" destination="e8U-8T-RE3" id="ogL-Lt-SKQ"/>
-                        <segue destination="I5w-XD-ya3" kind="presentation" identifier="toMain" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="YCz-As-75S"/>
-                        <segue destination="Utb-aS-VrW" kind="presentation" identifier="toReturn" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="VsM-Pp-4xq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yfn-UI-Jr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="15.5" y="2146.5"/>
+            <point key="canvasLocation" x="-88.5" y="1255.5"/>
         </scene>
     </scenes>
     <resources>
@@ -817,13 +691,10 @@
         <image name="SettingsAdjustEmpty.png" width="111" height="192"/>
         <image name="SettingsCircleEmpty.png" width="156" height="156"/>
         <image name="SettingsPayEmpty.png" width="99" height="156"/>
-        <image name="WelcomeButtonEmpty.png" width="519" height="162"/>
-        <image name="WelcomeButtonFull.png" width="519" height="162"/>
         <image name="WelcomeCalc.png" width="87" height="114"/>
         <image name="WhiteButton.png" width="441" height="195"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VsM-Pp-4xq"/>
-        <segue reference="YCz-As-75S"/>
+        <segue reference="3ko-Tb-LqV"/>
     </inferredMetricsTieBreakers>
 </document>

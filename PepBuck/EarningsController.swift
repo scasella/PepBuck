@@ -8,11 +8,7 @@
 
 import UIKit
 
-var periodStart = ""
-var latestDate = ""
 
-var totalPay = 0.00
-var totalHours = 0.00
 
 class EarningsController: UIViewController {
     

@@ -54,10 +54,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
         }*/
+        if NSUserDefaults.standardUserDefaults().objectForKey("name") != nil {
+        name = NSUserDefaults.standardUserDefaults().objectForKey("name") as! String
+        }
         
-        NSUserDefaults.standardUserDefaults().objectForKey("circleCompletion")
+        if NSUserDefaults.standardUserDefaults().objectForKey("circleCompletion") != nil {
+        circleCompletion = NSUserDefaults.standardUserDefaults().objectForKey("circleCompletion") as! Double
+        }
+        
+        if NSUserDefaults.standardUserDefaults().objectForKey("payRate") != nil {
         payRate = NSUserDefaults.standardUserDefaults().objectForKey("payRate") as! Double
-       
+        }
+        
         if toggleSaveTime == true {
             NSUserDefaults.standardUserDefaults().objectForKey("seconds")
             NSUserDefaults.standardUserDefaults().objectForKey("savedTime")

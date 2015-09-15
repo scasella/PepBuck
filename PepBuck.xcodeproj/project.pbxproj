@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		880C97291B991DD40057521F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C97281B991DD40057521F /* SettingsController.swift */; };
 		880CD2A11B9DE77B00578C54 /* WhiteCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD29F1B9DE77B00578C54 /* WhiteCard.png */; };
 		880CD2AA1B9E11B500578C54 /* Card.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD2A61B9E11B500578C54 /* Card.png */; };
 		880CD2AB1B9E11B500578C54 /* PeachButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD2A71B9E11B500578C54 /* PeachButton.png */; };
@@ -57,6 +56,7 @@
 		8885AA501B8D3E4B00184164 /* SettingsPayEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8885AA471B8D3E4B00184164 /* SettingsPayEmpty.png */; };
 		8885AA521B8D3E4B00184164 /* SettingsAdjustEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8885AA491B8D3E4B00184164 /* SettingsAdjustEmpty.png */; };
 		8885AA571B8D3E4B00184164 /* SettingsCircleEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8885AA4E1B8D3E4B00184164 /* SettingsCircleEmpty.png */; };
+		889044DB1BA79C3C0092B846 /* SalaryCalcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889044DA1BA79C3C0092B846 /* SalaryCalcController.swift */; };
 		8899941F1B8A976300C876AA /* CoinImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8899941E1B8A976300C876AA /* CoinImage.png */; };
 		88AA77E61BA24222005148FC /* SettingsAdjustFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA77E31BA24222005148FC /* SettingsAdjustFull.png */; };
 		88AA77E71BA24222005148FC /* SettingsCircleFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA77E41BA24222005148FC /* SettingsCircleFull.png */; };
@@ -65,9 +65,7 @@
 		88AA77ED1BA24239005148FC /* PinkEmptyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA77EA1BA24239005148FC /* PinkEmptyButton.png */; };
 		88AA77EE1BA24239005148FC /* PinkFullButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA77EB1BA24239005148FC /* PinkFullButton.png */; };
 		88AA77F01BA2476F005148FC /* BlueFullButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA77EF1BA2476F005148FC /* BlueFullButton.png */; };
-		88BD82EF1B88F4530050CB73 /* EarningsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD82EE1B88F4530050CB73 /* EarningsController.swift */; };
 		88D6943D1B990E2200473067 /* pauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D6943C1B990E2200473067 /* pauseButton.png */; };
-		88D7581B1B8681FD0077F698 /* ReturnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7581A1B8681FD0077F698 /* ReturnController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +79,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		880C97281B991DD40057521F /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		880CD29F1B9DE77B00578C54 /* WhiteCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WhiteCard.png; path = PepBuck/WhiteCard.png; sourceTree = "<group>"; };
 		880CD2A61B9E11B500578C54 /* Card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Card.png; sourceTree = "<group>"; };
 		880CD2A71B9E11B500578C54 /* PeachButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PeachButton.png; sourceTree = "<group>"; };
@@ -135,6 +132,7 @@
 		8885AA471B8D3E4B00184164 /* SettingsPayEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsPayEmpty.png; sourceTree = "<group>"; };
 		8885AA491B8D3E4B00184164 /* SettingsAdjustEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsAdjustEmpty.png; sourceTree = "<group>"; };
 		8885AA4E1B8D3E4B00184164 /* SettingsCircleEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsCircleEmpty.png; sourceTree = "<group>"; };
+		889044DA1BA79C3C0092B846 /* SalaryCalcController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalaryCalcController.swift; sourceTree = "<group>"; };
 		8899941E1B8A976300C876AA /* CoinImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CoinImage.png; path = PepBuck/CoinImage.png; sourceTree = "<group>"; };
 		88AA77E31BA24222005148FC /* SettingsAdjustFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsAdjustFull.png; sourceTree = "<group>"; };
 		88AA77E41BA24222005148FC /* SettingsCircleFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsCircleFull.png; sourceTree = "<group>"; };
@@ -143,9 +141,7 @@
 		88AA77EA1BA24239005148FC /* PinkEmptyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkEmptyButton.png; sourceTree = "<group>"; };
 		88AA77EB1BA24239005148FC /* PinkFullButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkFullButton.png; sourceTree = "<group>"; };
 		88AA77EF1BA2476F005148FC /* BlueFullButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueFullButton.png; sourceTree = "<group>"; };
-		88BD82EE1B88F4530050CB73 /* EarningsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarningsController.swift; sourceTree = "<group>"; };
 		88D6943C1B990E2200473067 /* pauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauseButton.png; path = PepBuck/pauseButton.png; sourceTree = "<group>"; };
-		88D7581A1B8681FD0077F698 /* ReturnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,11 +258,9 @@
 				887423821B8569D400CA7889 /* CircularProgressView.swift */,
 				8876EB211B8534EC00384F47 /* AppDelegate.swift */,
 				8876EB231B8534EC00384F47 /* SetupController.swift */,
-				88D7581A1B8681FD0077F698 /* ReturnController.swift */,
-				88BD82EE1B88F4530050CB73 /* EarningsController.swift */,
-				880C97281B991DD40057521F /* SettingsController.swift */,
 				8874237E1B8565CD00CA7889 /* MainController.swift */,
 				8876EB251B8534EC00384F47 /* Main.storyboard */,
+				889044DA1BA79C3C0092B846 /* SalaryCalcController.swift */,
 				8876EB281B8534ED00384F47 /* Images.xcassets */,
 				8876EB2A1B8534ED00384F47 /* LaunchScreen.xib */,
 				8876EB1F1B8534EC00384F47 /* Supporting Files */,
@@ -438,7 +432,6 @@
 				887423761B85445D00CA7889 /* SpringLabel.swift in Sources */,
 				887423691B85445D00CA7889 /* DesignableLabel.swift in Sources */,
 				887423701B85445D00CA7889 /* Misc.swift in Sources */,
-				88BD82EF1B88F4530050CB73 /* EarningsController.swift in Sources */,
 				8876EB241B8534EC00384F47 /* SetupController.swift in Sources */,
 				887423751B85445D00CA7889 /* SpringImageView.swift in Sources */,
 				8874236E1B85445D00CA7889 /* ImageLoader.swift in Sources */,
@@ -455,13 +448,12 @@
 				8874236A1B85445D00CA7889 /* DesignableTextField.swift in Sources */,
 				8874236D1B85445D00CA7889 /* DesignableTabBarController.swift in Sources */,
 				887423671B85445D00CA7889 /* DesignableButton.swift in Sources */,
-				880C97291B991DD40057521F /* SettingsController.swift in Sources */,
 				887423611B85445D00CA7889 /* AsyncButton.swift in Sources */,
 				887423741B85445D00CA7889 /* SpringButton.swift in Sources */,
-				88D7581B1B8681FD0077F698 /* ReturnController.swift in Sources */,
 				887423621B85445D00CA7889 /* AsyncImageView.swift in Sources */,
 				887423631B85445D00CA7889 /* AutoTextView.swift in Sources */,
 				8874236B1B85445D00CA7889 /* DesignableTextView.swift in Sources */,
+				889044DB1BA79C3C0092B846 /* SalaryCalcController.swift in Sources */,
 				8874236F1B85445D00CA7889 /* KeyboardLayoutConstraint.swift in Sources */,
 				887423681B85445D00CA7889 /* DesignableImageView.swift in Sources */,
 				8874237C1B85445D00CA7889 /* UnwindSegue.swift in Sources */,
