@@ -140,7 +140,9 @@ class MainController: UIViewController {
             latestDate = "\(date)"
             if periodStart == "" {
                 periodStart = "\(date)"
+                NSUserDefaults.standardUserDefaults().setObject(periodStart, forKey: "periodStart")
             }
+            NSUserDefaults.standardUserDefaults().setObject(latestDate, forKey: "latestDate")
         
         }
         
@@ -175,6 +177,16 @@ class MainController: UIViewController {
         /* springView.animation = "flipX"
        springView.duration = 2.5
         springView.animate() */
+        
+        if NSUserDefaults.standardUserDefaults().objectForKey("totalHours") != nil {
+            totalHours = NSUserDefaults.standardUserDefaults().objectForKey("totalHours") as! Double }
+        if NSUserDefaults.standardUserDefaults().objectForKey("totalPay") != nil {
+            totalPay = NSUserDefaults.standardUserDefaults().objectForKey("totalPay") as! Double }
+        if NSUserDefaults.standardUserDefaults().objectForKey("totalPay") != nil {
+            periodStart = NSUserDefaults.standardUserDefaults().objectForKey("periodStart") as! String }
+        if NSUserDefaults.standardUserDefaults().objectForKey("totalPay") != nil {
+            latestDate = NSUserDefaults.standardUserDefaults().objectForKey("latestDate") as! String }
+        
         settingsButton.enabled = false
         earningsButton.enabled = false
         totalPayLabel.text = "$\(round(totalPay * 100)/100)"
@@ -217,7 +229,7 @@ class MainController: UIViewController {
         }
         
         animator = UIDynamicAnimator(referenceView: view)
-
+        
         
     }
     
@@ -294,6 +306,11 @@ class MainController: UIViewController {
             totalPay = 0.00
             periodStart = ""
             latestDate = ""
+            
+             NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
+             NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
+            NSUserDefaults.standardUserDefaults().setObject(periodStart, forKey: "periodStart")
+             NSUserDefaults.standardUserDefaults().setObject(latestDate, forKey: "latestDate")
             
             self.resetLabels()
             
