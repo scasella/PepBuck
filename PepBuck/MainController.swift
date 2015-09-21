@@ -46,6 +46,7 @@ class MainController: UIViewController {
 
     
     
+    @IBOutlet var pepBuckLabel: UILabel!
     @IBOutlet var saveButton: UIButton!
     @IBOutlet var backButton: UIButton!
     @IBOutlet var settingsLabel: SpringLabel!
@@ -210,6 +211,7 @@ class MainController: UIViewController {
     
     
     @IBAction func settingsButtonPressed(sender: AnyObject) {
+        pepBuckLabel.hidden = true 
         settingsButton.enabled = false
         earningsButton.enabled = false
         springView.animation = "fall"
@@ -255,14 +257,15 @@ class MainController: UIViewController {
     @IBOutlet var panRecognizer: UIPanGestureRecognizer!
     
     
-    
     @IBAction func handleGesture(sender: AnyObject) {
         let myView = springView
         let location = sender.locationInView(view)
         let boxLocation = sender.locationInView(springView)
         
         if sender.state == UIGestureRecognizerState.Began {
-            animator.removeBehavior(snapBehavior)
+            if snapBehavior != nil {
+                animator.removeBehavior(snapBehavior)
+            }
             
             let centerOffset = UIOffsetMake(boxLocation.x - CGRectGetMidX(myView.bounds), boxLocation.y - CGRectGetMidY(myView.bounds));
             attachmentBehavior = UIAttachmentBehavior(item: myView, offsetFromCenter: centerOffset, attachedToAnchor: location)
@@ -279,11 +282,11 @@ class MainController: UIViewController {
             snapBehavior = UISnapBehavior(item: myView, snapToPoint: view.center)
             animator.addBehavior(snapBehavior)
             
-            let translation = sender.translationInView(view)
-          /*  if translation.y > 100 {
+           /* let translation = sender.translationInView(view)
+            if translation.y > 100 {
                 animator.removeAllBehaviors()
                 
-                var gravity = UIGravityBehavior(items: [springView])
+                let gravity = UIGravityBehavior(items: [dialogView])
                 gravity.gravityDirection = CGVectorMake(0, 10)
                 animator.addBehavior(gravity)
             } */
@@ -301,7 +304,7 @@ class MainController: UIViewController {
     @IBAction func earningsResetPressed(sender: AnyObject) {
         let refreshAlert = UIAlertController(title: "Reset Earnings", message: "Are you sure?", preferredStyle: UIAlertControllerStyle.Alert)
         
-        refreshAlert.addAction(UIAlertAction(title: "Yes!", style: .Default, handler: { (action: UIAlertAction!) in
+        refreshAlert.addAction(UIAlertAction(title: "Yes!", style: .Default, handler: { (action: UIAlertAction) in
             totalHours = 0.00
             totalPay = 0.00
             periodStart = ""
@@ -316,8 +319,8 @@ class MainController: UIViewController {
             
         }))
         
-        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
-            println("Handle Cancel Logic here")
+        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction) in
+            print("Handle Cancel Logic here")
         }))
         
     }
@@ -359,19 +362,19 @@ class MainController: UIViewController {
         switch settingsSelect {
             
         case .Pay:
-            payRate = (settingsField.text as NSString).doubleValue
+            payRate = (settingsField.text as! NSString).doubleValue
             NSUserDefaults.standardUserDefaults().setObject(payRate, forKey: "payRate")
             showSettingsAlert("Hourly pay is now $\(payRate)")
             
         case .Circle:
-            circleCompletion = (settingsField.text as NSString).doubleValue
+            circleCompletion = (settingsField.text as! NSString).doubleValue
             NSUserDefaults.standardUserDefaults().setObject(circleCompletion, forKey: "circleCompletion")
              showSettingsAlert("Circle completes every $\(circleCompletion) earned")
             
         case .Adjust:
             
-            let newHours = (settingsField.text as NSString).doubleValue - totalHours
-            totalHours = (settingsField.text as NSString).doubleValue
+            let newHours = (settingsField.text as! NSString).doubleValue - totalHours
+            totalHours = (settingsField.text as! NSString).doubleValue
             totalPay = newHours * payRate + totalPay
             
             NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
@@ -380,7 +383,7 @@ class MainController: UIViewController {
              showSettingsAlert("Hours worked adjusted sucessfully")
             
         default :
-            println("test")
+            print("test")
             
         }
     }
@@ -433,7 +436,16 @@ class MainController: UIViewController {
     
 
     @IBAction func backPressed(sender: AnyObject) {
-        performSegueWithIdentifier("refreshView", sender: self)
+        springView.animation = "slideUp"
+        springView.duration = 1.5
+        springView.force = 4.0
+        springView.animate()
+        settingsButton.enabled = true
+        earningsButton.enabled = true
+        pepBuckLabel.hidden = false
+        settingsButton.enabled = true
+        earningsButton.enabled = true
+        settingsView.hidden = true
     }
     
     

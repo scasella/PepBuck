@@ -85,7 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let elapsedTime = NSDate().timeIntervalSinceDate(savedTime)
             seconds = seconds + Int(round(Double(elapsedTime)))
-            println(seconds)
+            print(seconds)
         }
 
         

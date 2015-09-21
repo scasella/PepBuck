@@ -61,7 +61,7 @@ class CircularProgressView: UIView
                 if newValue == iProgressTint
                 {
                     print("[CircularProgressView] WARNING: setting trackTint to the same color as progressTint " +
-                          "will make the circular progress view appear as if it's not progressing.")
+                          "will make the circular progress view appear as if it's not progressing.", terminator: "")
                 }
             }
         }
@@ -84,7 +84,7 @@ class CircularProgressView: UIView
                 if newValue == iTrackTint
                 {
                     print("[CircularProgressView] WARNING: setting progressTint to the same color as trackTint " +
-                          "will make the circular progress view appear as if it's not progressing.")
+                          "will make the circular progress view appear as if it's not progressing.", terminator: "")
                 }
             }
         }
@@ -333,8 +333,8 @@ class CircularProgressView: UIView
                     label.baselineAdjustment = .AlignCenters
                     label.minimumScaleFactor = 0.5
 
-                    label.setTranslatesAutoresizingMaskIntoConstraints(false)
-                    label.removeConstraints(label.constraints())
+                    label.translatesAutoresizingMaskIntoConstraints = false
+                    label.removeConstraints(label.constraints)
 
                     var constraint: NSLayoutConstraint
 
@@ -388,13 +388,13 @@ class CircularProgressView: UIView
     }
 
 
-    private func fillTrack(#center: CGPoint, radius: CGFloat, sangle: CGFloat, eangle: CGFloat,
+    private func fillTrack(center center: CGPoint, radius: CGFloat, sangle: CGFloat, eangle: CGFloat,
         color: UIColor, thickness: CGFloat, clockwise: Bool)
     {
         color.set()
         let p = UIBezierPath()
         p.lineWidth = thickness
-        p.lineCapStyle = kCGLineCapRound
+        p.lineCapStyle = CGLineCap.Round
         p.addArcWithCenter(center, radius: radius, startAngle: sangle, endAngle: eangle, clockwise: clockwise)
         p.stroke()
     }

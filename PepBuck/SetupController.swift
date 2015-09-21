@@ -25,7 +25,7 @@ class SetupController: UIViewController {
         if payToggle == false {
         if entryField.text != "" {
         
-        name = entryField.text
+        name = entryField.text!
         name.replaceRange(name.startIndex...name.startIndex, with: String(name[name.startIndex]).capitalizedString)
         NSUserDefaults.standardUserDefaults().setObject(name, forKey: "name")
         welcomeLabel.hidden = true
@@ -51,7 +51,7 @@ class SetupController: UIViewController {
          }
         } else {
             if entryField.text != "" {
-            payRate = (entryField.text as NSString).doubleValue
+            payRate = (entryField.text as! NSString).doubleValue
             NSUserDefaults.standardUserDefaults().setObject(payRate, forKey: "payRate")
             performSegueWithIdentifier("toMain", sender: self)
             } }

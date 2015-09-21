@@ -20,7 +20,7 @@ class SalaryCalcController: UIViewController {
     
     @IBAction func submitPressed(sender: AnyObject) {
         if firstLabelShowing == true {
-            salary = (textField.text as NSString).doubleValue
+            salary = (textField.text as! NSString).doubleValue
             textField.text = ""
             firstLabelShowing = false
             whatIsYourSalaryLabel.x = 1000
@@ -29,7 +29,7 @@ class SalaryCalcController: UIViewController {
             howManyHoursLabel.hidden = false 
             howManyHoursLabel.animate()
         } else {
-            hours = (textField.text as NSString).doubleValue
+            hours = (textField.text as! NSString).doubleValue
             firstLabelShowing = true 
             payRate = salary / 52 / hours
             NSUserDefaults.standardUserDefaults().setObject(payRate, forKey: "payRate")
