@@ -107,7 +107,7 @@ class MainController: UIViewController {
     
     
     @IBAction func endShiftPressed(sender: AnyObject) {
-        invisiblePlay.hidden = true
+
         timerLabel.hidden = true
         playButton.hidden = true
         coinLabel.hidden = false
@@ -121,14 +121,7 @@ class MainController: UIViewController {
         
         coinLabel.animate()
         coinImage.animateNext {
-            self.coinLabel.hidden = true
-            self.coinImage.hidden = true
-            seconds = 0
-            self.timerLabel.hidden = true
-            self.playButton.hidden = false
-            self.invisiblePlay.hidden = false
-            self.performSegueWithIdentifier("refreshView", sender: self)
-            
+           self.performSegueWithIdentifier("refreshViewSegue", sender: self)
         }
         
     }
@@ -144,13 +137,9 @@ class MainController: UIViewController {
                 NSUserDefaults.standardUserDefaults().setObject(periodStart, forKey: "periodStart")
             }
             NSUserDefaults.standardUserDefaults().setObject(latestDate, forKey: "latestDate")
-        
         }
         
-        
-        
         timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
-        
     }
     
     
@@ -183,9 +172,9 @@ class MainController: UIViewController {
             totalHours = NSUserDefaults.standardUserDefaults().objectForKey("totalHours") as! Double }
         if NSUserDefaults.standardUserDefaults().objectForKey("totalPay") != nil {
             totalPay = NSUserDefaults.standardUserDefaults().objectForKey("totalPay") as! Double }
-        if NSUserDefaults.standardUserDefaults().objectForKey("totalPay") != nil {
+        if NSUserDefaults.standardUserDefaults().objectForKey("periodStart") != nil {
             periodStart = NSUserDefaults.standardUserDefaults().objectForKey("periodStart") as! String }
-        if NSUserDefaults.standardUserDefaults().objectForKey("totalPay") != nil {
+        if NSUserDefaults.standardUserDefaults().objectForKey("latestDate") != nil {
             latestDate = NSUserDefaults.standardUserDefaults().objectForKey("latestDate") as! String }
         
         settingsButton.enabled = false
@@ -214,8 +203,7 @@ class MainController: UIViewController {
         pepBuckLabel.hidden = true 
         settingsButton.enabled = false
         earningsButton.enabled = false
-        springView.animation = "fall"
-        springView.animate()
+        springView.hidden = true
         settingsView.hidden = false
         
     }
@@ -436,6 +424,8 @@ class MainController: UIViewController {
     
 
     @IBAction func backPressed(sender: AnyObject) {
+        settingsField.resignFirstResponder()
+        springView.hidden = false
         springView.animation = "slideUp"
         springView.duration = 1.5
         springView.force = 4.0

@@ -445,8 +445,8 @@
                                             </imageView>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-Sl-GOG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="66" y="90" width="189" height="55"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="32"/>
-                                                <color key="textColor" red="0.35686274509803922" green="0.64313725490196083" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                                <color key="textColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomOut"/>
@@ -482,18 +482,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vo2-Hk-0yZ" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                                <rect key="frame" x="144" y="98" width="32" height="45"/>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="50"/>
-                                                <inset key="contentEdgeInsets" minX="0.0" minY="-9" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" backgroundImage="PeachPause.png">
-                                                    <color key="titleColor" red="0.97254901959999995" green="0.19215686269999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="playPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="LJu-Ab-lgG"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
@@ -531,14 +519,14 @@
                                 <rect key="frame" x="16" y="72" width="343" height="363"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L95-Xf-N3k" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="33" y="14" width="276" height="50"/>
+                                        <rect key="frame" x="33" y="-1" width="276" height="50"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
                                         <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih6-cf-uFS">
-                                        <rect key="frame" x="56" y="251" width="109" height="51"/>
+                                        <rect key="frame" x="56" y="264" width="109" height="51"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <state key="normal" title="Back" backgroundImage="PinkEmptyButton.png">
                                             <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -551,7 +539,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfN-0T-W9W">
-                                        <rect key="frame" x="177" y="251" width="109" height="51"/>
+                                        <rect key="frame" x="177" y="264" width="109" height="51"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <state key="normal" title="Save" backgroundImage="PinkEmptyButton.png">
                                             <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -564,7 +552,7 @@
                                         </connections>
                                     </button>
                                     <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="WhiteButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="FZV-nl-YSg">
-                                        <rect key="frame" x="114" y="187" width="109" height="51"/>
+                                        <rect key="frame" x="114" y="189" width="109" height="51"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
@@ -625,10 +613,17 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PepBuck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmd-3d-BFH">
                                 <rect key="frame" x="55" y="40" width="264" height="123"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="70"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="69"/>
                                 <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqR-aS-1CD">
+                                <rect key="frame" x="329" y="490" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="I5w-XD-ya3" kind="presentation" identifier="refreshViewSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="oih-BX-JmF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019607843142" green="0.93333333333333335" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -642,7 +637,6 @@
                         <outlet property="earningsButton" destination="T3V-ZU-FZe" id="RoE-AG-d8n"/>
                         <outlet property="earningsView" destination="Y7q-ME-3Bk" id="u4R-TI-kuA"/>
                         <outlet property="endShiftButton" destination="LAu-LN-dcs" id="SpZ-Jg-JDc"/>
-                        <outlet property="invisiblePlay" destination="vo2-Hk-0yZ" id="j1t-O5-e0L"/>
                         <outlet property="latestDateLabel" destination="o82-3o-ydh" id="C9R-Vq-Kbg"/>
                         <outlet property="mainView" destination="2na-9r-B2R" id="S7q-mA-29Y"/>
                         <outlet property="panRecognizer" destination="DGR-Rn-duA" id="JLJ-AU-Pta"/>
@@ -671,7 +665,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-115.5" y="1441.5"/>
+            <point key="canvasLocation" x="-195.5" y="1359.5"/>
         </scene>
     </scenes>
     <resources>
@@ -679,7 +673,6 @@
         <image name="Card.png" width="933" height="840"/>
         <image name="CardBG.png" width="933" height="840"/>
         <image name="CoinImage.png" width="573" height="573"/>
-        <image name="PeachPause.png" width="243" height="315"/>
         <image name="PinkEmptyButton.png" width="351" height="156"/>
         <image name="PinkFullButton.png" width="336" height="156"/>
         <image name="SettingsAdjustEmpty.png" width="111" height="192"/>
