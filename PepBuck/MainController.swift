@@ -8,32 +8,17 @@
 
 import UIKit
 
-var payRate = 0.00
-var name = ""
-var circleCompletion = 1.00
-var startNowToggle = false
-var toggleSaveTime = false
-var seconds = 0
-var periodStart = ""
-var latestDate = ""
-var totalPay = 0.00
-var totalHours = 0.00
-var savedTime = NSDate()
-
-var date = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .ShortStyle)
+var totalPauseTime = 0.0
 
 class MainController: UIViewController {
     
+    var newSession = true
     var coinLabelPay = 0.00
     var timer = NSTimer()
     var pauseToggle = false
-    var newSession = true
+    var pauseTimeStart = NSDate()
+    var pauseTimeEnd = NSDate()
     
-    enum timerStatus {
-        case toStart
-        case toPause
-        case toResume
-    }
     
     enum settingEnum {
         case None
@@ -70,10 +55,10 @@ class MainController: UIViewController {
     @IBOutlet var totalHoursLabel: UILabel!
     @IBOutlet var periodStartLabel: UILabel!
     @IBOutlet var latestDateLabel: UILabel!
-
-    
     @IBOutlet var settingsButton: UIButton!
     @IBOutlet var earningsButton: UIButton!
+    
+    
     
     @IBAction func playPressed(sender: SpringButton) {
         if pauseToggle == false {
@@ -84,7 +69,15 @@ class MainController: UIViewController {
         earningsButton.enabled = false
         endShiftButton.hidden = true
         timerLabel.hidden = false
-        setupGame()
+        
+        if newSession == true {
+            setupGame(true)
+        } else {
+            setupGame(false)
+            pauseTimeEnd = NSDate()
+            totalPauseTime = totalPauseTime + pauseTimeEnd.timeIntervalSinceDate(pauseTimeStart)
+        }
+            
         subtractTime()
         toggleSaveTime = true
         newSession = false
@@ -92,10 +85,10 @@ class MainController: UIViewController {
             
         } else {
         
+        pauseTimeStart = NSDate()
         timer.invalidate()
         toggleSaveTime = false
         playButton.setTitle("Start", forState: UIControlState.Normal)
-        //invisiblePlay.hidden = true
         endShiftButton.hidden = false
         settingsButton.enabled = true
         earningsButton.enabled = true
@@ -107,15 +100,15 @@ class MainController: UIViewController {
     
     
     @IBAction func endShiftPressed(sender: AnyObject) {
-
+        newSession = true
         timerLabel.hidden = true
         playButton.hidden = true
         coinLabel.hidden = false
         coinImage.hidden = false
         endShiftButton.hidden = true
- 
+        
         timerCircle.value = CGFloat(0.0)
-        coinLabel.text = "+$\(coinLabelPay)"
+        coinLabel.text = "+$\(round(NSDate().timeIntervalSinceDate(startTime) / 60 / 60 * 100) / 100)"
         coinImage.duration = 4.0
         coinLabel.duration = 4.0
         
@@ -128,7 +121,7 @@ class MainController: UIViewController {
     
     
     
-    func setupGame() {
+    func setupGame(sessionNew: Bool) {
         
         if newSession == true {
             latestDate = "\(date)"
@@ -136,31 +129,43 @@ class MainController: UIViewController {
                 periodStart = "\(date)"
                 NSUserDefaults.standardUserDefaults().setObject(periodStart, forKey: "periodStart")
             }
-            NSUserDefaults.standardUserDefaults().setObject(latestDate, forKey: "latestDate")
+                NSUserDefaults.standardUserDefaults().setObject(latestDate, forKey: "latestDate")
         }
         
         timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
+        
+        if sessionNew == true {
+        startTime = NSDate()
+        NSUserDefaults.standardUserDefaults().setObject(startTime, forKey: "startTime")
+        newSession = false
+        }
     }
     
     
     
     func subtractTime() {
        
-        let oldSecs = Double(seconds)
-        let oldPay = round(payRate * Double(seconds / 10) / 60 / 60 * 100) / 100
+        let elapsedTime = NSDate().timeIntervalSinceDate(startTime) - totalPauseTime
         
-        seconds++
+        //let oldSecs = Double(seconds)
+        //let oldPay = round(payRate * Double(seconds / 10) / 60 / 60 * 100) / 100
         
-        let newSecs = Double(seconds)
-        let newPay = round(payRate * Double(seconds / 10) / 60 / 60 * 100) / 100
-        coinLabelPay = newPay
+        //seconds++
+        
+       // let newSecs = Double(seconds)
+       // let newPay = round(payRate * Double(seconds / 10) / 60 / 60 * 100) / 100
+        //coinLabelPay = elapsedTime / 60 / 60 * payRate
 
-        totalHours = (totalHours - oldSecs + newSecs) / 60 / 60
-        totalPay = totalPay - oldPay + newPay
+        totalHours = totalHours + (elapsedTime / 60 / 60)
+        totalPay = totalPay + (elapsedTime / 60 / 60 * payRate)
         
-        timerLabel.text = "$\(newPay)"
-        timerCircle.value = CGFloat(payRate * Double(seconds / 10 ) / 60 / 60 % circleCompletion)
-        }
+        timerLabel.text = "$\(round(elapsedTime / 60 / 60 * payRate * 100) / 100)"
+        let currentPay = (elapsedTime / 60 / 60 * payRate / circleCompletion)
+        let timerCalc = currentPay - Double(Int(currentPay))
+        timerCircle.value = CGFloat(timerCalc)
+       
+    }
+    
     
     
     @IBAction func earningsButtonPressed(sender: AnyObject) {
@@ -223,6 +228,8 @@ class MainController: UIViewController {
         
     }
     
+    
+    
     override func viewDidAppear(animated: Bool) {
         
         if name == "" {
@@ -243,6 +250,7 @@ class MainController: UIViewController {
     var snapBehavior : UISnapBehavior!
 
     @IBOutlet var panRecognizer: UIPanGestureRecognizer!
+    
     
     
     @IBAction func handleGesture(sender: AnyObject) {
