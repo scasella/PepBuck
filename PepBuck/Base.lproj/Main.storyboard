@@ -20,22 +20,22 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEw-f5-1gH" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="41" y="20" width="227" height="87"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="41"/>
                                 <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Steve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2S-R9-EY3" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="16" y="63" width="343" height="87"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                 <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PepBuck" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF1-Ot-hLf" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
@@ -43,9 +43,12 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="194" id="OAv-ha-mHL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="41"/>
                                 <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cfy-ej-zLt">
                                 <rect key="frame" x="16" y="213" width="343" height="30"/>
@@ -53,7 +56,7 @@
                                     <constraint firstAttribute="height" constant="30" id="TY1-KN-fOp"/>
                                 </constraints>
                                 <color key="textColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your first name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-wP-VCt" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
@@ -90,7 +93,7 @@
                                     <constraint firstAttribute="height" constant="52" id="Xsm-wp-Ldu"/>
                                     <constraint firstAttribute="width" constant="113" id="gPW-CI-7h0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Submit" backgroundImage="PinkEmptyButton.png">
                                     <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -329,7 +332,7 @@
                                                 <gestureRecognizers/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Period start date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56S-sC-Q0e">
-                                                <rect key="frame" x="23" y="130" width="296" height="33"/>
+                                                <rect key="frame" x="23" y="151" width="296" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -369,11 +372,11 @@
                                                 <state key="selected" image="PinkFullButton.png"/>
                                                 <state key="highlighted" image="PinkFullButton.png"/>
                                                 <connections>
-                                                    <action selector="earningsResetPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="flt-1z-Sua"/>
+                                                    <action selector="earningsResetPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="FAN-FI-5TB"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latest date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o82-3o-ydh">
-                                                <rect key="frame" x="23" y="151" width="296" height="33"/>
+                                                <rect key="frame" x="23" y="130" width="296" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -444,7 +447,7 @@
                                             </imageView>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-Sl-GOG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="66" y="90" width="189" height="55"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
                                                 <color key="textColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>

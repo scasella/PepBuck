@@ -8,6 +8,7 @@
 
 import UIKit
 
+var getPause = false
 var totalPauseTime = 0.0
 
 class MainController: UIViewController {
@@ -18,7 +19,9 @@ class MainController: UIViewController {
     var pauseToggle = false
     var pauseTimeStart = NSDate()
     var pauseTimeEnd = NSDate()
-    
+    var pauseUsed = false
+    var sessionPay = 0.00
+    var sessionHours = 0.00
     
     enum settingEnum {
         case None
@@ -43,7 +46,6 @@ class MainController: UIViewController {
     @IBOutlet var mainView: SpringView!
     @IBOutlet var earningsView: SpringView!
     @IBOutlet var springImage: SpringImageView!
-    @IBOutlet var invisiblePlay: SpringButton!
     @IBOutlet var coinLabel: SpringLabel!
     @IBOutlet var endShiftButton: UIButton!
     @IBOutlet var coinImage: SpringImageView!
@@ -58,18 +60,29 @@ class MainController: UIViewController {
     @IBOutlet var settingsButton: UIButton!
     @IBOutlet var earningsButton: UIButton!
     
-    
+    func toggleEarningsSettings(show: Bool) {
+        if show == true {
+            settingsButton.enabled = true
+            settingsButton.alpha = 1.0
+            earningsButton.enabled = true
+            earningsButton.alpha = 1.0
+        } else {
+            settingsButton.enabled = false
+            settingsButton.alpha = 0.5
+            earningsButton.enabled = false
+            earningsButton.alpha = 0.5
+        }
+        
+        
+    }
     
     @IBAction func playPressed(sender: SpringButton) {
         if pauseToggle == false {
-        
+        pauseToggle = true
         playButton.setTitle("Pause", forState: UIControlState.Normal)
         //invisiblePlay.hidden = false
-        settingsButton.enabled = false
-        earningsButton.enabled = false
-        endShiftButton.hidden = true
-        timerLabel.hidden = false
-        
+    
+            
         if newSession == true {
             setupGame(true)
         } else {
@@ -79,20 +92,24 @@ class MainController: UIViewController {
         }
             
         subtractTime()
-        toggleSaveTime = true
         newSession = false
-        pauseToggle = true
+       
+        timerLabel.hidden = false
+        endShiftButton.hidden = true
             
-        } else {
+        toggleEarningsSettings(false)
         
+        } else {
+            
         pauseTimeStart = NSDate()
+        pauseUsed = true
         timer.invalidate()
         toggleSaveTime = false
         playButton.setTitle("Start", forState: UIControlState.Normal)
         endShiftButton.hidden = false
-        settingsButton.enabled = true
-        earningsButton.enabled = true
         pauseToggle = false
+            
+      
         
         }
     }
@@ -100,15 +117,20 @@ class MainController: UIViewController {
     
     
     @IBAction func endShiftPressed(sender: AnyObject) {
+        
         newSession = true
+        
         timerLabel.hidden = true
         playButton.hidden = true
         coinLabel.hidden = false
         coinImage.hidden = false
         endShiftButton.hidden = true
         
+        totalHours = totalHours + sessionHours
+        totalPay = totalPay + sessionPay
+        
         timerCircle.value = CGFloat(0.0)
-        coinLabel.text = "+$\(round(NSDate().timeIntervalSinceDate(startTime) / 60 / 60 * 100) / 100)"
+        coinLabel.text = "\(timerLabel.text!)"
         coinImage.duration = 4.0
         coinLabel.duration = 4.0
         
@@ -122,45 +144,45 @@ class MainController: UIViewController {
     
     
     func setupGame(sessionNew: Bool) {
-        
-        if newSession == true {
+        if sessionNew == true {
+           
+            newSession = false
+            startTime = NSDate()
+            NSUserDefaults.standardUserDefaults().setObject(startTime, forKey: "startTime")
             latestDate = "\(date)"
+           
             if periodStart == "" {
                 periodStart = "\(date)"
                 NSUserDefaults.standardUserDefaults().setObject(periodStart, forKey: "periodStart")
             }
-                NSUserDefaults.standardUserDefaults().setObject(latestDate, forKey: "latestDate")
+            
+            NSUserDefaults.standardUserDefaults().setObject(latestDate, forKey: "latestDate")
         }
         
         timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
-        
-        if sessionNew == true {
-        startTime = NSDate()
-        NSUserDefaults.standardUserDefaults().setObject(startTime, forKey: "startTime")
-        newSession = false
-        }
+       
     }
     
     
     
     func subtractTime() {
-       
-        let elapsedTime = NSDate().timeIntervalSinceDate(startTime) - totalPauseTime
+    
+        let elapsedTime: Double?
         
-        //let oldSecs = Double(seconds)
-        //let oldPay = round(payRate * Double(seconds / 10) / 60 / 60 * 100) / 100
+        if pauseUsed == true {
+            elapsedTime = NSDate().timeIntervalSinceDate(startTime) - totalPauseTime
+    
+        } else {
+            elapsedTime = NSDate().timeIntervalSinceDate(startTime)
+        }
         
-        //seconds++
+        let convertToHours = elapsedTime! / 60 / 60
         
-       // let newSecs = Double(seconds)
-       // let newPay = round(payRate * Double(seconds / 10) / 60 / 60 * 100) / 100
-        //coinLabelPay = elapsedTime / 60 / 60 * payRate
-
-        totalHours = totalHours + (elapsedTime / 60 / 60)
-        totalPay = totalPay + (elapsedTime / 60 / 60 * payRate)
+        sessionPay = convertToHours * payRate
+        sessionHours = convertToHours
         
-        timerLabel.text = "$\(round(elapsedTime / 60 / 60 * payRate * 100) / 100)"
-        let currentPay = (elapsedTime / 60 / 60 * payRate / circleCompletion)
+        timerLabel.text = "$\(round(elapsedTime! / 60 / 60 * payRate * 100) / 100)"
+        let currentPay = (elapsedTime! / 60 / 60 * payRate / circleCompletion)
         let timerCalc = currentPay - Double(Int(currentPay))
         timerCircle.value = CGFloat(timerCalc)
        
@@ -291,6 +313,9 @@ class MainController: UIViewController {
     
     
     
+    
+    
+    
     /* Earnings View Code - Below
     =========================
     =========================
@@ -346,6 +371,10 @@ class MainController: UIViewController {
     }
     
  //END EARNINGS VIEW
+   
+    
+    
+    
     
 
 /* Settings View Code - Below

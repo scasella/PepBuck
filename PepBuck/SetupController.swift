@@ -49,6 +49,7 @@ class SetupController: UIViewController {
         entryField.becomeFirstResponder()
         payToggle = true
          }
+            
         } else {
             if entryField.text != "" {
             payRate = (entryField.text as! NSString).doubleValue
