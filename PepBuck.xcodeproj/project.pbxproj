@@ -56,7 +56,6 @@
 		8885AA501B8D3E4B00184164 /* SettingsPayEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8885AA471B8D3E4B00184164 /* SettingsPayEmpty.png */; };
 		8885AA521B8D3E4B00184164 /* SettingsAdjustEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8885AA491B8D3E4B00184164 /* SettingsAdjustEmpty.png */; };
 		8885AA571B8D3E4B00184164 /* SettingsCircleEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8885AA4E1B8D3E4B00184164 /* SettingsCircleEmpty.png */; };
-		889044DB1BA79C3C0092B846 /* SalaryCalcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889044DA1BA79C3C0092B846 /* SalaryCalcController.swift */; };
 		8899941F1B8A976300C876AA /* CoinImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8899941E1B8A976300C876AA /* CoinImage.png */; };
 		88AA77E61BA24222005148FC /* SettingsAdjustFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA77E31BA24222005148FC /* SettingsAdjustFull.png */; };
 		88AA77E71BA24222005148FC /* SettingsCircleFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AA77E41BA24222005148FC /* SettingsCircleFull.png */; };
@@ -133,7 +132,6 @@
 		8885AA471B8D3E4B00184164 /* SettingsPayEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsPayEmpty.png; sourceTree = "<group>"; };
 		8885AA491B8D3E4B00184164 /* SettingsAdjustEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsAdjustEmpty.png; sourceTree = "<group>"; };
 		8885AA4E1B8D3E4B00184164 /* SettingsCircleEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsCircleEmpty.png; sourceTree = "<group>"; };
-		889044DA1BA79C3C0092B846 /* SalaryCalcController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalaryCalcController.swift; sourceTree = "<group>"; };
 		8899941E1B8A976300C876AA /* CoinImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CoinImage.png; path = PepBuck/CoinImage.png; sourceTree = "<group>"; };
 		88AA77E31BA24222005148FC /* SettingsAdjustFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsAdjustFull.png; sourceTree = "<group>"; };
 		88AA77E41BA24222005148FC /* SettingsCircleFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsCircleFull.png; sourceTree = "<group>"; };
@@ -263,7 +261,6 @@
 				8874237E1B8565CD00CA7889 /* MainController.swift */,
 				88E205EC1BB7918800DD1784 /* Models.swift */,
 				8876EB251B8534EC00384F47 /* Main.storyboard */,
-				889044DA1BA79C3C0092B846 /* SalaryCalcController.swift */,
 				8876EB281B8534ED00384F47 /* Images.xcassets */,
 				8876EB2A1B8534ED00384F47 /* LaunchScreen.xib */,
 				8876EB1F1B8534EC00384F47 /* Supporting Files */,
@@ -453,7 +450,6 @@
 				88684E681BAF8007004E6D94 /* TransitionZoom.swift in Sources */,
 				88684E591BAF8007004E6D94 /* DesignableView.swift in Sources */,
 				887423831B8569D400CA7889 /* CircularProgressView.swift in Sources */,
-				889044DB1BA79C3C0092B846 /* SalaryCalcController.swift in Sources */,
 				88684E661BAF8007004E6D94 /* SpringView.swift in Sources */,
 				88684E631BAF8007004E6D94 /* SpringLabel.swift in Sources */,
 				88684E5D1BAF8007004E6D94 /* Misc.swift in Sources */,

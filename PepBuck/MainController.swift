@@ -10,6 +10,7 @@ import UIKit
 
 var getPause = false
 var totalPauseTime = 0.0
+var onlyShowPepBuck = false
 
 class MainController: UIViewController {
     
@@ -34,7 +35,9 @@ class MainController: UIViewController {
 
     
     
-    @IBOutlet var pepBuckLabel: UILabel!
+    @IBOutlet var nameLabel: SpringLabel!
+    @IBOutlet var welcomeLabel: SpringLabel!
+    @IBOutlet var pepBuckLabel: SpringLabel!
     @IBOutlet var saveButton: UIButton!
     @IBOutlet var backButton: UIButton!
     @IBOutlet var settingsLabel: SpringLabel!
@@ -129,10 +132,14 @@ class MainController: UIViewController {
         totalHours = totalHours + sessionHours
         totalPay = totalPay + sessionPay
         
+        NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
+        NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
+        
         timerCircle.value = CGFloat(0.0)
         coinLabel.text = "\(timerLabel.text!)"
         coinImage.duration = 4.0
         coinLabel.duration = 4.0
+        onlyShowPepBuck = true 
         
         coinLabel.animate()
         coinImage.animateNext {
@@ -195,6 +202,8 @@ class MainController: UIViewController {
        springView.duration = 2.5
         springView.animate() */
         
+        toggleEarningsSettings(false)
+        
         if NSUserDefaults.standardUserDefaults().objectForKey("totalHours") != nil {
             totalHours = NSUserDefaults.standardUserDefaults().objectForKey("totalHours") as! Double }
         if NSUserDefaults.standardUserDefaults().objectForKey("totalPay") != nil {
@@ -227,9 +236,10 @@ class MainController: UIViewController {
     
     
     @IBAction func settingsButtonPressed(sender: AnyObject) {
+        
+        toggleEarningsSettings(false)
+        
         pepBuckLabel.hidden = true 
-        settingsButton.enabled = false
-        earningsButton.enabled = false
         springView.hidden = true
         settingsView.hidden = false
         
@@ -239,6 +249,8 @@ class MainController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameLabel.text = "\(name)"
         
             if startNowToggle == true {
             playPressed(SpringButton())
@@ -250,17 +262,19 @@ class MainController: UIViewController {
         
     }
     
-    
-    
     override func viewDidAppear(animated: Bool) {
-        
-        if name == "" {
-            performSegueWithIdentifier("toSetup", sender: self)
-        }
+        if onlyShowPepBuck == false {
+        pepBuckLabel.animate()
+        welcomeLabel.hidden = false
+        nameLabel.hidden = false 
+        welcomeLabel.animate()
+        nameLabel.animateNext() {
+            self.nameLabel.hidden = true
+            self.welcomeLabel.hidden = true
+            } }
     }
 
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -333,7 +347,7 @@ class MainController: UIViewController {
             
              NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
              NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
-            NSUserDefaults.standardUserDefaults().setObject(periodStart, forKey: "periodStart")
+             NSUserDefaults.standardUserDefaults().setObject(periodStart, forKey: "periodStart")
              NSUserDefaults.standardUserDefaults().setObject(latestDate, forKey: "latestDate")
             
             self.resetLabels()
@@ -365,8 +379,7 @@ class MainController: UIViewController {
         mainView.force = 4.0
         earningsView.animate()
         mainView.animate()
-        settingsButton.enabled = true
-        earningsButton.enabled = true
+        toggleEarningsSettings(true)
         
     }
     
@@ -470,9 +483,8 @@ class MainController: UIViewController {
         settingsButton.enabled = true
         earningsButton.enabled = true
         pepBuckLabel.hidden = false
-        settingsButton.enabled = true
-        earningsButton.enabled = true
         settingsView.hidden = true
+        toggleEarningsSettings(true)
     }
     
     

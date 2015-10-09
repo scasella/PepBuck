@@ -19,7 +19,7 @@ class SetupController: UIViewController {
     @IBOutlet var submitButton: SpringButton!
     @IBOutlet var nameLabel: SpringLabel!
     @IBOutlet var whatIsHourLabel: SpringLabel!
-    @IBOutlet var calcIcon: UIButton!
+    @IBOutlet var hourlySalarySegmented: UISegmentedControl!
     
     @IBAction func submitTap(sender: AnyObject) {
         if payToggle == false {
@@ -32,8 +32,8 @@ class SetupController: UIViewController {
         pepBuckLabel.hidden = true
         nameLabel.text = "Hi, \(name)"
         nameLabel.hidden = false
-        nameLabel.animation = "fadeIn"
-        nameLabel.duration = 1.0
+        nameLabel.animation = "zoomIn"
+        nameLabel.duration = 1.5
         nameLabel.animate()
         whatIsLabel.x = 1000
         whatIsLabel.duration = 1.5
@@ -43,35 +43,41 @@ class SetupController: UIViewController {
         whatIsHourLabel.duration = 1.5
         whatIsHourLabel.animate()
         entryField.text = ""
-        calcIcon.hidden = false
+        hourlySalarySegmented.hidden = false
         entryField.keyboardType = UIKeyboardType.DecimalPad
         entryField.resignFirstResponder()
         entryField.becomeFirstResponder()
         payToggle = true
          }
             
-        } else {
+        } else if hourlySalarySegmented.selectedSegmentIndex == 0 {
             if entryField.text != "" {
             payRate = (entryField.text as! NSString).doubleValue
             NSUserDefaults.standardUserDefaults().setObject(payRate, forKey: "payRate")
+            onlyShowPepBuck = true 
             performSegueWithIdentifier("toMain", sender: self)
-            } }
+            }
         
+        } else {
+            if entryField.text != "" {
+                payRate = (entryField.text as! NSString).doubleValue / 2080
+                NSUserDefaults.standardUserDefaults().setObject(payRate, forKey: "payRate")
+                onlyShowPepBuck = true
+                performSegueWithIdentifier("toMain", sender: self)
+        }
+        }
     }
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.animateNext {
-            self.welcomeLabel.animation = "squeezeRight"
-            self.welcomeLabel.duration = 1.5
-            self.welcomeLabel.animate()
-        }
         
+     
+
+        welcomeLabel.animate()         
         pepBuckLabel.animateNext {
-            self.pepBuckLabel.animation = "squeezeLeft"
-            self.pepBuckLabel.delay = 0.2
-            self.pepBuckLabel.duration = 1.5
-            self.pepBuckLabel.animate()
+
             self.pepBuckLabel.animateNext {
                 entryField.becomeFirstResponder()
             }
@@ -83,11 +89,10 @@ class SetupController: UIViewController {
         self.whatIsLabel.duration = 3.0
         self.whatIsLabel.animate()
             
+        }
+        
     }
-
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

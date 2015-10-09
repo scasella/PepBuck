@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I5w-XD-ya3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I5w-XD-ya3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,80 +19,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEw-f5-1gH" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="41" y="20" width="227" height="87"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="41"/>
-                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, Steve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2S-R9-EY3" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="16" y="63" width="343" height="87"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hi, Steve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2S-R9-EY3" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="16" y="52" width="343" height="87"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                 <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PepBuck" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF1-Ot-hLf" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="164" y="68" width="194" height="87"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cfy-ej-zLt">
+                                <rect key="frame" x="16" y="200" width="343" height="30"/>
+                                <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="194" id="OAv-ha-mHL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="41"/>
-                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cfy-ej-zLt">
-                                <rect key="frame" x="16" y="213" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="TY1-KN-fOp"/>
+                                    <constraint firstAttribute="height" constant="30" id="IeJ-YP-o3g"/>
                                 </constraints>
                                 <color key="textColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your first name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-wP-VCt" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="49" y="180" width="276" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="wcA-cc-4Aa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <rect key="frame" x="49" y="167" width="276" height="32"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7Q-gp-jOn">
-                                <rect key="frame" x="174" y="276" width="26" height="37"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you get paid?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-9t-n2l" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="49" y="167" width="276" height="32"/>
+                                <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="26" id="uNB-8g-dJN"/>
-                                    <constraint firstAttribute="height" constant="37" id="vjI-oO-zfR"/>
+                                    <constraint firstAttribute="height" constant="32" id="6Ub-WS-eMy"/>
                                 </constraints>
-                                <state key="normal" image="WelcomeCalc.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BJE-gH-SjQ" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="rjC-nh-7tg"/>
-                                </connections>
-                            </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your hourly pay?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-9t-n2l" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="49" y="180" width="276" height="32"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13H-Tp-xI6" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="131" y="346" width="113" height="52"/>
+                                <rect key="frame" x="131" y="335" width="113" height="52"/>
+                                <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="Xsm-wp-Ldu"/>
-                                    <constraint firstAttribute="width" constant="113" id="gPW-CI-7h0"/>
+                                    <constraint firstAttribute="width" constant="113" id="qqc-jv-iJd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Submit" backgroundImage="PinkEmptyButton.png">
@@ -106,177 +76,104 @@
                                     <action selector="submitTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CcB-Mr-CvK"/>
                                 </connections>
                             </button>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DAb-3l-LYD">
+                                <rect key="frame" x="110" y="257" width="154" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="mab-fC-Hta"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Hourly"/>
+                                    <segment title="Salary"/>
+                                </segments>
+                                <color key="tintColor" red="0.16470588235294117" green="0.16862745098039217" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEw-f5-1gH" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="41" y="32" width="259" height="87"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PepBuck" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF1-Ot-hLf" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="165" y="77" width="194" height="87"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="vlV-VN-u0p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.34999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Cfy-ej-zLt" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="3X5-LW-lR9"/>
-                            <constraint firstItem="QAn-9t-n2l" firstAttribute="baseline" secondItem="NSp-wP-VCt" secondAttribute="baseline" id="9Gx-p8-3RQ"/>
-                            <constraint firstItem="Cfy-ej-zLt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Ad9-Xp-kBi"/>
-                            <constraint firstItem="p2S-R9-EY3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="43" id="B9P-zE-fB5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nEw-f5-1gH" secondAttribute="trailing" constant="91" id="FDH-KH-9Hz"/>
-                            <constraint firstItem="NSp-wP-VCt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="33" id="G50-GI-U1N"/>
-                            <constraint firstItem="Cfy-ej-zLt" firstAttribute="trailing" secondItem="p2S-R9-EY3" secondAttribute="trailing" id="HUQ-nQ-vBd"/>
-                            <constraint firstItem="CF1-Ot-hLf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="48" id="HzU-Xn-FWC"/>
-                            <constraint firstItem="QAn-9t-n2l" firstAttribute="top" secondItem="nEw-f5-1gH" secondAttribute="bottom" constant="73" id="Kq2-WP-Ddf"/>
-                            <constraint firstItem="NSp-wP-VCt" firstAttribute="top" secondItem="CF1-Ot-hLf" secondAttribute="bottom" constant="25" id="NC8-pb-DyS"/>
-                            <constraint firstItem="nEw-f5-1gH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="Ngl-dz-x1W"/>
-                            <constraint firstItem="R7Q-gp-jOn" firstAttribute="centerX" secondItem="Cfy-ej-zLt" secondAttribute="centerX" id="Sva-Po-9jT"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="13H-Tp-xI6" secondAttribute="bottom" constant="269" id="TSY-kr-O10"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QAn-9t-n2l" secondAttribute="trailing" constant="34" id="Tdy-vB-Chp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CF1-Ot-hLf" secondAttribute="trailing" constant="1" id="UFh-bf-nJE"/>
-                            <constraint firstItem="13H-Tp-xI6" firstAttribute="top" secondItem="R7Q-gp-jOn" secondAttribute="bottom" constant="33" id="WGU-Ja-cbN"/>
-                            <constraint firstItem="Cfy-ej-zLt" firstAttribute="top" secondItem="NSp-wP-VCt" secondAttribute="bottom" constant="1" id="YEf-0T-6cQ"/>
-                            <constraint firstItem="13H-Tp-xI6" firstAttribute="centerX" secondItem="R7Q-gp-jOn" secondAttribute="centerX" id="an2-jq-hGY"/>
-                            <constraint firstItem="R7Q-gp-jOn" firstAttribute="top" secondItem="Cfy-ej-zLt" secondAttribute="bottom" constant="33" id="fEr-uR-cAL"/>
-                            <constraint firstItem="QAn-9t-n2l" firstAttribute="firstBaseline" secondItem="NSp-wP-VCt" secondAttribute="firstBaseline" id="g1G-Eh-4lb"/>
-                            <constraint firstItem="QAn-9t-n2l" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="33" id="iyq-lU-Fwf"/>
-                            <constraint firstItem="QAn-9t-n2l" firstAttribute="top" secondItem="p2S-R9-EY3" secondAttribute="bottom" constant="30" id="n6j-T3-HXc"/>
-                            <constraint firstItem="nEw-f5-1gH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="vGK-24-YWp"/>
-                            <constraint firstItem="NSp-wP-VCt" firstAttribute="centerX" secondItem="Cfy-ej-zLt" secondAttribute="centerX" id="yOw-YG-m6g"/>
-                            <constraint firstItem="p2S-R9-EY3" firstAttribute="leading" secondItem="Cfy-ej-zLt" secondAttribute="leading" id="zwe-xj-FlG"/>
+                            <constraint firstItem="p2S-R9-EY3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="5Ap-Vp-g53"/>
+                            <constraint firstItem="nEw-f5-1gH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="12" id="7Fu-df-cJB"/>
+                            <constraint firstItem="Cfy-ej-zLt" firstAttribute="trailing" secondItem="CF1-Ot-hLf" secondAttribute="trailing" id="Bl3-Hm-aJc"/>
+                            <constraint firstItem="CF1-Ot-hLf" firstAttribute="trailing" secondItem="p2S-R9-EY3" secondAttribute="trailing" id="IaY-o2-Hf2"/>
+                            <constraint firstItem="NSp-wP-VCt" firstAttribute="baseline" secondItem="QAn-9t-n2l" secondAttribute="baseline" id="Khq-Mx-teV"/>
+                            <constraint firstItem="NSp-wP-VCt" firstAttribute="trailing" secondItem="QAn-9t-n2l" secondAttribute="trailing" id="Kou-E2-qkJ"/>
+                            <constraint firstItem="Cfy-ej-zLt" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" constant="4" id="MH9-mF-Pif"/>
+                            <constraint firstItem="NSp-wP-VCt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="33" id="Mhe-IG-D77"/>
+                            <constraint firstItem="p2S-R9-EY3" firstAttribute="baseline" secondItem="CF1-Ot-hLf" secondAttribute="firstBaseline" constant="8" id="MqF-Ly-qto"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="13H-Tp-xI6" secondAttribute="bottom" constant="280" id="PUm-iN-Pkh"/>
+                            <constraint firstItem="CF1-Ot-hLf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="57" id="Ph4-NK-CYw"/>
+                            <constraint firstItem="QAn-9t-n2l" firstAttribute="top" secondItem="p2S-R9-EY3" secondAttribute="bottom" constant="28" id="Q8e-8s-lY5"/>
+                            <constraint firstItem="QAn-9t-n2l" firstAttribute="top" secondItem="nEw-f5-1gH" secondAttribute="bottom" constant="48" id="RmH-4h-d6g"/>
+                            <constraint firstItem="DAb-3l-LYD" firstAttribute="centerX" secondItem="Cfy-ej-zLt" secondAttribute="centerX" id="T55-CE-Xzp"/>
+                            <constraint firstItem="Cfy-ej-zLt" firstAttribute="leading" secondItem="p2S-R9-EY3" secondAttribute="leading" id="TtM-wk-gmp"/>
+                            <constraint firstItem="Cfy-ej-zLt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-4" id="U3F-jc-zAm"/>
+                            <constraint firstItem="NSp-wP-VCt" firstAttribute="leading" secondItem="QAn-9t-n2l" secondAttribute="leading" id="UE1-XC-EvX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nEw-f5-1gH" secondAttribute="trailing" constant="55" id="WsK-M6-k7M"/>
+                            <constraint firstItem="Cfy-ej-zLt" firstAttribute="centerX" secondItem="NSp-wP-VCt" secondAttribute="centerX" id="Zr8-O4-JCU"/>
+                            <constraint firstItem="DAb-3l-LYD" firstAttribute="top" secondItem="Cfy-ej-zLt" secondAttribute="bottom" constant="27" id="dUW-rJ-2Mr"/>
+                            <constraint firstItem="Cfy-ej-zLt" firstAttribute="top" secondItem="QAn-9t-n2l" secondAttribute="bottom" constant="1" id="iz2-oH-9w3"/>
+                            <constraint firstItem="13H-Tp-xI6" firstAttribute="top" secondItem="DAb-3l-LYD" secondAttribute="bottom" constant="50" id="pfc-Mh-4rg"/>
+                            <constraint firstItem="Cfy-ej-zLt" firstAttribute="top" secondItem="CF1-Ot-hLf" secondAttribute="bottom" constant="36" id="vXA-bx-Vwf"/>
+                            <constraint firstItem="DAb-3l-LYD" firstAttribute="centerX" secondItem="13H-Tp-xI6" secondAttribute="centerX" id="vp5-O1-kFp"/>
+                            <constraint firstItem="QAn-9t-n2l" firstAttribute="firstBaseline" secondItem="NSp-wP-VCt" secondAttribute="firstBaseline" id="yn5-KI-96I"/>
+                            <constraint firstItem="DAb-3l-LYD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="94" id="z4O-xa-5gk"/>
+                            <constraint firstItem="nEw-f5-1gH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="21" id="zqa-7r-fRC"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="calcIcon" destination="R7Q-gp-jOn" id="fdE-fm-woe"/>
                         <outlet property="entryField" destination="Cfy-ej-zLt" id="ZO4-ca-UPa"/>
+                        <outlet property="hourlySalarySegmented" destination="DAb-3l-LYD" id="4lJ-Fr-0OQ"/>
                         <outlet property="nameLabel" destination="p2S-R9-EY3" id="DCw-ZL-SI1"/>
                         <outlet property="pepBuckLabel" destination="CF1-Ot-hLf" id="Cog-Ix-LP9"/>
                         <outlet property="submitButton" destination="13H-Tp-xI6" id="0r5-AL-bQF"/>
                         <outlet property="welcomeLabel" destination="nEw-f5-1gH" id="leb-BO-UaP"/>
                         <outlet property="whatIsHourLabel" destination="QAn-9t-n2l" id="efr-md-tsh"/>
                         <outlet property="whatIsLabel" destination="NSp-wP-VCt" id="lXw-5p-uFV"/>
-                        <segue destination="I5w-XD-ya3" kind="presentation" identifier="toMain" modalTransitionStyle="crossDissolve" id="scH-uY-rzm"/>
+                        <segue destination="I5w-XD-ya3" kind="show" identifier="toMain" id="scH-uY-rzm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="125.5" y="219.5"/>
-        </scene>
-        <!--Salary Calc Controller-->
-        <scene sceneID="7Od-vE-SaC">
-            <objects>
-                <viewController id="BJE-gH-SjQ" customClass="SalaryCalcController" customModule="PepBuck" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CfM-Ob-DOc"/>
-                        <viewControllerLayoutGuide type="bottom" id="tcG-v5-KiQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Fuu-lk-ojm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <visualEffectView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLH-6b-drA">
-                                <rect key="frame" x="0.0" y="-5" width="375" height="685"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nNp-tF-npP">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="685"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary to Hourly Converter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8d-wR-ILa" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                            <rect key="frame" x="30" y="65" width="315" height="92"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="92" id="9Vi-E5-yVo"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                            <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="r8d-wR-ILa" firstAttribute="leading" secondItem="nNp-tF-npP" secondAttribute="leading" constant="30" id="KCS-2b-b1U"/>
-                                        <constraint firstItem="r8d-wR-ILa" firstAttribute="centerX" secondItem="nNp-tF-npP" secondAttribute="centerX" id="WHt-k7-E9N"/>
-                                        <constraint firstItem="r8d-wR-ILa" firstAttribute="top" secondItem="nNp-tF-npP" secondAttribute="top" constant="65" id="cAH-re-0jL"/>
-                                    </constraints>
-                                </view>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifM-DB-KGx">
-                                <rect key="frame" x="16" y="213" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="A2b-T0-Qmc"/>
-                                </constraints>
-                                <color key="textColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" keyboardType="decimalPad" keyboardAppearance="alert"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your salary?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="j2c-dY-oHX" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="49" y="180" width="276" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="BkY-kZ-u4n"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many hours per week?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="b8w-lI-RUc" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="49" y="180" width="276" height="32"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6g-3w-B00" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="131" y="346" width="113" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="C4N-uf-lfs"/>
-                                    <constraint firstAttribute="width" constant="113" id="it5-58-iLp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                <state key="normal" title="Submit" backgroundImage="PinkEmptyButton.png">
-                                    <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" image="PinkFullButton.png"/>
-                                <state key="highlighted" image="PinkFullButton.png"/>
-                                <connections>
-                                    <action selector="submitPressed:" destination="BJE-gH-SjQ" eventType="touchUpInside" id="d7P-cC-k7J"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="lLH-6b-drA" secondAttribute="trailing" id="8K8-1w-Kho"/>
-                            <constraint firstItem="ifM-DB-KGx" firstAttribute="top" secondItem="b8w-lI-RUc" secondAttribute="bottom" constant="1" id="BbO-2m-voq"/>
-                            <constraint firstItem="lLH-6b-drA" firstAttribute="leading" secondItem="Fuu-lk-ojm" secondAttribute="leading" id="Gjb-Wt-1iF"/>
-                            <constraint firstItem="b8w-lI-RUc" firstAttribute="leading" secondItem="Fuu-lk-ojm" secondAttribute="leadingMargin" constant="33" id="Roq-xQ-neo"/>
-                            <constraint firstItem="ifM-DB-KGx" firstAttribute="centerX" secondItem="A6g-3w-B00" secondAttribute="centerX" id="RrJ-ZH-Y2K"/>
-                            <constraint firstItem="ifM-DB-KGx" firstAttribute="centerX" secondItem="b8w-lI-RUc" secondAttribute="centerX" id="SdH-tH-rDq"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="lLH-6b-drA" secondAttribute="bottom" constant="-13" id="TS2-hg-idY"/>
-                            <constraint firstItem="b8w-lI-RUc" firstAttribute="baseline" secondItem="j2c-dY-oHX" secondAttribute="baseline" id="aS4-hu-Fzw"/>
-                            <constraint firstItem="b8w-lI-RUc" firstAttribute="leading" secondItem="j2c-dY-oHX" secondAttribute="leading" id="ac2-8k-N6K"/>
-                            <constraint firstItem="b8w-lI-RUc" firstAttribute="firstBaseline" secondItem="j2c-dY-oHX" secondAttribute="firstBaseline" id="bT3-Xk-4lR"/>
-                            <constraint firstItem="ifM-DB-KGx" firstAttribute="leading" secondItem="Fuu-lk-ojm" secondAttribute="leadingMargin" id="dda-1y-XTD"/>
-                            <constraint firstItem="lLH-6b-drA" firstAttribute="top" secondItem="Fuu-lk-ojm" secondAttribute="topMargin" constant="-5" id="jg5-HM-bhZ"/>
-                            <constraint firstItem="b8w-lI-RUc" firstAttribute="centerX" secondItem="lLH-6b-drA" secondAttribute="centerX" id="rqG-wX-17H"/>
-                            <constraint firstItem="b8w-lI-RUc" firstAttribute="top" secondItem="CfM-Ob-DOc" secondAttribute="bottom" constant="160" id="sRh-jZ-41D"/>
-                            <constraint firstItem="tcG-v5-KiQ" firstAttribute="top" secondItem="A6g-3w-B00" secondAttribute="bottom" constant="269" id="uG4-jQ-dY9"/>
-                            <constraint firstItem="j2c-dY-oHX" firstAttribute="trailing" secondItem="b8w-lI-RUc" secondAttribute="trailing" id="yAf-iC-SCr"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="howManyHoursLabel" destination="b8w-lI-RUc" id="E7y-dj-Pi0"/>
-                        <outlet property="textField" destination="ifM-DB-KGx" id="0EU-F9-J0k"/>
-                        <outlet property="whatIsYourSalaryLabel" destination="j2c-dY-oHX" id="g6M-KD-M7W"/>
-                        <segue destination="I5w-XD-ya3" kind="presentation" identifier="toMain" animates="NO" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="3ko-Tb-LqV"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NCd-02-KEp" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="536.5" y="114.5"/>
         </scene>
         <!--Main Controller-->
         <scene sceneID="wqQ-v0-351">
@@ -292,9 +189,11 @@
                         <subviews>
                             <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Wf-aO-Txd">
                                 <rect key="frame" x="27" y="619" width="320" height="50"/>
+                                <animations/>
                             </adBannerView>
                             <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snl-wv-DPy">
                                 <rect key="frame" x="27" y="535" width="155" height="55"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                 <state key="normal" title="Settings" backgroundImage="WhiteButton.png">
@@ -309,6 +208,7 @@
                             </button>
                             <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3V-ZU-FZe">
                                 <rect key="frame" x="192" y="535" width="155" height="55"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                 <state key="normal" title="Earnings" backgroundImage="WhiteButton.png">
@@ -329,28 +229,33 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CardBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVw-CO-aZh">
                                                 <rect key="frame" x="8" y="0.0" width="321" height="266"/>
+                                                <animations/>
                                                 <gestureRecognizers/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Period start date " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56S-sC-Q0e">
                                                 <rect key="frame" x="23" y="151" width="296" height="33"/>
+                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgj-Hb-UhX" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="33" y="58" width="276" height="48"/>
+                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="34"/>
                                                 <color key="textColor" red="0.21568627450980393" green="0.22352941176470587" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVv-Vy-rWG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="33" y="95" width="276" height="33"/>
+                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                                 <color key="textColor" red="0.21568627450980393" green="0.22352941176470587" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-D4-g74">
                                                 <rect key="frame" x="44" y="193" width="109" height="51"/>
+                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                 <state key="normal" title="Back" backgroundImage="PinkEmptyButton.png">
                                                     <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -364,6 +269,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gax-Yw-EI9">
                                                 <rect key="frame" x="200" y="193" width="109" height="51"/>
+                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                 <state key="normal" title="Reset" backgroundImage="PinkEmptyButton.png">
                                                     <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -377,18 +283,21 @@
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latest date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o82-3o-ydh">
                                                 <rect key="frame" x="23" y="130" width="296" height="33"/>
+                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Earnings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psP-y7-Tdp" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="30" y="10" width="276" height="48"/>
+                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
                                                 <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                         </subviews>
+                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
@@ -406,6 +315,7 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Card.png" translatesAutoresizingMaskIntoConstraints="NO" id="YUZ-2n-iMP" customClass="SpringImageView" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="6" y="13" width="320" height="286"/>
+                                                <animations/>
                                                 <gestureRecognizers/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
@@ -418,6 +328,7 @@
                                             </imageView>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mOv-bX-lYQ" customClass="CircularProgressView" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="73" y="-33" width="175" height="302"/>
+                                                <animations/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="progressTint">
@@ -440,14 +351,16 @@
                                             </view>
                                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CoinImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-bG-ahC" customClass="SpringImageView" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="66" y="24" width="189" height="187"/>
+                                                <animations/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomOut"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-Sl-GOG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                                <rect key="frame" x="66" y="90" width="189" height="55"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                                                <rect key="frame" x="58" y="72" width="207" height="91"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="53"/>
                                                 <color key="textColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -457,6 +370,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kra-nl-VK4" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="214" y="221" width="91" height="72"/>
+                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="Start">
                                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -480,11 +394,13 @@
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoF-SW-V7v">
                                                 <rect key="frame" x="16" y="226" width="167" height="62"/>
+                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
@@ -501,6 +417,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="DGR-Rn-duA" appends="YES" id="1kE-X2-uuF"/>
@@ -508,6 +425,7 @@
                             </view>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-LN-dcs">
                                 <rect key="frame" x="124" y="488" width="127" height="32"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
                                 <state key="normal" title="end shift">
                                     <color key="titleColor" red="0.35686274509803922" green="0.64313725490196083" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
@@ -521,7 +439,8 @@
                                 <rect key="frame" x="16" y="72" width="343" height="363"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L95-Xf-N3k" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="33" y="-1" width="276" height="50"/>
+                                        <rect key="frame" x="33" y="3" width="276" height="50"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
                                         <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -529,6 +448,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih6-cf-uFS">
                                         <rect key="frame" x="56" y="264" width="109" height="51"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <state key="normal" title="Back" backgroundImage="PinkEmptyButton.png">
                                             <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -542,6 +462,7 @@
                                     </button>
                                     <button opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfN-0T-W9W">
                                         <rect key="frame" x="177" y="264" width="109" height="51"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <state key="normal" title="Save" backgroundImage="PinkEmptyButton.png">
                                             <color key="titleColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -554,7 +475,8 @@
                                         </connections>
                                     </button>
                                     <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="WhiteButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="FZV-nl-YSg">
-                                        <rect key="frame" x="114" y="189" width="109" height="51"/>
+                                        <rect key="frame" x="114" y="188" width="109" height="51"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
@@ -562,19 +484,22 @@
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hourly Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8U-8T-RE3" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                         <rect key="frame" x="33" y="90" width="276" height="48"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap a button below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eY-1b-a3w" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="33" y="61" width="276" height="48"/>
+                                        <rect key="frame" x="33" y="51" width="276" height="48"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <color key="textColor" red="0.96078431369999995" green="0.54117647059999996" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Pay" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05l-QV-Lmv" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="62" y="114" width="37" height="50"/>
+                                        <rect key="frame" x="71" y="114" width="37" height="50"/>
+                                        <animations/>
                                         <state key="normal" backgroundImage="SettingsPayEmpty.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -583,7 +508,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Adjust" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeB-J6-HWo" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="224" y="111" width="41" height="62"/>
+                                        <rect key="frame" x="233" y="111" width="41" height="62"/>
+                                        <animations/>
                                         <state key="normal" backgroundImage="SettingsAdjustEmpty.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -592,7 +518,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Circle" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oat-oi-PRE" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="141" y="116" width="49" height="48"/>
+                                        <rect key="frame" x="150" y="116" width="49" height="48"/>
+                                        <animations/>
                                         <state key="normal" backgroundImage="SettingsCircleEmpty.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -601,33 +528,85 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="1.5"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1.75"/>
+                                        <real key="value" value="2.75"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="linear"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PepBuck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmd-3d-BFH">
-                                <rect key="frame" x="55" y="40" width="264" height="123"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="69"/>
-                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqR-aS-1CD">
                                 <rect key="frame" x="329" y="490" width="46" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="I5w-XD-ya3" kind="presentation" identifier="refreshViewSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="oih-BX-JmF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PepBuck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmd-3d-BFH" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="38" y="39" width="299" height="123"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="74"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="3.75"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="2.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome back," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a67-Y8-8y6" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="41" y="48" width="389" height="83"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="43"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmH-y7-Jui" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="38" y="94" width="279" height="78"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.92549019607843142" green="0.93333333333333335" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -641,6 +620,7 @@
                         <outlet property="endShiftButton" destination="LAu-LN-dcs" id="SpZ-Jg-JDc"/>
                         <outlet property="latestDateLabel" destination="o82-3o-ydh" id="C9R-Vq-Kbg"/>
                         <outlet property="mainView" destination="2na-9r-B2R" id="S7q-mA-29Y"/>
+                        <outlet property="nameLabel" destination="EmH-y7-Jui" id="fwS-LI-bnX"/>
                         <outlet property="panRecognizer" destination="DGR-Rn-duA" id="JLJ-AU-Pta"/>
                         <outlet property="payButton" destination="05l-QV-Lmv" id="VFt-fx-Gsf"/>
                         <outlet property="pepBuckLabel" destination="Kmd-3d-BFH" id="JHa-x4-0S9"/>
@@ -657,6 +637,7 @@
                         <outlet property="timerLabel" destination="xoF-SW-V7v" id="t6E-A5-Z4T"/>
                         <outlet property="totalHoursLabel" destination="SVv-Vy-rWG" id="YA0-IT-2vl"/>
                         <outlet property="totalPayLabel" destination="qgj-Hb-UhX" id="k7e-cv-q8W"/>
+                        <outlet property="welcomeLabel" destination="a67-Y8-8y6" id="E0a-gk-ZbB"/>
                         <segue destination="vXZ-lx-hvc" kind="presentation" identifier="toSetup" animates="NO" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="T0S-cs-OPM"/>
                     </connections>
                 </viewController>
@@ -667,7 +648,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-195.5" y="1359.5"/>
+            <point key="canvasLocation" x="-204.5" y="1276.5"/>
         </scene>
     </scenes>
     <resources>
@@ -680,7 +661,6 @@
         <image name="SettingsAdjustEmpty.png" width="111" height="192"/>
         <image name="SettingsCircleEmpty.png" width="156" height="156"/>
         <image name="SettingsPayEmpty.png" width="99" height="156"/>
-        <image name="WelcomeCalc.png" width="87" height="114"/>
         <image name="WhiteButton.png" width="441" height="195"/>
     </resources>
     <inferredMetricsTieBreakers>
