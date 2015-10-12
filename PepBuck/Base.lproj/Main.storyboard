@@ -254,7 +254,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-D4-g74">
-                                                <rect key="frame" x="44" y="193" width="109" height="51"/>
+                                                <rect key="frame" x="36" y="193" width="109" height="51"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                 <state key="normal" title="Back" backgroundImage="PinkEmptyButton.png">
@@ -268,7 +268,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gax-Yw-EI9">
-                                                <rect key="frame" x="200" y="193" width="109" height="51"/>
+                                                <rect key="frame" x="192" y="193" width="109" height="51"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                 <state key="normal" title="Reset" backgroundImage="PinkEmptyButton.png">
@@ -435,6 +435,65 @@
                                     <action selector="endShiftPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="ebw-7O-eIg"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqR-aS-1CD">
+                                <rect key="frame" x="329" y="490" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="I5w-XD-ya3" kind="presentation" identifier="refreshViewSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="oih-BX-JmF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PepBuck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmd-3d-BFH" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="38" y="41" width="299" height="123"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="74"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="3.75"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="2.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome back," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a67-Y8-8y6" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="41" y="44" width="389" height="83"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="43"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmH-y7-Jui" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                <rect key="frame" x="38" y="90" width="279" height="78"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xaV-nU-MSr" customClass="SpringView" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="16" y="72" width="343" height="363"/>
                                 <subviews>
@@ -475,12 +534,12 @@
                                         </connections>
                                     </button>
                                     <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="WhiteButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="FZV-nl-YSg">
-                                        <rect key="frame" x="114" y="188" width="109" height="51"/>
+                                        <rect key="frame" x="114" y="188" width="109" height="47"/>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hourly Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8U-8T-RE3" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                         <rect key="frame" x="33" y="90" width="276" height="48"/>
@@ -517,8 +576,19 @@
                                             <action selector="settingsPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="8Nm-k0-dke"/>
                                         </connections>
                                     </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIZ-TR-7Fo">
+                                        <rect key="frame" x="228" y="202" width="107" height="47"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Set Name">
+                                            <color key="titleColor" red="0.96078431372549022" green="0.54117647058823526" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeNamePressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="8tA-oR-Kir"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Circle" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oat-oi-PRE" customClass="SpringButton" customModule="PepBuck" customModuleProvider="target">
-                                        <rect key="frame" x="150" y="116" width="49" height="48"/>
+                                        <rect key="frame" x="147" y="116" width="49" height="48"/>
                                         <animations/>
                                         <state key="normal" backgroundImage="SettingsCircleEmpty.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -545,65 +615,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqR-aS-1CD">
-                                <rect key="frame" x="329" y="490" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="I5w-XD-ya3" kind="presentation" identifier="refreshViewSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="oih-BX-JmF"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PepBuck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmd-3d-BFH" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="38" y="39" width="299" height="123"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="74"/>
-                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="3.75"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="2.25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome back," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a67-Y8-8y6" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="41" y="48" width="389" height="83"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="43"/>
-                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="1.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="3.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmH-y7-Jui" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="38" y="94" width="279" height="78"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
-                                <color key="textColor" red="0.35686274509999999" green="0.64313725489999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="1.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="3.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
-                                </userDefinedRuntimeAttributes>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
@@ -612,6 +623,7 @@
                     <connections>
                         <outlet property="adjustButton" destination="UeB-J6-HWo" id="qwa-or-P6x"/>
                         <outlet property="backButton" destination="Ih6-cf-uFS" id="AIk-D2-bPY"/>
+                        <outlet property="changeNameButton" destination="LIZ-TR-7Fo" id="W0o-d6-wPT"/>
                         <outlet property="circleButton" destination="Oat-oi-PRE" id="Aod-DD-gcK"/>
                         <outlet property="coinImage" destination="cRd-bG-ahC" id="fXk-Cc-pYW"/>
                         <outlet property="coinLabel" destination="DgU-Sl-GOG" id="2c1-IQ-Sch"/>

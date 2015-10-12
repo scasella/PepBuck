@@ -29,6 +29,7 @@ class MainController: UIViewController {
         case Pay
         case Circle
         case Adjust
+        case Name
     }
     
     var settingsSelect = settingEnum.None
@@ -62,6 +63,7 @@ class MainController: UIViewController {
     @IBOutlet var latestDateLabel: UILabel!
     @IBOutlet var settingsButton: UIButton!
     @IBOutlet var earningsButton: UIButton!
+    @IBOutlet var changeNameButton: UIButton!
     
     func toggleEarningsSettings(show: Bool) {
         if show == true {
@@ -157,13 +159,14 @@ class MainController: UIViewController {
             startTime = NSDate()
             NSUserDefaults.standardUserDefaults().setObject(startTime, forKey: "startTime")
             latestDate = "\(date)"
-           
+            NSUserDefaults.standardUserDefaults().setObject(latestDate, forKey: "latestDate")
+            
             if periodStart == "" {
                 periodStart = "\(date)"
                 NSUserDefaults.standardUserDefaults().setObject(periodStart, forKey: "periodStart")
             }
             
-            NSUserDefaults.standardUserDefaults().setObject(latestDate, forKey: "latestDate")
+            
         }
         
         timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
@@ -238,9 +241,14 @@ class MainController: UIViewController {
     @IBAction func settingsButtonPressed(sender: AnyObject) {
         
         toggleEarningsSettings(false)
+        mainView.duration = 1.5
+        mainView.animation = "fall"
+        mainView.force = 4.0
+        mainView.animateToNext() {
+            self.mainView.y = 400
+        }
+        pepBuckLabel.hidden = true
         
-        pepBuckLabel.hidden = true 
-        springView.hidden = true
         settingsView.hidden = false
         
     }
@@ -395,6 +403,16 @@ class MainController: UIViewController {
     =========================
     =========================
 */
+    @IBAction func changeNamePressed(sender: AnyObject) {
+        settingsField.resignFirstResponder()
+        settingsField.keyboardType = UIKeyboardType.NamePhonePad
+        settingsField.becomeFirstResponder()
+        settingsField.text = ""
+        settingsSelect = .Name
+        settingsLabel.text = "Set Name"
+        
+    }
+   
     
     @IBAction func savePressed(sender: AnyObject) {
         switch settingsSelect {
@@ -419,6 +437,13 @@ class MainController: UIViewController {
             NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
             
              showSettingsAlert("Hours worked adjusted sucessfully")
+        
+            
+        case .Name:
+            
+            name = settingsField.text!
+            NSUserDefaults.standardUserDefaults().setObject(name, forKey: "name")
+            showSettingsAlert("Hi, \(name)!")
             
         default :
             print("test")
@@ -434,6 +459,7 @@ class MainController: UIViewController {
             
             settingsLabel.text = "Hourly Pay"
             settingsButtonsSwitch()
+            changeNameButton.hidden = false
             sender.setBackgroundImage(UIImage(named: "SettingsPayFull.png"), forState: UIControlState.Normal)
             settingsSelect = .Pay
             settingsField.text = "\(round(payRate * 100) / 100)"
@@ -462,10 +488,11 @@ class MainController: UIViewController {
     
     
     func settingsButtonsSwitch() {
+        settingsField.keyboardType = UIKeyboardType.DecimalPad
         payButton.setBackgroundImage(UIImage(named: "SettingsPayEmpty.png"), forState: UIControlState.Normal)
         circleButton.setBackgroundImage(UIImage(named: "SettingsCircleEmpty.png"), forState: UIControlState.Normal)
         adjustButton.setBackgroundImage(UIImage(named: "SettingsAdjustEmpty.png"), forState: UIControlState.Normal)
-        //tapLabel.hidden = true
+        changeNameButton.hidden = true
         settingsField.hidden = false
         saveButton.alpha = 1.0
         saveButton.enabled = true
@@ -476,10 +503,10 @@ class MainController: UIViewController {
     @IBAction func backPressed(sender: AnyObject) {
         settingsField.resignFirstResponder()
         springView.hidden = false
-        springView.animation = "slideUp"
-        springView.duration = 1.5
-        springView.force = 4.0
-        springView.animate()
+        mainView.animation = "slideUp"
+        mainView.duration = 1.5
+        mainView.force = 4.0
+        mainView.animate()
         settingsButton.enabled = true
         earningsButton.enabled = true
         pepBuckLabel.hidden = false
