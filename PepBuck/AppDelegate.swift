@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var initialViewController: UIViewController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -29,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             payRate = NSUserDefaults.standardUserDefaults().objectForKey("payRate") as! Double
         }
 
-        
         // Override point for customization after application launch.
         return true
     }
@@ -66,6 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if NSUserDefaults.standardUserDefaults().objectForKey("startTime") != nil {
             startTime = NSUserDefaults.standardUserDefaults().objectForKey("startTime") as! NSDate }
 
+        
         
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }

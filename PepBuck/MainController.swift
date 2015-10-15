@@ -270,7 +270,14 @@ class MainController: UIViewController {
         
     }
     
+    
+    
     override func viewDidAppear(animated: Bool) {
+        
+        if name == "" {
+            performSegueWithIdentifier("toSetup", sender: self)
+        }
+        
         if onlyShowPepBuck == false {
         pepBuckLabel.animate()
         welcomeLabel.hidden = false
@@ -282,6 +289,7 @@ class MainController: UIViewController {
             } }
     }
 
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -345,9 +353,11 @@ class MainController: UIViewController {
     */
     
     @IBAction func earningsResetPressed(sender: AnyObject) {
-        let refreshAlert = UIAlertController(title: "Reset Earnings", message: "Are you sure?", preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "Alert", message: "Resert Earnings?", preferredStyle: UIAlertControllerStyle.Alert)
         
-        refreshAlert.addAction(UIAlertAction(title: "Yes!", style: .Default, handler: { (action: UIAlertAction) in
+       
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (action: UIAlertAction) in
             totalHours = 0.00
             totalPay = 0.00
             periodStart = ""
@@ -362,9 +372,11 @@ class MainController: UIViewController {
             
         }))
         
-        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction) in
             print("Handle Cancel Logic here")
         }))
+        
+         self.presentViewController(alert, animated: true, completion: nil)
         
     }
     
@@ -516,7 +528,7 @@ class MainController: UIViewController {
     
     
     
-    func showSettingsAlert(setting: String) {
+   func showSettingsAlert(setting: String) {
         let alertController = UIAlertController(title: "Settings Updated", message:
             "\(setting)", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))

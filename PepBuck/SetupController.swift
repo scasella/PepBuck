@@ -68,19 +68,15 @@ class SetupController: UIViewController {
         }
     }
     
-   
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    
+    override func viewDidAppear(animated: Bool) {
      
-
         welcomeLabel.animate()         
         pepBuckLabel.animateNext {
 
-            self.pepBuckLabel.animateNext {
                 entryField.becomeFirstResponder()
-            }
+          
         }
         
         whatIsLabel.animateNext {
