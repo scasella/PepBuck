@@ -13,6 +13,7 @@
 		880CD2AC1B9E11B500578C54 /* PepBuckLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD2A81B9E11B500578C54 /* PepBuckLogo.png */; };
 		880CD2AD1B9E11B500578C54 /* WhiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD2A91B9E11B500578C54 /* WhiteButton.png */; };
 		880CD2AF1B9E13FD00578C54 /* PeachPause.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD2AE1B9E13FD00578C54 /* PeachPause.png */; };
+		883B53791BD87D6A004A0409 /* goalRectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 883B53781BD87D6A004A0409 /* goalRectangle.png */; settings = {ASSET_TAGS = (); }; };
 		88491AA81B97D50A006A1BA4 /* WelcomeCalc.png in Resources */ = {isa = PBXBuildFile; fileRef = 88491AA71B97D50A006A1BA4 /* WelcomeCalc.png */; };
 		88684E4E1BAF8007004E6D94 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88684E321BAF8007004E6D94 /* AsyncButton.swift */; settings = {ASSET_TAGS = (); }; };
 		88684E4F1BAF8007004E6D94 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88684E331BAF8007004E6D94 /* AsyncImageView.swift */; settings = {ASSET_TAGS = (); }; };
@@ -85,6 +86,7 @@
 		880CD2A81B9E11B500578C54 /* PepBuckLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PepBuckLogo.png; sourceTree = "<group>"; };
 		880CD2A91B9E11B500578C54 /* WhiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteButton.png; sourceTree = "<group>"; };
 		880CD2AE1B9E13FD00578C54 /* PeachPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PeachPause.png; path = PepBuck/PeachPause.png; sourceTree = "<group>"; };
+		883B53781BD87D6A004A0409 /* goalRectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalRectangle.png; sourceTree = "<group>"; };
 		88491AA71B97D50A006A1BA4 /* WelcomeCalc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WelcomeCalc.png; path = PepBuck/WelcomeCalc.png; sourceTree = "<group>"; };
 		88684E321BAF8007004E6D94 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		88684E331BAF8007004E6D94 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		885472101B960CDB0059938E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				883B53781BD87D6A004A0409 /* goalRectangle.png */,
 				88AA77EF1BA2476F005148FC /* BlueFullButton.png */,
 				8899941E1B8A976300C876AA /* CoinImage.png */,
 				8885AA431B8D320100184164 /* whiteBorderButton.png */,
@@ -400,6 +403,7 @@
 				88AA77E61BA24222005148FC /* SettingsAdjustFull.png in Resources */,
 				8885AA501B8D3E4B00184164 /* SettingsPayEmpty.png in Resources */,
 				880CD2AC1B9E11B500578C54 /* PepBuckLogo.png in Resources */,
+				883B53791BD87D6A004A0409 /* goalRectangle.png in Resources */,
 				8876EB291B8534ED00384F47 /* Images.xcassets in Resources */,
 				88AA77ED1BA24239005148FC /* PinkEmptyButton.png in Resources */,
 				8885AA421B8D276F00184164 /* PlayButtonWhite.png in Resources */,

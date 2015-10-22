@@ -355,9 +355,13 @@ class MainController: UIViewController {
     @IBAction func earningsResetPressed(sender: AnyObject) {
         let alert = UIAlertController(title: "Alert", message: "Resert Earnings?", preferredStyle: UIAlertControllerStyle.Alert)
         
-       
         
-        alert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action: UIAlertAction) in
+            
+        }))
+        
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .Destructive, handler: { (action: UIAlertAction) in
             totalHours = 0.00
             totalPay = 0.00
             periodStart = ""
@@ -371,10 +375,7 @@ class MainController: UIViewController {
             self.resetLabels()
             
         }))
-        
-        alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction) in
-            print("Handle Cancel Logic here")
-        }))
+       
         
          self.presentViewController(alert, animated: true, completion: nil)
         
