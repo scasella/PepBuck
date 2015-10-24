@@ -66,7 +66,7 @@ class MainController: UIViewController {
     @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var earningsButton: UIButton!
     @IBOutlet weak var changeNameButton: UIButton!
-    
+    @IBOutlet weak var dollarLabel: UILabel!
     
     
     func toggleEarningsSettings(show: Bool) {
@@ -437,6 +437,7 @@ class MainController: UIViewController {
     =========================
 */
     @IBAction func changeNamePressed(sender: AnyObject) {
+        dollarLabel.hidden = true
         settingsField.resignFirstResponder()
         settingsField.keyboardType = UIKeyboardType.NamePhonePad
         settingsField.becomeFirstResponder()
@@ -447,6 +448,7 @@ class MainController: UIViewController {
     }
    
     
+    
     @IBAction func savePressed(sender: AnyObject) {
         switch settingsSelect {
             
@@ -454,6 +456,7 @@ class MainController: UIViewController {
             payRate = (settingsField.text as! NSString).doubleValue
             NSUserDefaults.standardUserDefaults().setObject(payRate, forKey: "payRate")
             showSettingsAlert("Hourly pay is now $\(payRate)")
+            
             
         case .Circle:
             
@@ -493,8 +496,7 @@ class MainController: UIViewController {
             })
             //Goal Name Set END
             
-            
-            
+
         case .Adjust:
             
             let newHours = (settingsField.text as! NSString).doubleValue - totalHours
@@ -527,6 +529,7 @@ class MainController: UIViewController {
             
             settingsLabel.text = "Hourly Pay"
             settingsButtonsSwitch()
+            dollarLabel.hidden = false
             changeNameButton.hidden = false
             sender.setBackgroundImage(UIImage(named: "SettingsPayFull.png"), forState: UIControlState.Normal)
             settingsSelect = .Pay
@@ -536,6 +539,7 @@ class MainController: UIViewController {
             
             settingsLabel.text = "Set Goal"
             settingsButtonsSwitch()
+            dollarLabel.hidden = false
             sender.setBackgroundImage(UIImage(named: "SettingsCircleFull.png"), forState: UIControlState.Normal)
             settingsSelect = .Circle
             settingsField.text = "\(circleCompletion)"
@@ -544,6 +548,7 @@ class MainController: UIViewController {
             
             settingsLabel.text = "Adjust Time"
             settingsButtonsSwitch()
+            dollarLabel.hidden = true
             sender.setBackgroundImage(UIImage(named: "SettingsAdjustFull.png"), forState: UIControlState.Normal)
             settingsSelect = .Adjust
             settingsField.text = "\(round(totalHours * 100) / 100)"
@@ -562,6 +567,7 @@ class MainController: UIViewController {
         adjustButton.setBackgroundImage(UIImage(named: "SettingsAdjustEmpty.png"), forState: UIControlState.Normal)
         changeNameButton.hidden = true
         settingsField.hidden = false
+        dollarLabel.hidden = true
         saveButton.alpha = 1.0
         saveButton.enabled = true
     }
@@ -578,6 +584,7 @@ class MainController: UIViewController {
         goalText.text = "$\(circleCompletion)"
         }
         
+        dollarLabel.hidden = true 
         goalImage.hidden = false
         goalText.hidden = false
         mainView.animation = "slideUp"

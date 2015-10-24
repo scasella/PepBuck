@@ -622,6 +622,14 @@
                                             <action selector="settingsPressed:" destination="I5w-XD-ya3" eventType="touchUpInside" id="F1Y-r7-tGj"/>
                                         </connections>
                                     </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h19-UO-zHH">
+                                        <rect key="frame" x="80" y="188" width="42" height="47"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" red="0.1960784314" green="0.20392156859999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -652,6 +660,7 @@
                         <outlet property="circleButton" destination="Oat-oi-PRE" id="Aod-DD-gcK"/>
                         <outlet property="coinImage" destination="cRd-bG-ahC" id="fXk-Cc-pYW"/>
                         <outlet property="coinLabel" destination="DgU-Sl-GOG" id="2c1-IQ-Sch"/>
+                        <outlet property="dollarLabel" destination="h19-UO-zHH" id="vBL-22-BTY"/>
                         <outlet property="earningsButton" destination="T3V-ZU-FZe" id="RoE-AG-d8n"/>
                         <outlet property="earningsView" destination="Y7q-ME-3Bk" id="u4R-TI-kuA"/>
                         <outlet property="endShiftButton" destination="LAu-LN-dcs" id="SpZ-Jg-JDc"/>
