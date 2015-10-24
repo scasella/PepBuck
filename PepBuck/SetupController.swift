@@ -75,7 +75,7 @@ class SetupController: UIViewController {
         welcomeLabel.animate()         
         pepBuckLabel.animateNext {
 
-                entryField.becomeFirstResponder()
+                self.entryField.becomeFirstResponder()
           
         }
         

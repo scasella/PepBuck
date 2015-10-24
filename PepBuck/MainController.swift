@@ -11,6 +11,7 @@ import UIKit
 var getPause = false
 var totalPauseTime = 0.0
 var onlyShowPepBuck = false
+var goalName = ""
 
 class MainController: UIViewController {
     
@@ -35,35 +36,38 @@ class MainController: UIViewController {
     var settingsSelect = settingEnum.None
 
     
+    @IBOutlet weak var goalText: SpringLabel!
+    @IBOutlet weak var goalImage: SpringImageView!
+    @IBOutlet weak var nameLabel: SpringLabel!
+    @IBOutlet weak var welcomeLabel: SpringLabel!
+    @IBOutlet weak var pepBuckLabel: SpringLabel!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var settingsLabel: SpringLabel!
+    @IBOutlet weak var circleButton: SpringButton!
+    @IBOutlet weak var adjustButton: SpringButton!
+    @IBOutlet weak var payButton: SpringButton!
+    @IBOutlet weak var settingsField: UITextField!
+    @IBOutlet weak var settingsView: SpringView!
+    @IBOutlet weak var mainView: SpringView!
+    @IBOutlet weak var earningsView: SpringView!
+    @IBOutlet weak var springImage: SpringImageView!
+    @IBOutlet weak var coinLabel: SpringLabel!
+    @IBOutlet weak var endShiftButton: UIButton!
+    @IBOutlet weak var coinImage: SpringImageView!
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var playButton: SpringButton!
+    @IBOutlet weak var timerCircle: CircularProgressView!
+    @IBOutlet weak var springView: SpringView!
+    @IBOutlet weak var totalPayLabel: UILabel!
+    @IBOutlet weak var totalHoursLabel: UILabel!
+    @IBOutlet weak var periodStartLabel: UILabel!
+    @IBOutlet weak var latestDateLabel: UILabel!
+    @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var earningsButton: UIButton!
+    @IBOutlet weak var changeNameButton: UIButton!
     
-    @IBOutlet var nameLabel: SpringLabel!
-    @IBOutlet var welcomeLabel: SpringLabel!
-    @IBOutlet var pepBuckLabel: SpringLabel!
-    @IBOutlet var saveButton: UIButton!
-    @IBOutlet var backButton: UIButton!
-    @IBOutlet var settingsLabel: SpringLabel!
-    @IBOutlet var circleButton: SpringButton!
-    @IBOutlet var adjustButton: SpringButton!
-    @IBOutlet var payButton: SpringButton!
-    @IBOutlet var settingsField: UITextField!
-    @IBOutlet var settingsView: SpringView!
-    @IBOutlet var mainView: SpringView!
-    @IBOutlet var earningsView: SpringView!
-    @IBOutlet var springImage: SpringImageView!
-    @IBOutlet var coinLabel: SpringLabel!
-    @IBOutlet var endShiftButton: UIButton!
-    @IBOutlet var coinImage: SpringImageView!
-    @IBOutlet var timerLabel: UILabel!
-    @IBOutlet var playButton: SpringButton!
-    @IBOutlet var timerCircle: CircularProgressView!
-    @IBOutlet var springView: SpringView!
-    @IBOutlet var totalPayLabel: UILabel!
-    @IBOutlet var totalHoursLabel: UILabel!
-    @IBOutlet var periodStartLabel: UILabel!
-    @IBOutlet var latestDateLabel: UILabel!
-    @IBOutlet var settingsButton: UIButton!
-    @IBOutlet var earningsButton: UIButton!
-    @IBOutlet var changeNameButton: UIButton!
+    
     
     func toggleEarningsSettings(show: Bool) {
         if show == true {
@@ -80,6 +84,8 @@ class MainController: UIViewController {
         
         
     }
+    
+    
     
     @IBAction func playPressed(sender: SpringButton) {
         if pauseToggle == false {
@@ -228,6 +234,8 @@ class MainController: UIViewController {
         mainView.force = 4.0
         earningsView.animation = "slideUp"
         earningsView.force = 4.0
+        goalImage.hidden = true
+        goalText.hidden = true
         mainView.animateToNext() {
               self.mainView.y = 400
         }
@@ -244,6 +252,8 @@ class MainController: UIViewController {
         mainView.duration = 1.5
         mainView.animation = "fall"
         mainView.force = 4.0
+        goalImage.hidden = true
+        goalText.hidden = true
         mainView.animateToNext() {
             self.mainView.y = 400
         }
@@ -260,9 +270,15 @@ class MainController: UIViewController {
         
         nameLabel.text = "\(name)"
         
-            if startNowToggle == true {
+        if startNowToggle == true {
             playPressed(SpringButton())
             startNowToggle = false 
+        }
+        
+        if goalName != "" {
+            goalText.text = "\(goalName)"
+        } else {
+            goalText.text = "$\(circleCompletion)"
         }
         
         animator = UIDynamicAnimator(referenceView: view)
@@ -284,6 +300,8 @@ class MainController: UIViewController {
         nameLabel.hidden = false 
         welcomeLabel.animate()
         nameLabel.animateNext() {
+            self.goalImage.hidden = false
+            self.goalText.hidden = false
             self.nameLabel.hidden = true
             self.welcomeLabel.hidden = true
             } }
@@ -393,6 +411,8 @@ class MainController: UIViewController {
     
     
     @IBAction func earningsBackPressed(sender: AnyObject) {
+        goalImage.hidden = false
+        goalText.hidden = false
         earningsView.animation = "fall"
         earningsView.duration = 1.5
         mainView.animation = "slideUp"
@@ -436,9 +456,44 @@ class MainController: UIViewController {
             showSettingsAlert("Hourly pay is now $\(payRate)")
             
         case .Circle:
+            
             circleCompletion = (settingsField.text as! NSString).doubleValue
             NSUserDefaults.standardUserDefaults().setObject(circleCompletion, forKey: "circleCompletion")
-             showSettingsAlert("Circle completes every $\(circleCompletion) earned")
+             //showSettingsAlert("Circle completes every $\(circleCompletion) earned")
+            
+            
+            
+            //Goal Name Set
+            var tField: UITextField!
+            
+            func configurationTextField(textField: UITextField!)
+            {
+                textField.placeholder = "Enter an item"
+                tField = textField
+            }
+            
+            
+            func handleCancel(alertView: UIAlertAction!)
+            {
+                goalName = ""
+                NSUserDefaults.standardUserDefaults().setObject(goalName, forKey: "goalName")
+            }
+            
+            let alert = UIAlertController(title: "Add Goal Name?", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addTextFieldWithConfigurationHandler(configurationTextField)
+            alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.Cancel, handler:handleCancel))
+            alert.addAction(UIAlertAction(title: "Save", style: UIAlertActionStyle.Default, handler:{ (UIAlertAction)in
+                goalName = tField.text as String!
+                NSUserDefaults.standardUserDefaults().setObject(goalName, forKey: "goalName")
+            }))
+            
+            self.presentViewController(alert, animated: true, completion: {
+                print("completion block")
+            })
+            //Goal Name Set END
+            
+            
             
         case .Adjust:
             
@@ -479,7 +534,7 @@ class MainController: UIViewController {
             
         } else if sender.restorationIdentifier == "Circle" {
             
-            settingsLabel.text = "Circle Finish"
+            settingsLabel.text = "Set Goal"
             settingsButtonsSwitch()
             sender.setBackgroundImage(UIImage(named: "SettingsCircleFull.png"), forState: UIControlState.Normal)
             settingsSelect = .Circle
@@ -516,6 +571,15 @@ class MainController: UIViewController {
     @IBAction func backPressed(sender: AnyObject) {
         settingsField.resignFirstResponder()
         springView.hidden = false
+        
+        if goalName != "" {
+        goalText.text = "\(goalName)"
+        } else {
+        goalText.text = "$\(circleCompletion)"
+        }
+        
+        goalImage.hidden = false
+        goalText.hidden = false
         mainView.animation = "slideUp"
         mainView.duration = 1.5
         mainView.force = 4.0
@@ -539,5 +603,9 @@ class MainController: UIViewController {
     }
     
 //END SETTINGS VIEW
+    
+    func setGoalLabel(goal: String) {
+        goalText.text = goal
+    }
     
 }

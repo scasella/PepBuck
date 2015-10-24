@@ -29,6 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if NSUserDefaults.standardUserDefaults().objectForKey("payRate") != nil {
             payRate = NSUserDefaults.standardUserDefaults().objectForKey("payRate") as! Double
         }
+        
+        if NSUserDefaults.standardUserDefaults().objectForKey("goalName") != nil{
+            goalName = NSUserDefaults.standardUserDefaults().objectForKey("goalName") as! String }
+
 
         // Override point for customization after application launch.
         return true
