@@ -163,7 +163,10 @@ class MainController: UIViewController {
            
             newSession = false
             startTime = NSDate()
+            let tempTime = startTime
+            let date = NSDateFormatter.localizedStringFromDate(tempTime, dateStyle: .ShortStyle, timeStyle: .ShortStyle)
             NSUserDefaults.standardUserDefaults().setObject(startTime, forKey: "startTime")
+           
             latestDate = "\(date)"
             NSUserDefaults.standardUserDefaults().setObject(latestDate, forKey: "latestDate")
             
@@ -226,8 +229,8 @@ class MainController: UIViewController {
         earningsButton.enabled = false
         totalPayLabel.text = "$\(round(totalPay * 100)/100)"
         totalHoursLabel.text = "\(round(totalHours * 100)/100) hours"
-        periodStartLabel.text = "Period start date: \(periodStart)"
-        latestDateLabel.text = "Latest date: \(latestDate)"
+        periodStartLabel.text = "Period start: \(periodStart)"
+        latestDateLabel.text = "Last shift: \(latestDate)"
         earningsView.duration = 1.5
         mainView.duration = 1.5
         mainView.animation = "fall"
@@ -248,6 +251,9 @@ class MainController: UIViewController {
     
     @IBAction func settingsButtonPressed(sender: AnyObject) {
         
+        settingsButtonsSwitch()
+        settingsLabel.text = "Tap a button below"
+        settingsField.text = ""
         toggleEarningsSettings(false)
         mainView.duration = 1.5
         mainView.animation = "fall"
@@ -281,6 +287,11 @@ class MainController: UIViewController {
             goalText.text = "$\(circleCompletion)"
         }
         
+        if onlyShowPepBuck == false {
+            goalImage.hidden = true
+            goalText.hidden = true
+        }
+        
         animator = UIDynamicAnimator(referenceView: view)
         
         
@@ -295,16 +306,24 @@ class MainController: UIViewController {
         }
         
         if onlyShowPepBuck == false {
+        toggleEarningsSettings(false)
         pepBuckLabel.animate()
-        welcomeLabel.hidden = false
-        nameLabel.hidden = false 
         welcomeLabel.animate()
+        welcomeLabel.hidden = false
+        nameLabel.hidden = false
+   
         nameLabel.animateNext() {
-            self.goalImage.hidden = false
-            self.goalText.hidden = false
             self.nameLabel.hidden = true
             self.welcomeLabel.hidden = true
-            } }
+            self.goalImage.hidden = false
+            self.goalImage.animate()
+            self.goalText.hidden = false
+            self.goalText.animateNext(){
+                self.toggleEarningsSettings(true)
+            }
+            } } else {
+            onlyShowPepBuck = false 
+        }
     }
 
     
@@ -497,6 +516,7 @@ class MainController: UIViewController {
             //Goal Name Set END
             
 
+        
         case .Adjust:
             
             let newHours = (settingsField.text as! NSString).doubleValue - totalHours
@@ -528,6 +548,8 @@ class MainController: UIViewController {
         if sender.restorationIdentifier == "Pay" {
             
             settingsLabel.text = "Hourly Pay"
+            settingsField.resignFirstResponder()
+            settingsField.keyboardType = UIKeyboardType.DecimalPad
             settingsButtonsSwitch()
             dollarLabel.hidden = false
             changeNameButton.hidden = false
@@ -538,6 +560,8 @@ class MainController: UIViewController {
         } else if sender.restorationIdentifier == "Circle" {
             
             settingsLabel.text = "Set Goal"
+            settingsField.resignFirstResponder()
+            settingsField.keyboardType = UIKeyboardType.DecimalPad
             settingsButtonsSwitch()
             dollarLabel.hidden = false
             sender.setBackgroundImage(UIImage(named: "SettingsCircleFull.png"), forState: UIControlState.Normal)
@@ -547,6 +571,8 @@ class MainController: UIViewController {
         } else {
             
             settingsLabel.text = "Adjust Time"
+            settingsField.resignFirstResponder()
+            settingsField.keyboardType = UIKeyboardType.DecimalPad
             settingsButtonsSwitch()
             dollarLabel.hidden = true
             sender.setBackgroundImage(UIImage(named: "SettingsAdjustFull.png"), forState: UIControlState.Normal)

@@ -21,6 +21,8 @@ class SetupController: UIViewController {
     @IBOutlet var whatIsHourLabel: SpringLabel!
     @IBOutlet var hourlySalarySegmented: UISegmentedControl!
     
+    
+    
     @IBAction func submitTap(sender: AnyObject) {
         if payToggle == false {
         if entryField.text != "" {
@@ -65,7 +67,7 @@ class SetupController: UIViewController {
                 onlyShowPepBuck = true
                 performSegueWithIdentifier("toMain", sender: self)
         }
-        }
+      }
     }
     
     
