@@ -24,8 +24,9 @@ class SetupController: UIViewController {
     
     
     @IBAction func submitTap(sender: AnyObject) {
+         if entryField.text != "" {
         if payToggle == false {
-        if entryField.text != "" {
+       
         
         name = entryField.text!
         name.replaceRange(name.startIndex...name.startIndex, with: String(name[name.startIndex]).capitalizedString)
@@ -50,7 +51,7 @@ class SetupController: UIViewController {
         entryField.resignFirstResponder()
         entryField.becomeFirstResponder()
         payToggle = true
-         }
+            
             
         } else if hourlySalarySegmented.selectedSegmentIndex == 0 {
             if entryField.text != "" {
@@ -68,6 +69,7 @@ class SetupController: UIViewController {
                 performSegueWithIdentifier("toMain", sender: self)
         }
       }
+        }
     }
     
     

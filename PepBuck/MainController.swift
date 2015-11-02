@@ -67,6 +67,8 @@ class MainController: UIViewController {
     @IBOutlet weak var earningsButton: UIButton!
     @IBOutlet weak var changeNameButton: UIButton!
     @IBOutlet weak var dollarLabel: UILabel!
+    @IBOutlet weak var starImage: UIImageView!
+    @IBOutlet weak var starLabel: UILabel!
     
     
     func toggleEarningsSettings(show: Bool) {
@@ -184,8 +186,21 @@ class MainController: UIViewController {
     
     
     
-    func subtractTime() {
     
+    var incrementer = 0.0
+    
+    func subtractTime() {
+        
+        incrementer = incrementer + 0.1
+        
+        let limit = circleCompletion / (payRate / 60 / 60)
+        
+        if incrementer > limit {
+           starSetup()
+           performSegueWithIdentifier("toAnimator", sender: self)
+           self.incrementer = 0.0
+        }
+        
         let elapsedTime: Double?
         
         if pauseUsed == true {
@@ -274,6 +289,8 @@ class MainController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+      starSetup()
+        
         nameLabel.text = "\(name)"
         
         if startNowToggle == true {
@@ -333,6 +350,28 @@ class MainController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func starSetup() {
+    
+    let startCalc =  sessionPay / circleCompletion
+    
+    if startCalc > 0.98 {
+    starImage.hidden = false
+    } else {
+    starImage.hidden = true
+    }
+    
+    if Int(startCalc) > 1 {
+    starLabel.hidden = false
+    starLabel.text = "\(Int(startCalc))"
+    } else {
+    starLabel.hidden = true
+    }
+    
+    }
+    
+    
+    
+    ///Snap-to-grid behavior
     var animator : UIDynamicAnimator!
     var attachmentBehavior : UIAttachmentBehavior!
     var gravityBehaviour : UIGravityBehavior!
@@ -469,6 +508,7 @@ class MainController: UIViewController {
     
     
     @IBAction func savePressed(sender: AnyObject) {
+        if settingsField.text != "" {
         switch settingsSelect {
             
         case .Pay:
@@ -486,6 +526,8 @@ class MainController: UIViewController {
             
             
             //Goal Name Set
+            ///////////////
+            ///////////////
             var tField: UITextField!
             
             func configurationTextField(textField: UITextField!)
@@ -511,8 +553,10 @@ class MainController: UIViewController {
             }))
             
             self.presentViewController(alert, animated: true, completion: {
-                print("completion block")
+                
             })
+            ///////////////
+            ///////////////
             //Goal Name Set END
             
 
@@ -539,6 +583,13 @@ class MainController: UIViewController {
             print("test")
             
         }
+            
+        }
+        
+        settingsButtonsSwitch()
+        settingsLabel.text = "Tap a button below"
+        settingsField.resignFirstResponder()
+        settingsField.text = ""
     }
 
     
