@@ -21,6 +21,9 @@ class SetupController: UIViewController {
     @IBOutlet var whatIsHourLabel: SpringLabel!
     @IBOutlet var hourlySalarySegmented: UISegmentedControl!
     
+    @IBAction func donePressed(sender: AnyObject) {
+        submitTap(self)
+    }
     
     
     @IBAction func submitTap(sender: AnyObject) {
