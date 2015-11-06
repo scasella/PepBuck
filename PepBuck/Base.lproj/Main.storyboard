@@ -40,7 +40,7 @@
                                 <color key="textColor" red="0.2156862745" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What do you get paid?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-9t-n2l" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What is your pay?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-9t-n2l" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="49" y="167" width="276" height="32"/>
                                 <animations/>
                                 <constraints>
@@ -190,9 +190,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="starImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xws-BQ-9GC" customClass="SpringImageView" customModule="PepBuck" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xws-BQ-9GC" customClass="SpringImageView" customModule="PepBuck" customModuleProvider="target">
                                 <rect key="frame" x="66" y="225" width="242" height="217"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="UK3-oX-gY0"/>
+                                    <constraint firstAttribute="width" constant="242" id="kcW-gO-thl"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomOut"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
@@ -204,6 +208,10 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xws-BQ-9GC" firstAttribute="centerY" secondItem="CdJ-z6-P8g" secondAttribute="centerY" id="IvE-gX-Cee"/>
+                            <constraint firstItem="Xws-BQ-9GC" firstAttribute="centerX" secondItem="CdJ-z6-P8g" secondAttribute="centerX" id="Jls-AJ-mN7"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -246,11 +254,11 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$1.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="WWh-w6-4Py" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
-                                <rect key="frame" x="64" y="129" width="194" height="36"/>
+                                <rect key="frame" x="64" y="129" width="182" height="36"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="BdZ-9S-tGe"/>
-                                    <constraint firstAttribute="width" constant="194" id="yX7-yY-SxX"/>
+                                    <constraint firstAttribute="width" constant="182" id="yX7-yY-SxX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -471,7 +479,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-Sl-GOG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="27" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-Sl-GOG" customClass="SpringLabel" customModule="PepBuck" customModuleProvider="target">
                                                 <rect key="frame" x="71" y="72" width="207" height="91"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="53"/>
@@ -867,6 +875,6 @@
         <image name="starImg.png" width="693" height="660"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="scH-uY-rzm"/>
+        <segue reference="9O4-ZK-ALg"/>
     </inferredMetricsTieBreakers>
 </document>

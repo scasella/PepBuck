@@ -239,8 +239,6 @@ class MainController: UIViewController, ADBannerViewDelegate {
     
             incrementer = circleCompletion * (sessionPay / circleCompletion - Double(Int(sessionPay / circleCompletion))) / (payRate / 60 / 60)
         
-          print(incrementer)
-
           //  incrementer = incrementer + 0.1
     
         
@@ -330,6 +328,7 @@ class MainController: UIViewController, ADBannerViewDelegate {
       
       bannerAd.delegate = self
       bannerAd.alpha = 0
+        self.canDisplayBannerAds = true
  
         
         nameLabel.text = "\(name)"
