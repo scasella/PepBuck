@@ -7,13 +7,34 @@
 //
 
 import UIKit
+import iAd
 
 var getPause = false
 var totalPauseTime = 0.0
 var onlyShowPepBuck = false
 var goalName = ""
 
-class MainController: UIViewController {
+class MainController: UIViewController, ADBannerViewDelegate {
+    
+    //Handle iAD 
+    func bannerViewDidLoadAd(banner: ADBannerView!) {
+        UIView.animateWithDuration(0.5) { () -> Void in
+             self.bannerAd.alpha = 1
+        }
+    }
+    
+    func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
+        return true
+    }
+    
+    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+
+            UIView.animateWithDuration(0.5) { () -> Void in
+                self.bannerAd.alpha = 0
+            }
+    }
+    /// END Handle iAd
+    
     
     var newSession = true
     var coinLabelPay = 0.00
@@ -24,6 +45,7 @@ class MainController: UIViewController {
     var pauseUsed = false
     var sessionPay = 0.00
     var sessionHours = 0.00
+    @IBOutlet weak var bannerAd: ADBannerView!
     
     enum settingEnum {
         case None
@@ -189,24 +211,18 @@ class MainController: UIViewController {
     
     var incrementer = 0.0
     
+    
+    
     func subtractTime() {
-        
-        incrementer = incrementer + 0.1
-        
-        let limit = circleCompletion / (payRate / 60 / 60)
-        
-        if incrementer > limit {
-           starSetup()
-           performSegueWithIdentifier("toAnimator", sender: self)
-           self.incrementer = 0.0
-        }
         
         let elapsedTime: Double?
         
         if pauseUsed == true {
+            
             elapsedTime = NSDate().timeIntervalSinceDate(startTime) - totalPauseTime
     
         } else {
+            
             elapsedTime = NSDate().timeIntervalSinceDate(startTime)
         }
         
@@ -219,6 +235,25 @@ class MainController: UIViewController {
         let currentPay = (elapsedTime! / 60 / 60 * payRate / circleCompletion)
         let timerCalc = currentPay - Double(Int(currentPay))
         timerCircle.value = CGFloat(timerCalc)
+        
+    
+            incrementer = circleCompletion * (sessionPay / circleCompletion - Double(Int(sessionPay / circleCompletion))) / (payRate / 60 / 60)
+        
+          print(incrementer)
+
+          //  incrementer = incrementer + 0.1
+    
+        
+       // let limit = circleCompletion / (payRate / 60 / 60)
+        
+        
+        if Int(starLabel.text as String!) < Int(sessionPay / circleCompletion) {
+            starSetup()
+            performSegueWithIdentifier("toAnimator", sender: self)
+            self.incrementer = 0.0
+
+        }
+        
        
     }
     
@@ -267,6 +302,8 @@ class MainController: UIViewController {
     @IBAction func settingsButtonPressed(sender: AnyObject) {
         
         settingsButtonsSwitch()
+        saveButton.enabled = false
+        settingsField.enabled = false
         settingsLabel.text = "Tap a button below"
         settingsField.text = ""
         toggleEarningsSettings(false)
@@ -290,6 +327,10 @@ class MainController: UIViewController {
         super.viewDidLoad()
         
       starSetup()
+      
+      bannerAd.delegate = self
+      bannerAd.alpha = 0
+ 
         
         nameLabel.text = "\(name)"
         
@@ -360,9 +401,11 @@ class MainController: UIViewController {
     starImage.hidden = true
     }
     
-    if Int(startCalc) > 1 {
-    starLabel.hidden = false
+    if Int(startCalc) >= 1 {
     starLabel.text = "\(Int(startCalc))"
+        if Int(startCalc) > 1 {
+    starLabel.hidden = false
+        }
     } else {
     starLabel.hidden = true
     }
@@ -588,13 +631,18 @@ class MainController: UIViewController {
         
         settingsButtonsSwitch()
         settingsLabel.text = "Tap a button below"
-        settingsField.resignFirstResponder()
-        settingsField.text = ""
+         settingsField.text = ""
+        settingsField.enabled = false
+ 
+       
     }
 
     
     
     @IBAction func settingsPressed(sender: SpringButton) {
+        
+        settingsField.enabled = true
+        saveButton.enabled = true 
         
         if sender.restorationIdentifier == "Pay" {
             

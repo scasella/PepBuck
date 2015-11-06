@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I5w-XD-ya3">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -265,13 +266,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Wf-aO-Txd">
-                                <rect key="frame" x="27" y="601" width="481" height="66"/>
-                                <animations/>
-                                <connections>
-                                    <outlet property="delegate" destination="I5w-XD-ya3" id="gMC-Eh-2x0"/>
-                                </connections>
-                            </adBannerView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LAu-LN-dcs">
                                 <rect key="frame" x="289" y="121" width="66" height="49"/>
                                 <animations/>
@@ -462,7 +456,7 @@
                                                 <rect key="frame" x="26" y="23" width="59" height="54"/>
                                                 <animations/>
                                             </imageView>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBb-ea-dyE">
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBb-ea-dyE">
                                                 <rect key="frame" x="25" y="24" width="59" height="54"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -753,6 +747,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Wf-aO-Txd">
+                                <rect key="frame" x="27" y="601" width="481" height="66"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="delegate" destination="I5w-XD-ya3" id="OvH-gT-x4C"/>
+                                </connections>
+                            </adBannerView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
@@ -803,6 +804,7 @@
                     <connections>
                         <outlet property="adjustButton" destination="UeB-J6-HWo" id="qwa-or-P6x"/>
                         <outlet property="backButton" destination="Ih6-cf-uFS" id="AIk-D2-bPY"/>
+                        <outlet property="bannerAd" destination="6Wf-aO-Txd" id="jER-H4-dRT"/>
                         <outlet property="changeNameButton" destination="LIZ-TR-7Fo" id="W0o-d6-wPT"/>
                         <outlet property="circleButton" destination="Oat-oi-PRE" id="Aod-DD-gcK"/>
                         <outlet property="coinImage" destination="cRd-bG-ahC" id="fXk-Cc-pYW"/>

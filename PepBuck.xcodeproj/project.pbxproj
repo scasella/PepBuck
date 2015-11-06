@@ -13,6 +13,8 @@
 		880CD2AC1B9E11B500578C54 /* PepBuckLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD2A81B9E11B500578C54 /* PepBuckLogo.png */; };
 		880CD2AD1B9E11B500578C54 /* WhiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD2A91B9E11B500578C54 /* WhiteButton.png */; };
 		880CD2AF1B9E13FD00578C54 /* PeachPause.png in Resources */ = {isa = PBXBuildFile; fileRef = 880CD2AE1B9E13FD00578C54 /* PeachPause.png */; };
+		88355E591BEC3C1D00DE70A6 /* refresh62.png in Resources */ = {isa = PBXBuildFile; fileRef = 88355E571BEC3C1D00DE70A6 /* refresh62.png */; };
+		88355E5A1BEC3C1D00DE70A6 /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = 88355E581BEC3C1D00DE70A6 /* Group.png */; };
 		883B53791BD87D6A004A0409 /* goalRectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 883B53781BD87D6A004A0409 /* goalRectangle.png */; };
 		88491AA81B97D50A006A1BA4 /* WelcomeCalc.png in Resources */ = {isa = PBXBuildFile; fileRef = 88491AA71B97D50A006A1BA4 /* WelcomeCalc.png */; };
 		88684E4E1BAF8007004E6D94 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88684E321BAF8007004E6D94 /* AsyncButton.swift */; };
@@ -88,6 +90,8 @@
 		880CD2A81B9E11B500578C54 /* PepBuckLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PepBuckLogo.png; sourceTree = "<group>"; };
 		880CD2A91B9E11B500578C54 /* WhiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteButton.png; sourceTree = "<group>"; };
 		880CD2AE1B9E13FD00578C54 /* PeachPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PeachPause.png; path = PepBuck/PeachPause.png; sourceTree = "<group>"; };
+		88355E571BEC3C1D00DE70A6 /* refresh62.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh62.png; sourceTree = "<group>"; };
+		88355E581BEC3C1D00DE70A6 /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Group.png; sourceTree = "<group>"; };
 		883B53781BD87D6A004A0409 /* goalRectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalRectangle.png; sourceTree = "<group>"; };
 		88491AA71B97D50A006A1BA4 /* WelcomeCalc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WelcomeCalc.png; path = PepBuck/WelcomeCalc.png; sourceTree = "<group>"; };
 		88684E321BAF8007004E6D94 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 				887423821B8569D400CA7889 /* CircularProgressView.swift */,
 				8876EB211B8534EC00384F47 /* AppDelegate.swift */,
 				8876EB231B8534EC00384F47 /* SetupController.swift */,
+				88355E571BEC3C1D00DE70A6 /* refresh62.png */,
+				88355E581BEC3C1D00DE70A6 /* Group.png */,
 				8874237E1B8565CD00CA7889 /* MainController.swift */,
 				88E205EC1BB7918800DD1784 /* Models.swift */,
 				8876EB251B8534EC00384F47 /* Main.storyboard */,
@@ -412,6 +418,7 @@
 				8885AA501B8D3E4B00184164 /* SettingsPayEmpty.png in Resources */,
 				880CD2AC1B9E11B500578C54 /* PepBuckLogo.png in Resources */,
 				883B53791BD87D6A004A0409 /* goalRectangle.png in Resources */,
+				88355E5A1BEC3C1D00DE70A6 /* Group.png in Resources */,
 				8876EB291B8534ED00384F47 /* Images.xcassets in Resources */,
 				88AA77ED1BA24239005148FC /* PinkEmptyButton.png in Resources */,
 				8885AA421B8D276F00184164 /* PlayButtonWhite.png in Resources */,
@@ -426,6 +433,7 @@
 				8899941F1B8A976300C876AA /* CoinImage.png in Resources */,
 				880CD2AA1B9E11B500578C54 /* Card.png in Resources */,
 				880CD2AB1B9E11B500578C54 /* PeachButton.png in Resources */,
+				88355E591BEC3C1D00DE70A6 /* refresh62.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -594,7 +602,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -614,6 +622,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scasella.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -629,6 +638,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scasella.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
