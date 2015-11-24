@@ -59,7 +59,6 @@ class MainController: UIViewController, ADBannerViewDelegate {
 
     
     @IBOutlet weak var goalText: SpringLabel!
-    @IBOutlet weak var goalImage: SpringImageView!
     @IBOutlet weak var nameLabel: SpringLabel!
     @IBOutlet weak var welcomeLabel: SpringLabel!
     @IBOutlet weak var pepBuckLabel: SpringLabel!
@@ -285,7 +284,7 @@ class MainController: UIViewController, ADBannerViewDelegate {
         mainView.force = 4.0
         earningsView.animation = "slideUp"
         earningsView.force = 4.0
-        goalImage.hidden = true
+        
         goalText.hidden = true
         mainView.animateToNext() {
               self.mainView.y = 400
@@ -308,7 +307,7 @@ class MainController: UIViewController, ADBannerViewDelegate {
         mainView.duration = 1.5
         mainView.animation = "fall"
         mainView.force = 4.0
-        goalImage.hidden = true
+        
         goalText.hidden = true
         mainView.animateToNext() {
             self.mainView.y = 400
@@ -328,7 +327,7 @@ class MainController: UIViewController, ADBannerViewDelegate {
       
       bannerAd.delegate = self
       bannerAd.alpha = 0
-        self.canDisplayBannerAds = true
+      self.canDisplayBannerAds = true
  
         
         nameLabel.text = "\(name)"
@@ -345,7 +344,7 @@ class MainController: UIViewController, ADBannerViewDelegate {
         }
         
         if onlyShowPepBuck == false {
-            goalImage.hidden = true
+           
             goalText.hidden = true
         }
         
@@ -372,8 +371,7 @@ class MainController: UIViewController, ADBannerViewDelegate {
         nameLabel.animateNext() {
             self.nameLabel.hidden = true
             self.welcomeLabel.hidden = true
-            self.goalImage.hidden = false
-            self.goalImage.animate()
+         
             self.goalText.hidden = false
             self.goalText.animateNext(){
                 self.toggleEarningsSettings(true)
@@ -511,7 +509,7 @@ class MainController: UIViewController, ADBannerViewDelegate {
     
     
     @IBAction func earningsBackPressed(sender: AnyObject) {
-        goalImage.hidden = false
+       
         goalText.hidden = false
         earningsView.animation = "fall"
         earningsView.duration = 1.5
@@ -709,7 +707,7 @@ class MainController: UIViewController, ADBannerViewDelegate {
         }
         
         dollarLabel.hidden = true 
-        goalImage.hidden = false
+        
         goalText.hidden = false
         mainView.animation = "slideUp"
         mainView.duration = 1.5

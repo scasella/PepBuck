@@ -17,6 +17,8 @@
 		88355E5A1BEC3C1D00DE70A6 /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = 88355E581BEC3C1D00DE70A6 /* Group.png */; };
 		883B53791BD87D6A004A0409 /* goalRectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 883B53781BD87D6A004A0409 /* goalRectangle.png */; };
 		88491AA81B97D50A006A1BA4 /* WelcomeCalc.png in Resources */ = {isa = PBXBuildFile; fileRef = 88491AA71B97D50A006A1BA4 /* WelcomeCalc.png */; };
+		8852EBD21C03FBBA00B7CB23 /* BagB.png in Resources */ = {isa = PBXBuildFile; fileRef = 8852EBD01C03FBBA00B7CB23 /* BagB.png */; };
+		8852EBD31C03FBBA00B7CB23 /* SettingsB.png in Resources */ = {isa = PBXBuildFile; fileRef = 8852EBD11C03FBBA00B7CB23 /* SettingsB.png */; };
 		88684E4E1BAF8007004E6D94 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88684E321BAF8007004E6D94 /* AsyncButton.swift */; };
 		88684E4F1BAF8007004E6D94 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88684E331BAF8007004E6D94 /* AsyncImageView.swift */; };
 		88684E501BAF8007004E6D94 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88684E341BAF8007004E6D94 /* AutoTextView.swift */; };
@@ -94,6 +96,8 @@
 		88355E581BEC3C1D00DE70A6 /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Group.png; sourceTree = "<group>"; };
 		883B53781BD87D6A004A0409 /* goalRectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalRectangle.png; sourceTree = "<group>"; };
 		88491AA71B97D50A006A1BA4 /* WelcomeCalc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WelcomeCalc.png; path = PepBuck/WelcomeCalc.png; sourceTree = "<group>"; };
+		8852EBD01C03FBBA00B7CB23 /* BagB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BagB.png; sourceTree = "<group>"; };
+		8852EBD11C03FBBA00B7CB23 /* SettingsB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsB.png; sourceTree = "<group>"; };
 		88684E321BAF8007004E6D94 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		88684E331BAF8007004E6D94 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		88684E341BAF8007004E6D94 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -270,6 +274,8 @@
 				887423821B8569D400CA7889 /* CircularProgressView.swift */,
 				8876EB211B8534EC00384F47 /* AppDelegate.swift */,
 				8876EB231B8534EC00384F47 /* SetupController.swift */,
+				8852EBD01C03FBBA00B7CB23 /* BagB.png */,
+				8852EBD11C03FBBA00B7CB23 /* SettingsB.png */,
 				88355E571BEC3C1D00DE70A6 /* refresh62.png */,
 				88355E581BEC3C1D00DE70A6 /* Group.png */,
 				8874237E1B8565CD00CA7889 /* MainController.swift */,
@@ -432,7 +438,9 @@
 				88AA77EE1BA24239005148FC /* PinkFullButton.png in Resources */,
 				8899941F1B8A976300C876AA /* CoinImage.png in Resources */,
 				880CD2AA1B9E11B500578C54 /* Card.png in Resources */,
+				8852EBD21C03FBBA00B7CB23 /* BagB.png in Resources */,
 				880CD2AB1B9E11B500578C54 /* PeachButton.png in Resources */,
+				8852EBD31C03FBBA00B7CB23 /* SettingsB.png in Resources */,
 				88355E591BEC3C1D00DE70A6 /* refresh62.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

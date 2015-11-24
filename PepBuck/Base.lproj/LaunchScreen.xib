@@ -18,51 +18,42 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="refresh62.png" translatesAutoresizingMaskIntoConstraints="NO" id="OaE-r2-zeo">
-                    <rect key="frame" x="94" y="265" width="198" height="198"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3u2-G2-sDE">
+                    <rect key="frame" x="67" y="250" width="240" height="233"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="refresh62.png" translatesAutoresizingMaskIntoConstraints="NO" id="OaE-r2-zeo">
+                            <rect key="frame" x="21" y="18" width="198" height="198"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="198" id="6lX-j0-VgV"/>
+                                <constraint firstAttribute="width" constant="198" id="aYw-0T-10p"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Es-ue-pRE">
+                            <rect key="frame" x="62" y="42" width="116" height="149"/>
+                            <animations/>
+                        </imageView>
+                    </subviews>
                     <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="198" id="6lX-j0-VgV"/>
-                        <constraint firstAttribute="width" constant="198" id="aYw-0T-10p"/>
+                        <constraint firstAttribute="height" constant="233" id="Om8-M5-aKU"/>
+                        <constraint firstAttribute="width" constant="240" id="xYM-Zd-QDK"/>
                     </constraints>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Es-ue-pRE">
-                    <rect key="frame" x="130" y="289" width="116" height="149"/>
-                    <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="149" id="JMj-DL-u6o"/>
-                        <constraint firstAttribute="width" constant="116" id="qT3-rF-BvH"/>
-                    </constraints>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="PepBuck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snf-qU-PCS">
-                    <rect key="frame" x="9" y="132" width="358" height="112"/>
-                    <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="112" id="3JQ-jb-ZWY"/>
-                        <constraint firstAttribute="width" constant="358" id="ldV-Y1-j6R"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="65"/>
-                    <color key="textColor" red="0.18416642312555184" green="0.59286310778337348" blue="0.92840514520202022" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                </view>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="OaE-r2-zeo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Snf-qU-PCS" secondAttribute="bottom" constant="25" id="KrQ-av-zuR"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
+                <constraint firstItem="3u2-G2-sDE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Omy-1x-ezT"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstAttribute="bottom" secondItem="OaE-r2-zeo" secondAttribute="bottom" constant="204" id="abF-2E-DDk"/>
-                <constraint firstItem="7Es-ue-pRE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="g3c-B3-b96"/>
-                <constraint firstAttribute="bottom" secondItem="7Es-ue-pRE" secondAttribute="bottom" constant="229" id="kvQ-rJ-Gv4"/>
-                <constraint firstItem="OaE-r2-zeo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lGO-a1-w4B"/>
-                <constraint firstItem="Snf-qU-PCS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vgL-NU-j8o"/>
-                <constraint firstItem="Snf-qU-PCS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="52" id="ygE-gF-TKT"/>
+                <constraint firstItem="3u2-G2-sDE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lFO-0R-Zvf"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="548" y="455"/>
+            <point key="canvasLocation" x="547.5" y="454.5"/>
         </view>
     </objects>
     <resources>
